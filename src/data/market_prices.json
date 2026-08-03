@@ -1,0 +1,82 @@
+{
+  "Pearl Millet (Bajra)": {
+    "name": "Pearl Millet (Bajra)",
+    "raw_name": "Bajra(Pearl Millet/Cumbu)",
+    "msp_per_quintal": 2775.0,
+    "mandi_price_per_quintal": 2391.6,
+    "price_per_kg": 23.92,
+    "water_category": "Low Water",
+    "water_req_m3_ha": 2800,
+    "kc_factor": 0.65
+  },
+  "Maize": {
+    "name": "Maize",
+    "raw_name": "Maize",
+    "msp_per_quintal": 2400.0,
+    "mandi_price_per_quintal": 2255.0,
+    "price_per_kg": 22.55,
+    "water_category": "Medium Water",
+    "water_req_m3_ha": 4200,
+    "kc_factor": 0.9
+  },
+  "Rice (Paddy)": {
+    "name": "Rice (Paddy)",
+    "raw_name": "Paddy(Common)",
+    "msp_per_quintal": 2369.0,
+    "mandi_price_per_quintal": 2356.17,
+    "price_per_kg": 23.56,
+    "water_category": "Very High Water",
+    "water_req_m3_ha": 11000,
+    "kc_factor": 1.25
+  },
+  "Wheat": {
+    "name": "Wheat",
+    "raw_name": "Wheat",
+    "msp_per_quintal": 2585.0,
+    "mandi_price_per_quintal": 2615.61,
+    "price_per_kg": 26.16,
+    "water_category": "Medium Water",
+    "water_req_m3_ha": 4800,
+    "kc_factor": 0.85
+  },
+  "Cotton": {
+    "name": "Cotton",
+    "raw_name": "Cotton",
+    "msp_per_quintal": 7710.0,
+    "mandi_price_per_quintal": 8773.53,
+    "price_per_kg": 87.74,
+    "water_category": "High Water",
+    "water_req_m3_ha": 8500,
+    "kc_factor": 1.15
+  },
+  "Groundnut": {
+    "name": "Groundnut",
+    "raw_name": "Groundnut",
+    "msp_per_quintal": 7263.0,
+    "mandi_price_per_quintal": 7105.64,
+    "price_per_kg": 71.06,
+    "water_category": "Medium Water",
+    "water_req_m3_ha": 5500,
+    "kc_factor": 0.95
+  },
+  "Mustard": {
+    "name": "Mustard",
+    "raw_name": "Mustard",
+    "msp_per_quintal": 6200.0,
+    "mandi_price_per_quintal": 7469.95,
+    "price_per_kg": 74.7,
+    "water_category": "Low Water",
+    "water_req_m3_ha": 3000,
+    "kc_factor": 0.7
+  },
+  "Pulses (Gram)": {
+    "name": "Pulses (Gram)",
+    "raw_name": "Bengal Gram(Gram)(Whole)",
+    "msp_per_quintal": 5875.0,
+    "mandi_price_per_quintal": 6576.48,
+    "price_per_kg": 65.76,
+    "water_category": "Low Water",
+    "water_req_m3_ha": 2500,
+    "kc_factor": 0.6
+  }
+}

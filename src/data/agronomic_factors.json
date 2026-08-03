@@ -1,0 +1,41 @@
+{
+  "penman_monteith": {
+    "equation": "ET_c = K_c * ET_0",
+    "description": "FAO-56 Penman-Monteith method computes reference evapotranspiration (ET_0) from Solar Radiation, Temperature, Humidity, and Wind Speed.",
+    "et0_gujarat_avg_mm_day": 5.2
+  },
+  "crop_parameters": {
+    "Cotton": {
+      "kc_initial": 0.45,
+      "kc_mid": 1.15,
+      "kc_late": 0.7,
+      "seasonal_water_m3_ha": 8500,
+      "growth_period_days": 160,
+      "sensitivity_index": "High Water Dependency"
+    },
+    "Groundnut": {
+      "kc_initial": 0.4,
+      "kc_mid": 0.95,
+      "kc_late": 0.6,
+      "seasonal_water_m3_ha": 5500,
+      "growth_period_days": 120,
+      "sensitivity_index": "Moderate Water Dependency"
+    },
+    "Wheat": {
+      "kc_initial": 0.35,
+      "kc_mid": 0.85,
+      "kc_late": 0.45,
+      "seasonal_water_m3_ha": 4800,
+      "growth_period_days": 110,
+      "sensitivity_index": "Rabi Season Crop"
+    },
+    "Pearl Millet (Bajra)": {
+      "kc_initial": 0.3,
+      "kc_mid": 0.65,
+      "kc_late": 0.35,
+      "seasonal_water_m3_ha": 2800,
+      "growth_period_days": 85,
+      "sensitivity_index": "Drought Resistant / Low Water"
+    }
+  }
+}

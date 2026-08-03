@@ -1,0 +1,5306 @@
+{
+  "Ahmedabad": {
+    "district": "Ahmedabad",
+    "stations_count": 3,
+    "mean_depth": 5.6,
+    "pre_monsoon_avg": 6.51,
+    "post_monsoon_avg": 4.69,
+    "annual_drawdown_rate": -0.096,
+    "cgwb_category": "Safe",
+    "risk_color": "#22c55e",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 2.05
+      },
+      {
+        "year": 1992,
+        "depth": 7.09
+      },
+      {
+        "year": 1993,
+        "depth": 6.42
+      },
+      {
+        "year": 1994,
+        "depth": 6.05
+      },
+      {
+        "year": 1995,
+        "depth": 7.09
+      },
+      {
+        "year": 1996,
+        "depth": 7.99
+      },
+      {
+        "year": 1997,
+        "depth": 7.34
+      },
+      {
+        "year": 1998,
+        "depth": 7.7
+      },
+      {
+        "year": 1999,
+        "depth": 8.09
+      },
+      {
+        "year": 2000,
+        "depth": 7.42
+      },
+      {
+        "year": 2001,
+        "depth": 7.88
+      },
+      {
+        "year": 2002,
+        "depth": 8.19
+      },
+      {
+        "year": 2003,
+        "depth": 8.43
+      },
+      {
+        "year": 2004,
+        "depth": 6.07
+      },
+      {
+        "year": 2005,
+        "depth": 4.48
+      },
+      {
+        "year": 2006,
+        "depth": 4.24
+      },
+      {
+        "year": 2007,
+        "depth": 4.38
+      },
+      {
+        "year": 2008,
+        "depth": 3.05
+      },
+      {
+        "year": 2009,
+        "depth": 4.12
+      },
+      {
+        "year": 2010,
+        "depth": 3.95
+      },
+      {
+        "year": 2011,
+        "depth": 4.27
+      },
+      {
+        "year": 2012,
+        "depth": 4.19
+      },
+      {
+        "year": 2013,
+        "depth": 4.73
+      },
+      {
+        "year": 2014,
+        "depth": 4.17
+      },
+      {
+        "year": 2015,
+        "depth": 4.68
+      },
+      {
+        "year": 2016,
+        "depth": 5.28
+      },
+      {
+        "year": 2017,
+        "depth": 4.55
+      },
+      {
+        "year": 2018,
+        "depth": 5.34
+      },
+      {
+        "year": 2019,
+        "depth": 5.14
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "AD-04B",
+        "tehsil": "DHANDHUKA",
+        "lat": 22.37222222,
+        "lng": 71.93861111,
+        "avg_depth": 8.52
+      },
+      {
+        "name": "AD-14",
+        "tehsil": "BAVLA",
+        "lat": 22.82083333,
+        "lng": 72.31833333,
+        "avg_depth": 3.89
+      },
+      {
+        "name": "AD-25A",
+        "tehsil": "SANAND",
+        "lat": 23.04694444,
+        "lng": 72.26527778,
+        "avg_depth": 3.99
+      }
+    ]
+  },
+  "Amreli": {
+    "district": "Amreli",
+    "stations_count": 59,
+    "mean_depth": 12.59,
+    "pre_monsoon_avg": 15.58,
+    "post_monsoon_avg": 9.75,
+    "annual_drawdown_rate": -0.052,
+    "cgwb_category": "Over-Exploited",
+    "risk_color": "#ef4444",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 12.35
+      },
+      {
+        "year": 1992,
+        "depth": 13.41
+      },
+      {
+        "year": 1993,
+        "depth": 12.89
+      },
+      {
+        "year": 1994,
+        "depth": 12.18
+      },
+      {
+        "year": 1995,
+        "depth": 12.57
+      },
+      {
+        "year": 1996,
+        "depth": 13.56
+      },
+      {
+        "year": 1997,
+        "depth": 12.67
+      },
+      {
+        "year": 1998,
+        "depth": 13.64
+      },
+      {
+        "year": 1999,
+        "depth": 15.25
+      },
+      {
+        "year": 2000,
+        "depth": 16.2
+      },
+      {
+        "year": 2001,
+        "depth": 15.67
+      },
+      {
+        "year": 2002,
+        "depth": 15.01
+      },
+      {
+        "year": 2003,
+        "depth": 14.23
+      },
+      {
+        "year": 2004,
+        "depth": 12.86
+      },
+      {
+        "year": 2005,
+        "depth": 11.57
+      },
+      {
+        "year": 2006,
+        "depth": 9.97
+      },
+      {
+        "year": 2007,
+        "depth": 8.94
+      },
+      {
+        "year": 2008,
+        "depth": 8.45
+      },
+      {
+        "year": 2009,
+        "depth": 10.06
+      },
+      {
+        "year": 2010,
+        "depth": 10.99
+      },
+      {
+        "year": 2011,
+        "depth": 10.23
+      },
+      {
+        "year": 2012,
+        "depth": 14.72
+      },
+      {
+        "year": 2013,
+        "depth": 12.11
+      },
+      {
+        "year": 2014,
+        "depth": 12.82
+      },
+      {
+        "year": 2015,
+        "depth": 13.48
+      },
+      {
+        "year": 2016,
+        "depth": 13.26
+      },
+      {
+        "year": 2017,
+        "depth": 12.39
+      },
+      {
+        "year": 2018,
+        "depth": 13.69
+      },
+      {
+        "year": 2019,
+        "depth": 11.7
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "AMR-009",
+        "tehsil": "KUNKAVAV-VADIA",
+        "lat": 21.685,
+        "lng": 70.82083333,
+        "avg_depth": 7.91
+      },
+      {
+        "name": "AMR-011",
+        "tehsil": "KUNKAVAV-VADIA",
+        "lat": 21.68333333,
+        "lng": 70.93861111,
+        "avg_depth": 9.09
+      },
+      {
+        "name": "AMR-012",
+        "tehsil": "KUNKAVAV-VADIA",
+        "lat": 21.63611111,
+        "lng": 70.98055556,
+        "avg_depth": 15.16
+      },
+      {
+        "name": "AMR-013",
+        "tehsil": "KUNKAVAV-VADIA",
+        "lat": 21.62833333,
+        "lng": 70.87555556,
+        "avg_depth": 8.55
+      },
+      {
+        "name": "AMR-014",
+        "tehsil": "BAGASARA",
+        "lat": 21.56111111,
+        "lng": 70.95,
+        "avg_depth": 11.79
+      },
+      {
+        "name": "AMR-015",
+        "tehsil": "BAGASARA",
+        "lat": 21.47694444,
+        "lng": 70.96083333,
+        "avg_depth": 15.11
+      }
+    ]
+  },
+  "Anand": {
+    "district": "Anand",
+    "stations_count": 18,
+    "mean_depth": 10.98,
+    "pre_monsoon_avg": 11.97,
+    "post_monsoon_avg": 9.99,
+    "annual_drawdown_rate": 0.003,
+    "cgwb_category": "Critical",
+    "risk_color": "#f97316",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 11.41
+      },
+      {
+        "year": 1992,
+        "depth": 10.43
+      },
+      {
+        "year": 1993,
+        "depth": 11.03
+      },
+      {
+        "year": 1994,
+        "depth": 10.47
+      },
+      {
+        "year": 1995,
+        "depth": 10.26
+      },
+      {
+        "year": 1996,
+        "depth": 10.39
+      },
+      {
+        "year": 1997,
+        "depth": 9.78
+      },
+      {
+        "year": 1998,
+        "depth": 9.51
+      },
+      {
+        "year": 1999,
+        "depth": 9.91
+      },
+      {
+        "year": 2000,
+        "depth": 11.67
+      },
+      {
+        "year": 2001,
+        "depth": 12.79
+      },
+      {
+        "year": 2002,
+        "depth": 13.92
+      },
+      {
+        "year": 2003,
+        "depth": 13.67
+      },
+      {
+        "year": 2004,
+        "depth": 13.07
+      },
+      {
+        "year": 2005,
+        "depth": 12.21
+      },
+      {
+        "year": 2006,
+        "depth": 10.48
+      },
+      {
+        "year": 2007,
+        "depth": 9.73
+      },
+      {
+        "year": 2008,
+        "depth": 8.99
+      },
+      {
+        "year": 2009,
+        "depth": 10.07
+      },
+      {
+        "year": 2010,
+        "depth": 10.58
+      },
+      {
+        "year": 2011,
+        "depth": 10.58
+      },
+      {
+        "year": 2012,
+        "depth": 11.04
+      },
+      {
+        "year": 2013,
+        "depth": 10.38
+      },
+      {
+        "year": 2014,
+        "depth": 9.98
+      },
+      {
+        "year": 2015,
+        "depth": 10.51
+      },
+      {
+        "year": 2016,
+        "depth": 11.53
+      },
+      {
+        "year": 2017,
+        "depth": 11.64
+      },
+      {
+        "year": 2018,
+        "depth": 11.76
+      },
+      {
+        "year": 2019,
+        "depth": 10.86
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "KR-01",
+        "tehsil": "UMRETH",
+        "lat": 22.70055556,
+        "lng": 73.12027778,
+        "avg_depth": 5.97
+      },
+      {
+        "name": "KR-02",
+        "tehsil": "UMRETH",
+        "lat": 22.65083333,
+        "lng": 73.17638889,
+        "avg_depth": 18.07
+      },
+      {
+        "name": "KR-04",
+        "tehsil": "UMRETH",
+        "lat": 22.59027778,
+        "lng": 73.14222222,
+        "avg_depth": 22.02
+      },
+      {
+        "name": "KR-05",
+        "tehsil": "ANAND",
+        "lat": 22.58361111,
+        "lng": 73.08305556,
+        "avg_depth": 16.87
+      },
+      {
+        "name": "KR-06",
+        "tehsil": "ANAND",
+        "lat": 22.545,
+        "lng": 73.07083333,
+        "avg_depth": 17.8
+      },
+      {
+        "name": "KR-10",
+        "tehsil": "UMRETH",
+        "lat": 22.70694444,
+        "lng": 73.04916667,
+        "avg_depth": 3.32
+      }
+    ]
+  },
+  "Aravalli": {
+    "district": "Aravalli",
+    "stations_count": 35,
+    "mean_depth": 10.15,
+    "pre_monsoon_avg": 13.72,
+    "post_monsoon_avg": 7.33,
+    "annual_drawdown_rate": -0.003,
+    "cgwb_category": "Critical",
+    "risk_color": "#f97316",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 9.76
+      },
+      {
+        "year": 1992,
+        "depth": 10.53
+      },
+      {
+        "year": 1993,
+        "depth": 10.36
+      },
+      {
+        "year": 1994,
+        "depth": 8.33
+      },
+      {
+        "year": 1995,
+        "depth": 8.54
+      },
+      {
+        "year": 1996,
+        "depth": 9.08
+      },
+      {
+        "year": 1997,
+        "depth": 7.52
+      },
+      {
+        "year": 1998,
+        "depth": 6.95
+      },
+      {
+        "year": 1999,
+        "depth": 10.09
+      },
+      {
+        "year": 2000,
+        "depth": 12.61
+      },
+      {
+        "year": 2001,
+        "depth": 15.14
+      },
+      {
+        "year": 2002,
+        "depth": 15.55
+      },
+      {
+        "year": 2003,
+        "depth": 14.83
+      },
+      {
+        "year": 2004,
+        "depth": 11.93
+      },
+      {
+        "year": 2005,
+        "depth": 10.13
+      },
+      {
+        "year": 2006,
+        "depth": 8.09
+      },
+      {
+        "year": 2007,
+        "depth": 6.55
+      },
+      {
+        "year": 2008,
+        "depth": 8.73
+      },
+      {
+        "year": 2009,
+        "depth": 11.59
+      },
+      {
+        "year": 2010,
+        "depth": 11.67
+      },
+      {
+        "year": 2011,
+        "depth": 10.31
+      },
+      {
+        "year": 2012,
+        "depth": 9.65
+      },
+      {
+        "year": 2013,
+        "depth": 8.31
+      },
+      {
+        "year": 2014,
+        "depth": 7.9
+      },
+      {
+        "year": 2015,
+        "depth": 10.08
+      },
+      {
+        "year": 2016,
+        "depth": 10.01
+      },
+      {
+        "year": 2017,
+        "depth": 10.52
+      },
+      {
+        "year": 2018,
+        "depth": 11.01
+      },
+      {
+        "year": 2019,
+        "depth": 9.52
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "SK-001",
+        "tehsil": "Bayad",
+        "lat": 23.22361111,
+        "lng": 73.2225,
+        "avg_depth": 7.06
+      },
+      {
+        "name": "SK-002A",
+        "tehsil": "Bayad",
+        "lat": 23.20916667,
+        "lng": 73.04333333,
+        "avg_depth": 15.52
+      },
+      {
+        "name": "SK-004A",
+        "tehsil": "Bayad",
+        "lat": 23.24444444,
+        "lng": 73.0925,
+        "avg_depth": 14.96
+      },
+      {
+        "name": "SK-006A",
+        "tehsil": "Bayad",
+        "lat": 23.21805556,
+        "lng": 73.11305556,
+        "avg_depth": 13.03
+      },
+      {
+        "name": "SK-009",
+        "tehsil": "Dhansura",
+        "lat": 23.33027778,
+        "lng": 73.25166667,
+        "avg_depth": 10.57
+      },
+      {
+        "name": "SK-010",
+        "tehsil": "Bayad",
+        "lat": 23.16583333,
+        "lng": 73.32111111,
+        "avg_depth": 9.89
+      }
+    ]
+  },
+  "Banaskantha": {
+    "district": "Banaskantha",
+    "stations_count": 21,
+    "mean_depth": 11.13,
+    "pre_monsoon_avg": 12.88,
+    "post_monsoon_avg": 10.05,
+    "annual_drawdown_rate": -0.015,
+    "cgwb_category": "Critical",
+    "risk_color": "#f97316",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 9.4
+      },
+      {
+        "year": 1992,
+        "depth": 9.47
+      },
+      {
+        "year": 1993,
+        "depth": 10.46
+      },
+      {
+        "year": 1994,
+        "depth": 10.62
+      },
+      {
+        "year": 1995,
+        "depth": 9.16
+      },
+      {
+        "year": 1996,
+        "depth": 9.72
+      },
+      {
+        "year": 1997,
+        "depth": 11.58
+      },
+      {
+        "year": 1998,
+        "depth": 12.07
+      },
+      {
+        "year": 1999,
+        "depth": 12.68
+      },
+      {
+        "year": 2000,
+        "depth": 15.67
+      },
+      {
+        "year": 2001,
+        "depth": 16.8
+      },
+      {
+        "year": 2002,
+        "depth": 17.79
+      },
+      {
+        "year": 2003,
+        "depth": 16.27
+      },
+      {
+        "year": 2004,
+        "depth": 14.46
+      },
+      {
+        "year": 2005,
+        "depth": 13.06
+      },
+      {
+        "year": 2006,
+        "depth": 9.34
+      },
+      {
+        "year": 2007,
+        "depth": 7.69
+      },
+      {
+        "year": 2008,
+        "depth": 9.49
+      },
+      {
+        "year": 2009,
+        "depth": 11.13
+      },
+      {
+        "year": 2010,
+        "depth": 12.34
+      },
+      {
+        "year": 2011,
+        "depth": 10.51
+      },
+      {
+        "year": 2012,
+        "depth": 9.62
+      },
+      {
+        "year": 2013,
+        "depth": 10.06
+      },
+      {
+        "year": 2014,
+        "depth": 10.15
+      },
+      {
+        "year": 2015,
+        "depth": 10.65
+      },
+      {
+        "year": 2016,
+        "depth": 10.52
+      },
+      {
+        "year": 2017,
+        "depth": 10.54
+      },
+      {
+        "year": 2018,
+        "depth": 11.07
+      },
+      {
+        "year": 2019,
+        "depth": 13.58
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "BK-004",
+        "tehsil": "VADGAM",
+        "lat": 24.00527778,
+        "lng": 72.62,
+        "avg_depth": 11.38
+      },
+      {
+        "name": "BK-005",
+        "tehsil": "VADGAM",
+        "lat": 24.02583333,
+        "lng": 72.63055556,
+        "avg_depth": 10.56
+      },
+      {
+        "name": "BK-015",
+        "tehsil": "AMIRGADH",
+        "lat": 24.40472222,
+        "lng": 72.64111111,
+        "avg_depth": 13.67
+      },
+      {
+        "name": "BK-019",
+        "tehsil": "PALANPUR",
+        "lat": 24.26027778,
+        "lng": 72.46972222,
+        "avg_depth": 16.81
+      },
+      {
+        "name": "BK-023",
+        "tehsil": "AMIRGADH",
+        "lat": 24.34,
+        "lng": 72.54444444,
+        "avg_depth": 22.05
+      },
+      {
+        "name": "BK-048",
+        "tehsil": "DANTA",
+        "lat": 24.27194444,
+        "lng": 72.98,
+        "avg_depth": 8.0
+      }
+    ]
+  },
+  "Bharuch": {
+    "district": "Bharuch",
+    "stations_count": 16,
+    "mean_depth": 7.79,
+    "pre_monsoon_avg": 9.17,
+    "post_monsoon_avg": 6.41,
+    "annual_drawdown_rate": -0.101,
+    "cgwb_category": "Semi-Critical",
+    "risk_color": "#eab308",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 8.67
+      },
+      {
+        "year": 1992,
+        "depth": 9.64
+      },
+      {
+        "year": 1993,
+        "depth": 8.84
+      },
+      {
+        "year": 1994,
+        "depth": 8.48
+      },
+      {
+        "year": 1995,
+        "depth": 8.42
+      },
+      {
+        "year": 1996,
+        "depth": 9.51
+      },
+      {
+        "year": 1997,
+        "depth": 8.95
+      },
+      {
+        "year": 1998,
+        "depth": 7.72
+      },
+      {
+        "year": 1999,
+        "depth": 8.41
+      },
+      {
+        "year": 2000,
+        "depth": 9.93
+      },
+      {
+        "year": 2001,
+        "depth": 10.22
+      },
+      {
+        "year": 2002,
+        "depth": 9.0
+      },
+      {
+        "year": 2003,
+        "depth": 8.54
+      },
+      {
+        "year": 2004,
+        "depth": 7.79
+      },
+      {
+        "year": 2005,
+        "depth": 7.5
+      },
+      {
+        "year": 2006,
+        "depth": 7.8
+      },
+      {
+        "year": 2007,
+        "depth": 6.39
+      },
+      {
+        "year": 2008,
+        "depth": 6.39
+      },
+      {
+        "year": 2009,
+        "depth": 7.14
+      },
+      {
+        "year": 2010,
+        "depth": 7.02
+      },
+      {
+        "year": 2011,
+        "depth": 6.26
+      },
+      {
+        "year": 2012,
+        "depth": 6.44
+      },
+      {
+        "year": 2013,
+        "depth": 5.98
+      },
+      {
+        "year": 2014,
+        "depth": 6.51
+      },
+      {
+        "year": 2015,
+        "depth": 7.53
+      },
+      {
+        "year": 2016,
+        "depth": 7.49
+      },
+      {
+        "year": 2017,
+        "depth": 7.31
+      },
+      {
+        "year": 2018,
+        "depth": 7.68
+      },
+      {
+        "year": 2019,
+        "depth": 6.5
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "BR-05",
+        "tehsil": "BHARUCH",
+        "lat": 21.71527778,
+        "lng": 72.81694444,
+        "avg_depth": 4.98
+      },
+      {
+        "name": "BR-12",
+        "tehsil": "HANSOT",
+        "lat": 21.47,
+        "lng": 72.67555556,
+        "avg_depth": 5.07
+      },
+      {
+        "name": "BR-14",
+        "tehsil": "JAMBUSAR",
+        "lat": 22.16416667,
+        "lng": 72.7425,
+        "avg_depth": 12.68
+      },
+      {
+        "name": "BR-15",
+        "tehsil": "JAMBUSAR",
+        "lat": 21.99361111,
+        "lng": 72.66805556,
+        "avg_depth": 3.74
+      },
+      {
+        "name": "BR-16",
+        "tehsil": "JHAGADIA",
+        "lat": 21.77111111,
+        "lng": 73.18777778,
+        "avg_depth": 10.31
+      },
+      {
+        "name": "BR-20",
+        "tehsil": "JHAGADIA",
+        "lat": 21.68388889,
+        "lng": 73.07361111,
+        "avg_depth": 7.63
+      }
+    ]
+  },
+  "Bhavnagar": {
+    "district": "Bhavnagar",
+    "stations_count": 42,
+    "mean_depth": 10.3,
+    "pre_monsoon_avg": 13.07,
+    "post_monsoon_avg": 7.59,
+    "annual_drawdown_rate": -0.057,
+    "cgwb_category": "Critical",
+    "risk_color": "#f97316",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 10.16
+      },
+      {
+        "year": 1992,
+        "depth": 10.91
+      },
+      {
+        "year": 1993,
+        "depth": 11.18
+      },
+      {
+        "year": 1994,
+        "depth": 9.06
+      },
+      {
+        "year": 1995,
+        "depth": 10.72
+      },
+      {
+        "year": 1996,
+        "depth": 11.96
+      },
+      {
+        "year": 1997,
+        "depth": 11.79
+      },
+      {
+        "year": 1998,
+        "depth": 12.03
+      },
+      {
+        "year": 1999,
+        "depth": 12.53
+      },
+      {
+        "year": 2000,
+        "depth": 13.91
+      },
+      {
+        "year": 2001,
+        "depth": 12.45
+      },
+      {
+        "year": 2002,
+        "depth": 11.19
+      },
+      {
+        "year": 2003,
+        "depth": 10.56
+      },
+      {
+        "year": 2004,
+        "depth": 11.1
+      },
+      {
+        "year": 2005,
+        "depth": 9.61
+      },
+      {
+        "year": 2006,
+        "depth": 8.16
+      },
+      {
+        "year": 2007,
+        "depth": 6.96
+      },
+      {
+        "year": 2008,
+        "depth": 6.61
+      },
+      {
+        "year": 2009,
+        "depth": 7.69
+      },
+      {
+        "year": 2010,
+        "depth": 12.68
+      },
+      {
+        "year": 2011,
+        "depth": 9.8
+      },
+      {
+        "year": 2012,
+        "depth": 12.48
+      },
+      {
+        "year": 2013,
+        "depth": 9.7
+      },
+      {
+        "year": 2014,
+        "depth": 7.67
+      },
+      {
+        "year": 2015,
+        "depth": 11.41
+      },
+      {
+        "year": 2016,
+        "depth": 10.99
+      },
+      {
+        "year": 2017,
+        "depth": 10.12
+      },
+      {
+        "year": 2018,
+        "depth": 10.85
+      },
+      {
+        "year": 2019,
+        "depth": 9.25
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "BVN-007",
+        "tehsil": "BOTAD",
+        "lat": 22.25277778,
+        "lng": 71.57638889,
+        "avg_depth": 11.93
+      },
+      {
+        "name": "BVN-010A",
+        "tehsil": "BOTAD",
+        "lat": 22.11666667,
+        "lng": 71.63944444,
+        "avg_depth": 19.17
+      },
+      {
+        "name": "BVN-013A",
+        "tehsil": "GADHADA",
+        "lat": 22.05888889,
+        "lng": 71.53111111,
+        "avg_depth": 9.9
+      },
+      {
+        "name": "BVN-014",
+        "tehsil": "GADHADA",
+        "lat": 21.96333333,
+        "lng": 71.57083333,
+        "avg_depth": 12.47
+      },
+      {
+        "name": "BVN-015",
+        "tehsil": "GADHADA",
+        "lat": 21.96777778,
+        "lng": 71.53444444,
+        "avg_depth": 7.9
+      },
+      {
+        "name": "BVN-016",
+        "tehsil": "GADHADA",
+        "lat": 21.99472222,
+        "lng": 71.45583333,
+        "avg_depth": 9.6
+      }
+    ]
+  },
+  "Botad": {
+    "district": "Botad",
+    "stations_count": 2,
+    "mean_depth": 9.96,
+    "pre_monsoon_avg": 11.54,
+    "post_monsoon_avg": 8.39,
+    "annual_drawdown_rate": -0.011,
+    "cgwb_category": "Critical",
+    "risk_color": "#f97316",
+    "yearly_history": [
+      {
+        "year": 1992,
+        "depth": 9.16
+      },
+      {
+        "year": 1993,
+        "depth": 11.09
+      },
+      {
+        "year": 1994,
+        "depth": 11.14
+      },
+      {
+        "year": 1995,
+        "depth": 9.44
+      },
+      {
+        "year": 1996,
+        "depth": 9.69
+      },
+      {
+        "year": 1997,
+        "depth": 9.12
+      },
+      {
+        "year": 1998,
+        "depth": 8.44
+      },
+      {
+        "year": 1999,
+        "depth": 8.93
+      },
+      {
+        "year": 2000,
+        "depth": 9.47
+      },
+      {
+        "year": 2001,
+        "depth": 9.43
+      },
+      {
+        "year": 2002,
+        "depth": 14.07
+      },
+      {
+        "year": 2003,
+        "depth": 12.74
+      },
+      {
+        "year": 2004,
+        "depth": 10.94
+      },
+      {
+        "year": 2005,
+        "depth": 9.16
+      },
+      {
+        "year": 2006,
+        "depth": 7.88
+      },
+      {
+        "year": 2007,
+        "depth": 10.34
+      },
+      {
+        "year": 2008,
+        "depth": 7.05
+      },
+      {
+        "year": 2009,
+        "depth": 9.8
+      },
+      {
+        "year": 2010,
+        "depth": 10.48
+      },
+      {
+        "year": 2011,
+        "depth": 10.28
+      },
+      {
+        "year": 2012,
+        "depth": 12.47
+      },
+      {
+        "year": 2013,
+        "depth": 11.03
+      },
+      {
+        "year": 2014,
+        "depth": 9.43
+      },
+      {
+        "year": 2015,
+        "depth": 10.93
+      },
+      {
+        "year": 2016,
+        "depth": 10.6
+      },
+      {
+        "year": 2017,
+        "depth": 9.07
+      },
+      {
+        "year": 2018,
+        "depth": 8.43
+      },
+      {
+        "year": 2019,
+        "depth": 8.32
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "AD-05A",
+        "tehsil": "Ranpur",
+        "lat": 22.345,
+        "lng": 71.72138889,
+        "avg_depth": 8.92
+      },
+      {
+        "name": "AD-06",
+        "tehsil": "Ranpur",
+        "lat": 22.26388889,
+        "lng": 71.80055556,
+        "avg_depth": 11.0
+      }
+    ]
+  },
+  "Chhota Udaipur": {
+    "district": "Chhota Udaipur",
+    "stations_count": 17,
+    "mean_depth": 7.27,
+    "pre_monsoon_avg": 8.88,
+    "post_monsoon_avg": 5.67,
+    "annual_drawdown_rate": 0.006,
+    "cgwb_category": "Semi-Critical",
+    "risk_color": "#eab308",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 6.56
+      },
+      {
+        "year": 1992,
+        "depth": 7.49
+      },
+      {
+        "year": 1993,
+        "depth": 7.5
+      },
+      {
+        "year": 1994,
+        "depth": 6.83
+      },
+      {
+        "year": 1995,
+        "depth": 6.89
+      },
+      {
+        "year": 1996,
+        "depth": 6.69
+      },
+      {
+        "year": 1997,
+        "depth": 6.79
+      },
+      {
+        "year": 1998,
+        "depth": 5.94
+      },
+      {
+        "year": 1999,
+        "depth": 6.9
+      },
+      {
+        "year": 2000,
+        "depth": 9.66
+      },
+      {
+        "year": 2001,
+        "depth": 8.92
+      },
+      {
+        "year": 2002,
+        "depth": 8.82
+      },
+      {
+        "year": 2003,
+        "depth": 7.56
+      },
+      {
+        "year": 2004,
+        "depth": 6.97
+      },
+      {
+        "year": 2005,
+        "depth": 6.8
+      },
+      {
+        "year": 2006,
+        "depth": 6.69
+      },
+      {
+        "year": 2007,
+        "depth": 6.26
+      },
+      {
+        "year": 2008,
+        "depth": 6.75
+      },
+      {
+        "year": 2009,
+        "depth": 7.82
+      },
+      {
+        "year": 2010,
+        "depth": 7.02
+      },
+      {
+        "year": 2011,
+        "depth": 7.36
+      },
+      {
+        "year": 2012,
+        "depth": 7.4
+      },
+      {
+        "year": 2013,
+        "depth": 6.37
+      },
+      {
+        "year": 2014,
+        "depth": 6.66
+      },
+      {
+        "year": 2015,
+        "depth": 7.67
+      },
+      {
+        "year": 2016,
+        "depth": 8.03
+      },
+      {
+        "year": 2017,
+        "depth": 7.6
+      },
+      {
+        "year": 2018,
+        "depth": 8.37
+      },
+      {
+        "year": 2019,
+        "depth": 6.24
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "BD-09",
+        "tehsil": "Chhota Udaipur",
+        "lat": 22.31333333,
+        "lng": 74.01333333,
+        "avg_depth": 5.37
+      },
+      {
+        "name": "BD-10",
+        "tehsil": "Chhota Udaipur",
+        "lat": 22.37166667,
+        "lng": 74.09166667,
+        "avg_depth": 4.32
+      },
+      {
+        "name": "BD-11",
+        "tehsil": "Kavant",
+        "lat": 22.14166667,
+        "lng": 74.05138889,
+        "avg_depth": 10.07
+      },
+      {
+        "name": "BD-12",
+        "tehsil": "Chhota Udaipur",
+        "lat": 22.37138889,
+        "lng": 74.21083333,
+        "avg_depth": 5.94
+      },
+      {
+        "name": "BD-14",
+        "tehsil": "Chhota Udaipur",
+        "lat": 22.53333333,
+        "lng": 73.95833333,
+        "avg_depth": 6.18
+      },
+      {
+        "name": "BD-15",
+        "tehsil": "Kavant",
+        "lat": 22.08111111,
+        "lng": 73.90305556,
+        "avg_depth": 6.42
+      }
+    ]
+  },
+  "Dang": {
+    "district": "Dang",
+    "stations_count": 7,
+    "mean_depth": 4.33,
+    "pre_monsoon_avg": 6.28,
+    "post_monsoon_avg": 2.39,
+    "annual_drawdown_rate": 0.021,
+    "cgwb_category": "Safe",
+    "risk_color": "#22c55e",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 3.59
+      },
+      {
+        "year": 1992,
+        "depth": 4.58
+      },
+      {
+        "year": 1993,
+        "depth": 4.1
+      },
+      {
+        "year": 1994,
+        "depth": 3.79
+      },
+      {
+        "year": 1995,
+        "depth": 4.01
+      },
+      {
+        "year": 1996,
+        "depth": 4.35
+      },
+      {
+        "year": 1997,
+        "depth": 4.32
+      },
+      {
+        "year": 1998,
+        "depth": 4.06
+      },
+      {
+        "year": 1999,
+        "depth": 3.69
+      },
+      {
+        "year": 2000,
+        "depth": 4.11
+      },
+      {
+        "year": 2001,
+        "depth": 4.44
+      },
+      {
+        "year": 2002,
+        "depth": 4.76
+      },
+      {
+        "year": 2003,
+        "depth": 4.88
+      },
+      {
+        "year": 2004,
+        "depth": 4.58
+      },
+      {
+        "year": 2005,
+        "depth": 4.15
+      },
+      {
+        "year": 2006,
+        "depth": 4.06
+      },
+      {
+        "year": 2007,
+        "depth": 4.04
+      },
+      {
+        "year": 2008,
+        "depth": 3.92
+      },
+      {
+        "year": 2009,
+        "depth": 4.34
+      },
+      {
+        "year": 2010,
+        "depth": 4.61
+      },
+      {
+        "year": 2011,
+        "depth": 4.41
+      },
+      {
+        "year": 2012,
+        "depth": 5.19
+      },
+      {
+        "year": 2013,
+        "depth": 5.15
+      },
+      {
+        "year": 2014,
+        "depth": 3.93
+      },
+      {
+        "year": 2015,
+        "depth": 4.53
+      },
+      {
+        "year": 2016,
+        "depth": 4.42
+      },
+      {
+        "year": 2017,
+        "depth": 3.94
+      },
+      {
+        "year": 2018,
+        "depth": 4.51
+      },
+      {
+        "year": 2019,
+        "depth": 5.05
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "DG-01",
+        "tehsil": "Ahwa",
+        "lat": 20.75833333,
+        "lng": 73.69222222,
+        "avg_depth": 4.31
+      },
+      {
+        "name": "DG-02",
+        "tehsil": "Vaghai",
+        "lat": 20.67611111,
+        "lng": 73.63222222,
+        "avg_depth": 4.25
+      },
+      {
+        "name": "DG-03",
+        "tehsil": "Vaghai",
+        "lat": 20.92111111,
+        "lng": 73.585,
+        "avg_depth": 2.42
+      },
+      {
+        "name": "DG-04A",
+        "tehsil": "Ahwa",
+        "lat": 20.77416667,
+        "lng": 73.79083333,
+        "avg_depth": 3.99
+      },
+      {
+        "name": "DG-05",
+        "tehsil": "Ahwa",
+        "lat": 20.62166667,
+        "lng": 73.71416667,
+        "avg_depth": 3.62
+      },
+      {
+        "name": "DG-06",
+        "tehsil": "Subir",
+        "lat": 20.92555556,
+        "lng": 73.78083333,
+        "avg_depth": 4.71
+      }
+    ]
+  },
+  "Devbhumi Dwarka": {
+    "district": "Devbhumi Dwarka",
+    "stations_count": 34,
+    "mean_depth": 10.33,
+    "pre_monsoon_avg": 12.84,
+    "post_monsoon_avg": 7.88,
+    "annual_drawdown_rate": -0.084,
+    "cgwb_category": "Critical",
+    "risk_color": "#f97316",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 12.98
+      },
+      {
+        "year": 1992,
+        "depth": 11.44
+      },
+      {
+        "year": 1993,
+        "depth": 12.04
+      },
+      {
+        "year": 1994,
+        "depth": 9.48
+      },
+      {
+        "year": 1995,
+        "depth": 10.9
+      },
+      {
+        "year": 1996,
+        "depth": 12.42
+      },
+      {
+        "year": 1997,
+        "depth": 10.56
+      },
+      {
+        "year": 1998,
+        "depth": 8.85
+      },
+      {
+        "year": 1999,
+        "depth": 10.74
+      },
+      {
+        "year": 2000,
+        "depth": 12.21
+      },
+      {
+        "year": 2001,
+        "depth": 10.82
+      },
+      {
+        "year": 2002,
+        "depth": 11.62
+      },
+      {
+        "year": 2003,
+        "depth": 12.84
+      },
+      {
+        "year": 2004,
+        "depth": 10.01
+      },
+      {
+        "year": 2005,
+        "depth": 11.32
+      },
+      {
+        "year": 2006,
+        "depth": 10.11
+      },
+      {
+        "year": 2007,
+        "depth": 7.55
+      },
+      {
+        "year": 2008,
+        "depth": 9.17
+      },
+      {
+        "year": 2009,
+        "depth": 9.26
+      },
+      {
+        "year": 2010,
+        "depth": 7.38
+      },
+      {
+        "year": 2011,
+        "depth": 7.2
+      },
+      {
+        "year": 2012,
+        "depth": 11.63
+      },
+      {
+        "year": 2013,
+        "depth": 7.71
+      },
+      {
+        "year": 2014,
+        "depth": 9.14
+      },
+      {
+        "year": 2015,
+        "depth": 12.02
+      },
+      {
+        "year": 2016,
+        "depth": 11.24
+      },
+      {
+        "year": 2017,
+        "depth": 11.18
+      },
+      {
+        "year": 2018,
+        "depth": 11.11
+      },
+      {
+        "year": 2019,
+        "depth": 7.02
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "JM-01",
+        "tehsil": "Dwarka",
+        "lat": 22.46527778,
+        "lng": 69.07333333,
+        "avg_depth": 2.76
+      },
+      {
+        "name": "JM-02",
+        "tehsil": "Dwarka",
+        "lat": 22.35555556,
+        "lng": 68.97222222,
+        "avg_depth": 7.79
+      },
+      {
+        "name": "JM-03",
+        "tehsil": "Dwarka",
+        "lat": 22.32361111,
+        "lng": 69.08138889,
+        "avg_depth": 4.85
+      },
+      {
+        "name": "JM-04",
+        "tehsil": "Dwarka",
+        "lat": 22.2425,
+        "lng": 68.98472222,
+        "avg_depth": 3.47
+      },
+      {
+        "name": "JM-05",
+        "tehsil": "Dwarka",
+        "lat": 22.19722222,
+        "lng": 69.04166667,
+        "avg_depth": 12.4
+      },
+      {
+        "name": "JM-06",
+        "tehsil": "Dwarka",
+        "lat": 22.14166667,
+        "lng": 69.06944444,
+        "avg_depth": 9.88
+      }
+    ]
+  },
+  "Dohad": {
+    "district": "Dohad",
+    "stations_count": 32,
+    "mean_depth": 5.34,
+    "pre_monsoon_avg": 7.31,
+    "post_monsoon_avg": 3.37,
+    "annual_drawdown_rate": 0.006,
+    "cgwb_category": "Safe",
+    "risk_color": "#22c55e",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 4.25
+      },
+      {
+        "year": 1992,
+        "depth": 5.35
+      },
+      {
+        "year": 1993,
+        "depth": 5.53
+      },
+      {
+        "year": 1994,
+        "depth": 4.31
+      },
+      {
+        "year": 1995,
+        "depth": 4.43
+      },
+      {
+        "year": 1996,
+        "depth": 4.9
+      },
+      {
+        "year": 1997,
+        "depth": 4.45
+      },
+      {
+        "year": 1998,
+        "depth": 3.95
+      },
+      {
+        "year": 1999,
+        "depth": 5.59
+      },
+      {
+        "year": 2000,
+        "depth": 8.18
+      },
+      {
+        "year": 2001,
+        "depth": 8.29
+      },
+      {
+        "year": 2002,
+        "depth": 8.16
+      },
+      {
+        "year": 2003,
+        "depth": 6.06
+      },
+      {
+        "year": 2004,
+        "depth": 4.62
+      },
+      {
+        "year": 2005,
+        "depth": 4.74
+      },
+      {
+        "year": 2006,
+        "depth": 4.6
+      },
+      {
+        "year": 2007,
+        "depth": 3.87
+      },
+      {
+        "year": 2008,
+        "depth": 4.5
+      },
+      {
+        "year": 2009,
+        "depth": 5.95
+      },
+      {
+        "year": 2010,
+        "depth": 5.9
+      },
+      {
+        "year": 2011,
+        "depth": 5.42
+      },
+      {
+        "year": 2012,
+        "depth": 4.74
+      },
+      {
+        "year": 2013,
+        "depth": 4.31
+      },
+      {
+        "year": 2014,
+        "depth": 4.65
+      },
+      {
+        "year": 2015,
+        "depth": 6.52
+      },
+      {
+        "year": 2016,
+        "depth": 6.33
+      },
+      {
+        "year": 2017,
+        "depth": 5.31
+      },
+      {
+        "year": 2018,
+        "depth": 5.05
+      },
+      {
+        "year": 2019,
+        "depth": 4.98
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "PM-001-B",
+        "tehsil": "DOHAD",
+        "lat": 22.82638889,
+        "lng": 74.25277778,
+        "avg_depth": 7.43
+      },
+      {
+        "name": "PM-002",
+        "tehsil": "GARBADA",
+        "lat": 22.69194444,
+        "lng": 74.31361111,
+        "avg_depth": 4.51
+      },
+      {
+        "name": "PM-003",
+        "tehsil": "GARBADA",
+        "lat": 22.73527778,
+        "lng": 74.20083333,
+        "avg_depth": 4.62
+      },
+      {
+        "name": "PM-005-A",
+        "tehsil": "GARBADA",
+        "lat": 22.67472222,
+        "lng": 74.28138889,
+        "avg_depth": 5.11
+      },
+      {
+        "name": "PM-006",
+        "tehsil": "DOHAD",
+        "lat": 22.75,
+        "lng": 74.38638889,
+        "avg_depth": 3.01
+      },
+      {
+        "name": "PM-007-B",
+        "tehsil": "DOHAD",
+        "lat": 22.81916667,
+        "lng": 74.40055556,
+        "avg_depth": 3.19
+      }
+    ]
+  },
+  "Gandhinagar": {
+    "district": "Gandhinagar",
+    "stations_count": 1,
+    "mean_depth": 11.74,
+    "pre_monsoon_avg": 13.2,
+    "post_monsoon_avg": 10.61,
+    "annual_drawdown_rate": 0.18,
+    "cgwb_category": "Critical",
+    "risk_color": "#f97316",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 9.15
+      },
+      {
+        "year": 1992,
+        "depth": 9.95
+      },
+      {
+        "year": 1993,
+        "depth": 10.85
+      },
+      {
+        "year": 1994,
+        "depth": 8.47
+      },
+      {
+        "year": 1995,
+        "depth": 10.1
+      },
+      {
+        "year": 1996,
+        "depth": 11.38
+      },
+      {
+        "year": 1997,
+        "depth": 9.28
+      },
+      {
+        "year": 1998,
+        "depth": 6.95
+      },
+      {
+        "year": 1999,
+        "depth": 9.75
+      },
+      {
+        "year": 2000,
+        "depth": 11.93
+      },
+      {
+        "year": 2001,
+        "depth": 13.32
+      },
+      {
+        "year": 2002,
+        "depth": 14.93
+      },
+      {
+        "year": 2003,
+        "depth": 14.12
+      },
+      {
+        "year": 2004,
+        "depth": 12.45
+      },
+      {
+        "year": 2005,
+        "depth": 10.3
+      },
+      {
+        "year": 2006,
+        "depth": 9.92
+      },
+      {
+        "year": 2007,
+        "depth": 10.17
+      },
+      {
+        "year": 2008,
+        "depth": 11.75
+      },
+      {
+        "year": 2009,
+        "depth": 12.15
+      },
+      {
+        "year": 2010,
+        "depth": 14.05
+      },
+      {
+        "year": 2011,
+        "depth": 13.15
+      },
+      {
+        "year": 2012,
+        "depth": 13.4
+      },
+      {
+        "year": 2013,
+        "depth": 12.2
+      },
+      {
+        "year": 2014,
+        "depth": 11.4
+      },
+      {
+        "year": 2015,
+        "depth": 12.55
+      },
+      {
+        "year": 2016,
+        "depth": 15.0
+      },
+      {
+        "year": 2017,
+        "depth": 14.0
+      },
+      {
+        "year": 2018,
+        "depth": 14.95
+      },
+      {
+        "year": 2019,
+        "depth": 15.65
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "AD-003",
+        "tehsil": "DEHGAM",
+        "lat": 23.17861111,
+        "lng": 72.84111111,
+        "avg_depth": 11.74
+      }
+    ]
+  },
+  "Jamnagar": {
+    "district": "Jamnagar",
+    "stations_count": 53,
+    "mean_depth": 10.68,
+    "pre_monsoon_avg": 13.42,
+    "post_monsoon_avg": 8.04,
+    "annual_drawdown_rate": -0.076,
+    "cgwb_category": "Critical",
+    "risk_color": "#f97316",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 11.89
+      },
+      {
+        "year": 1992,
+        "depth": 11.94
+      },
+      {
+        "year": 1993,
+        "depth": 12.83
+      },
+      {
+        "year": 1994,
+        "depth": 9.59
+      },
+      {
+        "year": 1995,
+        "depth": 10.26
+      },
+      {
+        "year": 1996,
+        "depth": 12.53
+      },
+      {
+        "year": 1997,
+        "depth": 10.14
+      },
+      {
+        "year": 1998,
+        "depth": 8.8
+      },
+      {
+        "year": 1999,
+        "depth": 13.5
+      },
+      {
+        "year": 2000,
+        "depth": 14.98
+      },
+      {
+        "year": 2001,
+        "depth": 13.92
+      },
+      {
+        "year": 2002,
+        "depth": 13.63
+      },
+      {
+        "year": 2003,
+        "depth": 11.97
+      },
+      {
+        "year": 2004,
+        "depth": 10.03
+      },
+      {
+        "year": 2005,
+        "depth": 9.4
+      },
+      {
+        "year": 2006,
+        "depth": 8.48
+      },
+      {
+        "year": 2007,
+        "depth": 7.77
+      },
+      {
+        "year": 2008,
+        "depth": 8.65
+      },
+      {
+        "year": 2009,
+        "depth": 9.82
+      },
+      {
+        "year": 2010,
+        "depth": 8.0
+      },
+      {
+        "year": 2011,
+        "depth": 6.54
+      },
+      {
+        "year": 2012,
+        "depth": 11.2
+      },
+      {
+        "year": 2013,
+        "depth": 6.96
+      },
+      {
+        "year": 2014,
+        "depth": 9.87
+      },
+      {
+        "year": 2015,
+        "depth": 12.43
+      },
+      {
+        "year": 2016,
+        "depth": 11.68
+      },
+      {
+        "year": 2017,
+        "depth": 11.76
+      },
+      {
+        "year": 2018,
+        "depth": 12.58
+      },
+      {
+        "year": 2019,
+        "depth": 8.75
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "JM-27",
+        "tehsil": "LALPUR",
+        "lat": 22.35916667,
+        "lng": 69.75277778,
+        "avg_depth": 9.62
+      },
+      {
+        "name": "JM-29",
+        "tehsil": "LALPUR",
+        "lat": 22.34583333,
+        "lng": 69.93666667,
+        "avg_depth": 9.07
+      },
+      {
+        "name": "JM-30",
+        "tehsil": "LALPUR",
+        "lat": 22.25972222,
+        "lng": 69.90555556,
+        "avg_depth": 13.35
+      },
+      {
+        "name": "JM-31",
+        "tehsil": "LALPUR",
+        "lat": 22.28111111,
+        "lng": 70.00833333,
+        "avg_depth": 15.68
+      },
+      {
+        "name": "JM-32",
+        "tehsil": "LALPUR",
+        "lat": 22.24388889,
+        "lng": 70.11055556,
+        "avg_depth": 12.5
+      },
+      {
+        "name": "JM-33",
+        "tehsil": "LALPUR",
+        "lat": 22.18055556,
+        "lng": 70.03333333,
+        "avg_depth": 9.34
+      }
+    ]
+  },
+  "Junagadh": {
+    "district": "Junagadh",
+    "stations_count": 96,
+    "mean_depth": 10.71,
+    "pre_monsoon_avg": 14.47,
+    "post_monsoon_avg": 7.04,
+    "annual_drawdown_rate": -0.092,
+    "cgwb_category": "Critical",
+    "risk_color": "#f97316",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 12.16
+      },
+      {
+        "year": 1992,
+        "depth": 11.63
+      },
+      {
+        "year": 1993,
+        "depth": 11.56
+      },
+      {
+        "year": 1994,
+        "depth": 10.42
+      },
+      {
+        "year": 1995,
+        "depth": 10.29
+      },
+      {
+        "year": 1996,
+        "depth": 11.39
+      },
+      {
+        "year": 1997,
+        "depth": 11.65
+      },
+      {
+        "year": 1998,
+        "depth": 11.8
+      },
+      {
+        "year": 1999,
+        "depth": 13.01
+      },
+      {
+        "year": 2000,
+        "depth": 14.1
+      },
+      {
+        "year": 2001,
+        "depth": 13.96
+      },
+      {
+        "year": 2002,
+        "depth": 13.62
+      },
+      {
+        "year": 2003,
+        "depth": 12.49
+      },
+      {
+        "year": 2004,
+        "depth": 10.21
+      },
+      {
+        "year": 2005,
+        "depth": 9.53
+      },
+      {
+        "year": 2006,
+        "depth": 7.83
+      },
+      {
+        "year": 2007,
+        "depth": 7.43
+      },
+      {
+        "year": 2008,
+        "depth": 7.71
+      },
+      {
+        "year": 2009,
+        "depth": 10.25
+      },
+      {
+        "year": 2010,
+        "depth": 9.19
+      },
+      {
+        "year": 2011,
+        "depth": 7.95
+      },
+      {
+        "year": 2012,
+        "depth": 11.89
+      },
+      {
+        "year": 2013,
+        "depth": 10.21
+      },
+      {
+        "year": 2014,
+        "depth": 9.56
+      },
+      {
+        "year": 2015,
+        "depth": 11.62
+      },
+      {
+        "year": 2016,
+        "depth": 10.4
+      },
+      {
+        "year": 2017,
+        "depth": 9.65
+      },
+      {
+        "year": 2018,
+        "depth": 10.8
+      },
+      {
+        "year": 2019,
+        "depth": 9.33
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "AMR-001",
+        "tehsil": "KODINAR",
+        "lat": 20.80666667,
+        "lng": 70.69111111,
+        "avg_depth": 13.04
+      },
+      {
+        "name": "AMR-002",
+        "tehsil": "KODINAR",
+        "lat": 20.85472222,
+        "lng": 70.66277778,
+        "avg_depth": 14.26
+      },
+      {
+        "name": "AMR-003",
+        "tehsil": "KODINAR",
+        "lat": 20.90222222,
+        "lng": 70.72611111,
+        "avg_depth": 9.91
+      },
+      {
+        "name": "AMR-004",
+        "tehsil": "KODINAR",
+        "lat": 20.86222222,
+        "lng": 70.75833333,
+        "avg_depth": 5.94
+      },
+      {
+        "name": "AMR-005",
+        "tehsil": "KODINAR",
+        "lat": 20.89416667,
+        "lng": 70.84861111,
+        "avg_depth": 8.97
+      },
+      {
+        "name": "AMR-006",
+        "tehsil": "KODINAR",
+        "lat": 20.80111111,
+        "lng": 70.80861111,
+        "avg_depth": 14.67
+      }
+    ]
+  },
+  "Kachchh": {
+    "district": "Kachchh",
+    "stations_count": 43,
+    "mean_depth": 9.57,
+    "pre_monsoon_avg": 10.42,
+    "post_monsoon_avg": 8.68,
+    "annual_drawdown_rate": 0.007,
+    "cgwb_category": "Critical",
+    "risk_color": "#f97316",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 9.98
+      },
+      {
+        "year": 1992,
+        "depth": 10.01
+      },
+      {
+        "year": 1993,
+        "depth": 10.17
+      },
+      {
+        "year": 1994,
+        "depth": 9.25
+      },
+      {
+        "year": 1995,
+        "depth": 8.23
+      },
+      {
+        "year": 1996,
+        "depth": 9.86
+      },
+      {
+        "year": 1997,
+        "depth": 9.58
+      },
+      {
+        "year": 1998,
+        "depth": 9.62
+      },
+      {
+        "year": 1999,
+        "depth": 8.93
+      },
+      {
+        "year": 2000,
+        "depth": 9.45
+      },
+      {
+        "year": 2001,
+        "depth": 10.57
+      },
+      {
+        "year": 2002,
+        "depth": 10.2
+      },
+      {
+        "year": 2003,
+        "depth": 9.89
+      },
+      {
+        "year": 2004,
+        "depth": 9.76
+      },
+      {
+        "year": 2005,
+        "depth": 9.77
+      },
+      {
+        "year": 2006,
+        "depth": 9.48
+      },
+      {
+        "year": 2007,
+        "depth": 8.7
+      },
+      {
+        "year": 2008,
+        "depth": 8.87
+      },
+      {
+        "year": 2009,
+        "depth": 9.67
+      },
+      {
+        "year": 2010,
+        "depth": 8.55
+      },
+      {
+        "year": 2011,
+        "depth": 7.45
+      },
+      {
+        "year": 2012,
+        "depth": 7.52
+      },
+      {
+        "year": 2013,
+        "depth": 8.96
+      },
+      {
+        "year": 2014,
+        "depth": 10.3
+      },
+      {
+        "year": 2015,
+        "depth": 10.16
+      },
+      {
+        "year": 2016,
+        "depth": 10.33
+      },
+      {
+        "year": 2017,
+        "depth": 10.42
+      },
+      {
+        "year": 2018,
+        "depth": 10.98
+      },
+      {
+        "year": 2019,
+        "depth": 10.5
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "KC-01",
+        "tehsil": "RAPAR",
+        "lat": 23.55972222,
+        "lng": 70.97138889,
+        "avg_depth": 5.62
+      },
+      {
+        "name": "KC-02",
+        "tehsil": "RAPAR",
+        "lat": 23.47138889,
+        "lng": 70.92138889,
+        "avg_depth": 6.29
+      },
+      {
+        "name": "KC-03",
+        "tehsil": "RAPAR",
+        "lat": 23.54472222,
+        "lng": 70.88166667,
+        "avg_depth": 9.39
+      },
+      {
+        "name": "KC-04",
+        "tehsil": "RAPAR",
+        "lat": 23.39333333,
+        "lng": 70.75,
+        "avg_depth": 12.82
+      },
+      {
+        "name": "KC-05",
+        "tehsil": "RAPAR",
+        "lat": 23.46472222,
+        "lng": 70.65333333,
+        "avg_depth": 17.71
+      },
+      {
+        "name": "KC-08",
+        "tehsil": "RAPAR",
+        "lat": 23.61055556,
+        "lng": 70.49416667,
+        "avg_depth": 10.19
+      }
+    ]
+  },
+  "Kheda": {
+    "district": "Kheda",
+    "stations_count": 15,
+    "mean_depth": 8.62,
+    "pre_monsoon_avg": 9.83,
+    "post_monsoon_avg": 7.41,
+    "annual_drawdown_rate": -0.071,
+    "cgwb_category": "Semi-Critical",
+    "risk_color": "#eab308",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 7.63
+      },
+      {
+        "year": 1992,
+        "depth": 8.53
+      },
+      {
+        "year": 1993,
+        "depth": 9.53
+      },
+      {
+        "year": 1994,
+        "depth": 8.79
+      },
+      {
+        "year": 1995,
+        "depth": 8.68
+      },
+      {
+        "year": 1996,
+        "depth": 8.92
+      },
+      {
+        "year": 1997,
+        "depth": 7.83
+      },
+      {
+        "year": 1998,
+        "depth": 7.55
+      },
+      {
+        "year": 1999,
+        "depth": 8.14
+      },
+      {
+        "year": 2000,
+        "depth": 10.51
+      },
+      {
+        "year": 2001,
+        "depth": 11.8
+      },
+      {
+        "year": 2002,
+        "depth": 12.7
+      },
+      {
+        "year": 2003,
+        "depth": 11.32
+      },
+      {
+        "year": 2004,
+        "depth": 10.13
+      },
+      {
+        "year": 2005,
+        "depth": 8.97
+      },
+      {
+        "year": 2006,
+        "depth": 7.57
+      },
+      {
+        "year": 2007,
+        "depth": 7.14
+      },
+      {
+        "year": 2008,
+        "depth": 7.15
+      },
+      {
+        "year": 2009,
+        "depth": 8.61
+      },
+      {
+        "year": 2010,
+        "depth": 8.61
+      },
+      {
+        "year": 2011,
+        "depth": 8.65
+      },
+      {
+        "year": 2012,
+        "depth": 8.55
+      },
+      {
+        "year": 2013,
+        "depth": 7.56
+      },
+      {
+        "year": 2014,
+        "depth": 7.79
+      },
+      {
+        "year": 2015,
+        "depth": 7.93
+      },
+      {
+        "year": 2016,
+        "depth": 8.38
+      },
+      {
+        "year": 2017,
+        "depth": 6.37
+      },
+      {
+        "year": 2018,
+        "depth": 6.36
+      },
+      {
+        "year": 2019,
+        "depth": 6.67
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "KR-30",
+        "tehsil": "KAPADVANJ",
+        "lat": 23.01027778,
+        "lng": 73.08111111,
+        "avg_depth": 13.73
+      },
+      {
+        "name": "KR-38",
+        "tehsil": "KATHLAL",
+        "lat": 22.91361111,
+        "lng": 73.11888889,
+        "avg_depth": 3.85
+      },
+      {
+        "name": "KR-39",
+        "tehsil": "KATHLAL",
+        "lat": 22.92194444,
+        "lng": 73.14583333,
+        "avg_depth": 3.97
+      },
+      {
+        "name": "KR-49",
+        "tehsil": "KHEDA",
+        "lat": 22.75027778,
+        "lng": 72.57611111,
+        "avg_depth": 2.93
+      },
+      {
+        "name": "KR-51",
+        "tehsil": "KHEDA",
+        "lat": 22.78666667,
+        "lng": 72.645,
+        "avg_depth": 8.17
+      },
+      {
+        "name": "KR-54",
+        "tehsil": "MEHMEDABAD",
+        "lat": 22.82277778,
+        "lng": 72.82555556,
+        "avg_depth": 10.33
+      }
+    ]
+  },
+  "Mahesana": {
+    "district": "Mahesana",
+    "stations_count": 29,
+    "mean_depth": 9.94,
+    "pre_monsoon_avg": 11.18,
+    "post_monsoon_avg": 9.28,
+    "annual_drawdown_rate": -0.083,
+    "cgwb_category": "Critical",
+    "risk_color": "#f97316",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 10.78
+      },
+      {
+        "year": 1992,
+        "depth": 11.02
+      },
+      {
+        "year": 1993,
+        "depth": 10.68
+      },
+      {
+        "year": 1994,
+        "depth": 10.12
+      },
+      {
+        "year": 1995,
+        "depth": 10.88
+      },
+      {
+        "year": 1996,
+        "depth": 12.23
+      },
+      {
+        "year": 1997,
+        "depth": 11.29
+      },
+      {
+        "year": 1998,
+        "depth": 11.75
+      },
+      {
+        "year": 1999,
+        "depth": 11.44
+      },
+      {
+        "year": 2000,
+        "depth": 12.79
+      },
+      {
+        "year": 2001,
+        "depth": 13.08
+      },
+      {
+        "year": 2002,
+        "depth": 13.08
+      },
+      {
+        "year": 2003,
+        "depth": 12.92
+      },
+      {
+        "year": 2004,
+        "depth": 11.39
+      },
+      {
+        "year": 2005,
+        "depth": 11.93
+      },
+      {
+        "year": 2006,
+        "depth": 9.16
+      },
+      {
+        "year": 2007,
+        "depth": 7.89
+      },
+      {
+        "year": 2008,
+        "depth": 8.09
+      },
+      {
+        "year": 2009,
+        "depth": 9.65
+      },
+      {
+        "year": 2010,
+        "depth": 10.3
+      },
+      {
+        "year": 2011,
+        "depth": 10.14
+      },
+      {
+        "year": 2012,
+        "depth": 9.77
+      },
+      {
+        "year": 2013,
+        "depth": 9.33
+      },
+      {
+        "year": 2014,
+        "depth": 8.81
+      },
+      {
+        "year": 2015,
+        "depth": 8.93
+      },
+      {
+        "year": 2016,
+        "depth": 9.75
+      },
+      {
+        "year": 2017,
+        "depth": 9.42
+      },
+      {
+        "year": 2018,
+        "depth": 9.67
+      },
+      {
+        "year": 2019,
+        "depth": 11.46
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "MSH-001A",
+        "tehsil": "VADNAGAR",
+        "lat": 23.78527778,
+        "lng": 72.64166667,
+        "avg_depth": 4.45
+      },
+      {
+        "name": "MSH-006A",
+        "tehsil": "KHERALU",
+        "lat": 23.89,
+        "lng": 72.76388889,
+        "avg_depth": 2.3
+      },
+      {
+        "name": "MSH-008",
+        "tehsil": "SATLASANA",
+        "lat": 23.97305556,
+        "lng": 72.82722222,
+        "avg_depth": 10.49
+      },
+      {
+        "name": "MSH-009",
+        "tehsil": "SATLASANA",
+        "lat": 24.00527778,
+        "lng": 72.84277778,
+        "avg_depth": 9.72
+      },
+      {
+        "name": "MSH-013",
+        "tehsil": "KHERALU",
+        "lat": 23.88194444,
+        "lng": 72.55,
+        "avg_depth": 9.64
+      },
+      {
+        "name": "MSH-014",
+        "tehsil": "KHERALU",
+        "lat": 23.88972222,
+        "lng": 72.50583333,
+        "avg_depth": 10.38
+      }
+    ]
+  },
+  "Mahisagar": {
+    "district": "Mahisagar",
+    "stations_count": 18,
+    "mean_depth": 8.69,
+    "pre_monsoon_avg": 10.87,
+    "post_monsoon_avg": 6.52,
+    "annual_drawdown_rate": 0.006,
+    "cgwb_category": "Semi-Critical",
+    "risk_color": "#eab308",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 7.5
+      },
+      {
+        "year": 1992,
+        "depth": 7.96
+      },
+      {
+        "year": 1993,
+        "depth": 8.51
+      },
+      {
+        "year": 1994,
+        "depth": 7.19
+      },
+      {
+        "year": 1995,
+        "depth": 7.87
+      },
+      {
+        "year": 1996,
+        "depth": 7.78
+      },
+      {
+        "year": 1997,
+        "depth": 7.24
+      },
+      {
+        "year": 1998,
+        "depth": 7.17
+      },
+      {
+        "year": 1999,
+        "depth": 8.35
+      },
+      {
+        "year": 2000,
+        "depth": 10.51
+      },
+      {
+        "year": 2001,
+        "depth": 12.65
+      },
+      {
+        "year": 2002,
+        "depth": 13.25
+      },
+      {
+        "year": 2003,
+        "depth": 10.61
+      },
+      {
+        "year": 2004,
+        "depth": 8.89
+      },
+      {
+        "year": 2005,
+        "depth": 9.15
+      },
+      {
+        "year": 2006,
+        "depth": 7.8
+      },
+      {
+        "year": 2007,
+        "depth": 7.41
+      },
+      {
+        "year": 2008,
+        "depth": 8.18
+      },
+      {
+        "year": 2009,
+        "depth": 9.77
+      },
+      {
+        "year": 2010,
+        "depth": 8.83
+      },
+      {
+        "year": 2011,
+        "depth": 8.6
+      },
+      {
+        "year": 2012,
+        "depth": 8.25
+      },
+      {
+        "year": 2013,
+        "depth": 7.87
+      },
+      {
+        "year": 2014,
+        "depth": 7.42
+      },
+      {
+        "year": 2015,
+        "depth": 9.3
+      },
+      {
+        "year": 2016,
+        "depth": 9.67
+      },
+      {
+        "year": 2017,
+        "depth": 8.05
+      },
+      {
+        "year": 2018,
+        "depth": 8.02
+      },
+      {
+        "year": 2019,
+        "depth": 7.97
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "KR-13",
+        "tehsil": "Balasinor",
+        "lat": 22.94833333,
+        "lng": 73.32583333,
+        "avg_depth": 4.04
+      },
+      {
+        "name": "KR-14",
+        "tehsil": "Balasinor",
+        "lat": 22.99722222,
+        "lng": 73.28722222,
+        "avg_depth": 7.3
+      },
+      {
+        "name": "KR-15A",
+        "tehsil": "Virpur",
+        "lat": 23.18166667,
+        "lng": 73.47805556,
+        "avg_depth": 8.5
+      },
+      {
+        "name": "PM-075",
+        "tehsil": "Lunawada",
+        "lat": 23.06722222,
+        "lng": 73.61166667,
+        "avg_depth": 3.98
+      },
+      {
+        "name": "PM-076",
+        "tehsil": "Lunawada",
+        "lat": 23.01527778,
+        "lng": 73.55027778,
+        "avg_depth": 5.01
+      },
+      {
+        "name": "PM-077-A",
+        "tehsil": "Lunawada",
+        "lat": 23.06944444,
+        "lng": 73.42194444,
+        "avg_depth": 7.85
+      }
+    ]
+  },
+  "Morbi": {
+    "district": "Morbi",
+    "stations_count": 23,
+    "mean_depth": 7.4,
+    "pre_monsoon_avg": 8.9,
+    "post_monsoon_avg": 5.85,
+    "annual_drawdown_rate": -0.096,
+    "cgwb_category": "Semi-Critical",
+    "risk_color": "#eab308",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 8.88
+      },
+      {
+        "year": 1992,
+        "depth": 9.41
+      },
+      {
+        "year": 1993,
+        "depth": 9.35
+      },
+      {
+        "year": 1994,
+        "depth": 6.9
+      },
+      {
+        "year": 1995,
+        "depth": 5.79
+      },
+      {
+        "year": 1996,
+        "depth": 8.13
+      },
+      {
+        "year": 1997,
+        "depth": 7.75
+      },
+      {
+        "year": 1998,
+        "depth": 7.76
+      },
+      {
+        "year": 1999,
+        "depth": 9.34
+      },
+      {
+        "year": 2000,
+        "depth": 9.68
+      },
+      {
+        "year": 2001,
+        "depth": 9.98
+      },
+      {
+        "year": 2002,
+        "depth": 9.79
+      },
+      {
+        "year": 2003,
+        "depth": 8.22
+      },
+      {
+        "year": 2004,
+        "depth": 8.21
+      },
+      {
+        "year": 2005,
+        "depth": 7.21
+      },
+      {
+        "year": 2006,
+        "depth": 6.38
+      },
+      {
+        "year": 2007,
+        "depth": 5.75
+      },
+      {
+        "year": 2008,
+        "depth": 6.1
+      },
+      {
+        "year": 2009,
+        "depth": 6.64
+      },
+      {
+        "year": 2010,
+        "depth": 5.99
+      },
+      {
+        "year": 2011,
+        "depth": 5.16
+      },
+      {
+        "year": 2012,
+        "depth": 7.08
+      },
+      {
+        "year": 2013,
+        "depth": 6.66
+      },
+      {
+        "year": 2014,
+        "depth": 6.96
+      },
+      {
+        "year": 2015,
+        "depth": 7.21
+      },
+      {
+        "year": 2016,
+        "depth": 8.87
+      },
+      {
+        "year": 2017,
+        "depth": 5.88
+      },
+      {
+        "year": 2018,
+        "depth": 6.33
+      },
+      {
+        "year": 2019,
+        "depth": 5.28
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "RK-002A",
+        "tehsil": "Maliya",
+        "lat": 23.095,
+        "lng": 70.76194444,
+        "avg_depth": 3.05
+      },
+      {
+        "name": "RK-005A",
+        "tehsil": "Morbi",
+        "lat": 22.97861111,
+        "lng": 70.82777778,
+        "avg_depth": 6.33
+      },
+      {
+        "name": "RK-007",
+        "tehsil": "Morbi",
+        "lat": 22.87277778,
+        "lng": 70.63527778,
+        "avg_depth": 3.93
+      },
+      {
+        "name": "RK-008",
+        "tehsil": "Morbi",
+        "lat": 22.88055556,
+        "lng": 70.74583333,
+        "avg_depth": 3.42
+      },
+      {
+        "name": "RK-009",
+        "tehsil": "Morbi",
+        "lat": 22.86194444,
+        "lng": 70.96527778,
+        "avg_depth": 5.06
+      },
+      {
+        "name": "RK-010",
+        "tehsil": "Morbi",
+        "lat": 22.81972222,
+        "lng": 70.86111111,
+        "avg_depth": 5.94
+      }
+    ]
+  },
+  "Narmada": {
+    "district": "Narmada",
+    "stations_count": 16,
+    "mean_depth": 8.01,
+    "pre_monsoon_avg": 9.3,
+    "post_monsoon_avg": 6.72,
+    "annual_drawdown_rate": -0.068,
+    "cgwb_category": "Semi-Critical",
+    "risk_color": "#eab308",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 9.36
+      },
+      {
+        "year": 1992,
+        "depth": 9.9
+      },
+      {
+        "year": 1993,
+        "depth": 9.29
+      },
+      {
+        "year": 1994,
+        "depth": 8.97
+      },
+      {
+        "year": 1995,
+        "depth": 8.45
+      },
+      {
+        "year": 1996,
+        "depth": 8.42
+      },
+      {
+        "year": 1997,
+        "depth": 7.96
+      },
+      {
+        "year": 1998,
+        "depth": 7.86
+      },
+      {
+        "year": 1999,
+        "depth": 7.96
+      },
+      {
+        "year": 2000,
+        "depth": 8.61
+      },
+      {
+        "year": 2001,
+        "depth": 8.87
+      },
+      {
+        "year": 2002,
+        "depth": 8.76
+      },
+      {
+        "year": 2003,
+        "depth": 9.07
+      },
+      {
+        "year": 2004,
+        "depth": 8.41
+      },
+      {
+        "year": 2005,
+        "depth": 7.61
+      },
+      {
+        "year": 2006,
+        "depth": 7.47
+      },
+      {
+        "year": 2007,
+        "depth": 7.23
+      },
+      {
+        "year": 2008,
+        "depth": 7.29
+      },
+      {
+        "year": 2009,
+        "depth": 6.9
+      },
+      {
+        "year": 2010,
+        "depth": 7.08
+      },
+      {
+        "year": 2011,
+        "depth": 7.05
+      },
+      {
+        "year": 2012,
+        "depth": 6.98
+      },
+      {
+        "year": 2013,
+        "depth": 6.55
+      },
+      {
+        "year": 2014,
+        "depth": 6.94
+      },
+      {
+        "year": 2015,
+        "depth": 7.79
+      },
+      {
+        "year": 2016,
+        "depth": 8.2
+      },
+      {
+        "year": 2017,
+        "depth": 7.91
+      },
+      {
+        "year": 2018,
+        "depth": 8.15
+      },
+      {
+        "year": 2019,
+        "depth": 7.75
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "BD-58",
+        "tehsil": "TILAKWADA",
+        "lat": 22.04527778,
+        "lng": 73.61194444,
+        "avg_depth": 10.71
+      },
+      {
+        "name": "BR-06",
+        "tehsil": "DEDIAPADA",
+        "lat": 21.57444444,
+        "lng": 73.51638889,
+        "avg_depth": 7.39
+      },
+      {
+        "name": "BR-08",
+        "tehsil": "DEDIAPADA",
+        "lat": 21.58027778,
+        "lng": 73.68277778,
+        "avg_depth": 3.29
+      },
+      {
+        "name": "BR-09",
+        "tehsil": "DEDIAPADA",
+        "lat": 21.67527778,
+        "lng": 73.66777778,
+        "avg_depth": 5.88
+      },
+      {
+        "name": "BR-30",
+        "tehsil": "NANDOD",
+        "lat": 21.83777778,
+        "lng": 73.41722222,
+        "avg_depth": 3.26
+      },
+      {
+        "name": "BR-32",
+        "tehsil": "Garudeswar",
+        "lat": 21.94222222,
+        "lng": 73.70388889,
+        "avg_depth": 4.93
+      }
+    ]
+  },
+  "Navsari": {
+    "district": "Navsari",
+    "stations_count": 29,
+    "mean_depth": 4.99,
+    "pre_monsoon_avg": 6.68,
+    "post_monsoon_avg": 3.31,
+    "annual_drawdown_rate": 0.034,
+    "cgwb_category": "Safe",
+    "risk_color": "#22c55e",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 4.67
+      },
+      {
+        "year": 1992,
+        "depth": 4.94
+      },
+      {
+        "year": 1993,
+        "depth": 4.22
+      },
+      {
+        "year": 1994,
+        "depth": 4.35
+      },
+      {
+        "year": 1995,
+        "depth": 4.24
+      },
+      {
+        "year": 1996,
+        "depth": 4.92
+      },
+      {
+        "year": 1997,
+        "depth": 4.5
+      },
+      {
+        "year": 1998,
+        "depth": 4.71
+      },
+      {
+        "year": 1999,
+        "depth": 4.74
+      },
+      {
+        "year": 2000,
+        "depth": 5.01
+      },
+      {
+        "year": 2001,
+        "depth": 5.6
+      },
+      {
+        "year": 2002,
+        "depth": 5.69
+      },
+      {
+        "year": 2003,
+        "depth": 5.38
+      },
+      {
+        "year": 2004,
+        "depth": 5.01
+      },
+      {
+        "year": 2005,
+        "depth": 4.37
+      },
+      {
+        "year": 2006,
+        "depth": 4.45
+      },
+      {
+        "year": 2007,
+        "depth": 4.4
+      },
+      {
+        "year": 2008,
+        "depth": 4.39
+      },
+      {
+        "year": 2009,
+        "depth": 4.6
+      },
+      {
+        "year": 2010,
+        "depth": 4.7
+      },
+      {
+        "year": 2011,
+        "depth": 5.1
+      },
+      {
+        "year": 2012,
+        "depth": 5.03
+      },
+      {
+        "year": 2013,
+        "depth": 5.33
+      },
+      {
+        "year": 2014,
+        "depth": 5.16
+      },
+      {
+        "year": 2015,
+        "depth": 5.39
+      },
+      {
+        "year": 2016,
+        "depth": 5.89
+      },
+      {
+        "year": 2017,
+        "depth": 5.93
+      },
+      {
+        "year": 2018,
+        "depth": 6.19
+      },
+      {
+        "year": 2019,
+        "depth": 4.93
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "BLS-01A",
+        "tehsil": "BANSDA",
+        "lat": 20.75555556,
+        "lng": 73.36111111,
+        "avg_depth": 8.25
+      },
+      {
+        "name": "BLS-02",
+        "tehsil": "BANSDA",
+        "lat": 20.61611111,
+        "lng": 73.29777778,
+        "avg_depth": 6.84
+      },
+      {
+        "name": "BLS-03A",
+        "tehsil": "BANSDA",
+        "lat": 20.78916667,
+        "lng": 73.27555556,
+        "avg_depth": 8.16
+      },
+      {
+        "name": "BLS-04",
+        "tehsil": "BANSDA",
+        "lat": 20.83666667,
+        "lng": 73.34805556,
+        "avg_depth": 5.25
+      },
+      {
+        "name": "BLS-14A",
+        "tehsil": "Khergam",
+        "lat": 20.73722222,
+        "lng": 73.03555556,
+        "avg_depth": 6.21
+      },
+      {
+        "name": "BLS-15A",
+        "tehsil": "Khergam",
+        "lat": 20.72722222,
+        "lng": 73.14277778,
+        "avg_depth": 7.83
+      }
+    ]
+  },
+  "Panchmahals": {
+    "district": "Panchmahals",
+    "stations_count": 35,
+    "mean_depth": 6.49,
+    "pre_monsoon_avg": 8.21,
+    "post_monsoon_avg": 4.79,
+    "annual_drawdown_rate": 0.008,
+    "cgwb_category": "Safe",
+    "risk_color": "#22c55e",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 4.81
+      },
+      {
+        "year": 1992,
+        "depth": 6.35
+      },
+      {
+        "year": 1993,
+        "depth": 6.65
+      },
+      {
+        "year": 1994,
+        "depth": 5.6
+      },
+      {
+        "year": 1995,
+        "depth": 5.9
+      },
+      {
+        "year": 1996,
+        "depth": 5.73
+      },
+      {
+        "year": 1997,
+        "depth": 5.2
+      },
+      {
+        "year": 1998,
+        "depth": 4.76
+      },
+      {
+        "year": 1999,
+        "depth": 6.52
+      },
+      {
+        "year": 2000,
+        "depth": 8.91
+      },
+      {
+        "year": 2001,
+        "depth": 9.55
+      },
+      {
+        "year": 2002,
+        "depth": 9.93
+      },
+      {
+        "year": 2003,
+        "depth": 8.45
+      },
+      {
+        "year": 2004,
+        "depth": 6.61
+      },
+      {
+        "year": 2005,
+        "depth": 6.48
+      },
+      {
+        "year": 2006,
+        "depth": 5.17
+      },
+      {
+        "year": 2007,
+        "depth": 5.01
+      },
+      {
+        "year": 2008,
+        "depth": 5.46
+      },
+      {
+        "year": 2009,
+        "depth": 7.07
+      },
+      {
+        "year": 2010,
+        "depth": 6.93
+      },
+      {
+        "year": 2011,
+        "depth": 6.17
+      },
+      {
+        "year": 2012,
+        "depth": 5.86
+      },
+      {
+        "year": 2013,
+        "depth": 5.28
+      },
+      {
+        "year": 2014,
+        "depth": 5.45
+      },
+      {
+        "year": 2015,
+        "depth": 6.8
+      },
+      {
+        "year": 2016,
+        "depth": 7.45
+      },
+      {
+        "year": 2017,
+        "depth": 6.63
+      },
+      {
+        "year": 2018,
+        "depth": 6.78
+      },
+      {
+        "year": 2019,
+        "depth": 6.16
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "PM-014-A",
+        "tehsil": "GHOGHAMBA",
+        "lat": 22.52611111,
+        "lng": 73.66583333,
+        "avg_depth": 6.43
+      },
+      {
+        "name": "PM-015",
+        "tehsil": "GHOGHAMBA",
+        "lat": 22.61083333,
+        "lng": 73.77888889,
+        "avg_depth": 7.02
+      },
+      {
+        "name": "PM-019-A",
+        "tehsil": "GHOGHAMBA",
+        "lat": 22.68861111,
+        "lng": 73.77861111,
+        "avg_depth": 6.31
+      },
+      {
+        "name": "PM-020-A",
+        "tehsil": "GHOGHAMBA",
+        "lat": 22.65277778,
+        "lng": 73.65166667,
+        "avg_depth": 6.0
+      },
+      {
+        "name": "PM-024-A",
+        "tehsil": "GODHRA",
+        "lat": 22.77,
+        "lng": 73.66694444,
+        "avg_depth": 4.99
+      },
+      {
+        "name": "PM-025-A",
+        "tehsil": "MORWA (HADAF)",
+        "lat": 22.92138889,
+        "lng": 73.84055556,
+        "avg_depth": 8.65
+      }
+    ]
+  },
+  "Patan": {
+    "district": "Patan",
+    "stations_count": 7,
+    "mean_depth": 13.32,
+    "pre_monsoon_avg": 14.82,
+    "post_monsoon_avg": 12.57,
+    "annual_drawdown_rate": -0.345,
+    "cgwb_category": "Over-Exploited",
+    "risk_color": "#ef4444",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 18.3
+      },
+      {
+        "year": 1992,
+        "depth": 18.75
+      },
+      {
+        "year": 1993,
+        "depth": 18.8
+      },
+      {
+        "year": 1994,
+        "depth": 19.15
+      },
+      {
+        "year": 1995,
+        "depth": 18.7
+      },
+      {
+        "year": 1996,
+        "depth": 19.45
+      },
+      {
+        "year": 1997,
+        "depth": 20.73
+      },
+      {
+        "year": 1998,
+        "depth": 18.2
+      },
+      {
+        "year": 1999,
+        "depth": 17.65
+      },
+      {
+        "year": 2000,
+        "depth": 20.5
+      },
+      {
+        "year": 2001,
+        "depth": 21.15
+      },
+      {
+        "year": 2002,
+        "depth": 20.8
+      },
+      {
+        "year": 2003,
+        "depth": 21.15
+      },
+      {
+        "year": 2004,
+        "depth": 21.0
+      },
+      {
+        "year": 2005,
+        "depth": 14.86
+      },
+      {
+        "year": 2006,
+        "depth": 13.61
+      },
+      {
+        "year": 2007,
+        "depth": 12.33
+      },
+      {
+        "year": 2008,
+        "depth": 13.32
+      },
+      {
+        "year": 2009,
+        "depth": 13.18
+      },
+      {
+        "year": 2010,
+        "depth": 12.54
+      },
+      {
+        "year": 2011,
+        "depth": 12.61
+      },
+      {
+        "year": 2012,
+        "depth": 12.49
+      },
+      {
+        "year": 2013,
+        "depth": 12.58
+      },
+      {
+        "year": 2014,
+        "depth": 12.36
+      },
+      {
+        "year": 2015,
+        "depth": 12.76
+      },
+      {
+        "year": 2016,
+        "depth": 13.06
+      },
+      {
+        "year": 2017,
+        "depth": 11.34
+      },
+      {
+        "year": 2018,
+        "depth": 11.69
+      },
+      {
+        "year": 2019,
+        "depth": 12.97
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "MSH-040",
+        "tehsil": "SIDHPUR",
+        "lat": 23.95944444,
+        "lng": 72.24,
+        "avg_depth": 18.93
+      },
+      {
+        "name": "MSH-043A",
+        "tehsil": "PATAN",
+        "lat": 23.77916667,
+        "lng": 72.16277778,
+        "avg_depth": 16.85
+      },
+      {
+        "name": "NEW-01",
+        "tehsil": "SIDHPUR",
+        "lat": 23.96222222,
+        "lng": 72.46305556,
+        "avg_depth": 13.96
+      },
+      {
+        "name": "NEW-05",
+        "tehsil": "RADHANPUR",
+        "lat": 23.94555556,
+        "lng": 71.63444444,
+        "avg_depth": 4.35
+      },
+      {
+        "name": "NEW-06",
+        "tehsil": "SANTALPUR",
+        "lat": 23.77,
+        "lng": 71.17888889,
+        "avg_depth": 4.21
+      },
+      {
+        "name": "NEW-08",
+        "tehsil": "PATAN",
+        "lat": 23.77027778,
+        "lng": 72.30027778,
+        "avg_depth": 17.18
+      }
+    ]
+  },
+  "Porbandar": {
+    "district": "Porbandar",
+    "stations_count": 18,
+    "mean_depth": 10.75,
+    "pre_monsoon_avg": 13.74,
+    "post_monsoon_avg": 7.83,
+    "annual_drawdown_rate": -0.006,
+    "cgwb_category": "Critical",
+    "risk_color": "#f97316",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 12.06
+      },
+      {
+        "year": 1992,
+        "depth": 11.35
+      },
+      {
+        "year": 1993,
+        "depth": 12.23
+      },
+      {
+        "year": 1994,
+        "depth": 10.84
+      },
+      {
+        "year": 1995,
+        "depth": 10.16
+      },
+      {
+        "year": 1996,
+        "depth": 11.41
+      },
+      {
+        "year": 1997,
+        "depth": 11.33
+      },
+      {
+        "year": 1998,
+        "depth": 10.48
+      },
+      {
+        "year": 1999,
+        "depth": 12.25
+      },
+      {
+        "year": 2000,
+        "depth": 12.85
+      },
+      {
+        "year": 2001,
+        "depth": 11.6
+      },
+      {
+        "year": 2002,
+        "depth": 13.98
+      },
+      {
+        "year": 2003,
+        "depth": 11.98
+      },
+      {
+        "year": 2004,
+        "depth": 10.86
+      },
+      {
+        "year": 2005,
+        "depth": 10.41
+      },
+      {
+        "year": 2006,
+        "depth": 8.61
+      },
+      {
+        "year": 2007,
+        "depth": 6.37
+      },
+      {
+        "year": 2008,
+        "depth": 6.45
+      },
+      {
+        "year": 2009,
+        "depth": 7.89
+      },
+      {
+        "year": 2010,
+        "depth": 7.37
+      },
+      {
+        "year": 2011,
+        "depth": 5.45
+      },
+      {
+        "year": 2012,
+        "depth": 8.8
+      },
+      {
+        "year": 2013,
+        "depth": 7.19
+      },
+      {
+        "year": 2014,
+        "depth": 8.61
+      },
+      {
+        "year": 2015,
+        "depth": 14.3
+      },
+      {
+        "year": 2016,
+        "depth": 16.47
+      },
+      {
+        "year": 2017,
+        "depth": 13.76
+      },
+      {
+        "year": 2018,
+        "depth": 16.66
+      },
+      {
+        "year": 2019,
+        "depth": 11.03
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "JND-002",
+        "tehsil": "PORBANDAR",
+        "lat": 21.77416667,
+        "lng": 69.45333333,
+        "avg_depth": 7.54
+      },
+      {
+        "name": "JND-005",
+        "tehsil": "PORBANDAR",
+        "lat": 21.77583333,
+        "lng": 69.64833333,
+        "avg_depth": 18.61
+      },
+      {
+        "name": "JND-007",
+        "tehsil": "PORBANDAR",
+        "lat": 21.90944444,
+        "lng": 69.59111111,
+        "avg_depth": 10.7
+      },
+      {
+        "name": "JND-010",
+        "tehsil": "PORBANDAR",
+        "lat": 21.525,
+        "lng": 69.72055556,
+        "avg_depth": 2.65
+      },
+      {
+        "name": "JND-011",
+        "tehsil": "PORBANDAR",
+        "lat": 21.46166667,
+        "lng": 69.79666667,
+        "avg_depth": 2.84
+      },
+      {
+        "name": "JND-012",
+        "tehsil": "PORBANDAR",
+        "lat": 21.4025,
+        "lng": 69.83444444,
+        "avg_depth": 7.34
+      }
+    ]
+  },
+  "Rajkot": {
+    "district": "Rajkot",
+    "stations_count": 102,
+    "mean_depth": 8.63,
+    "pre_monsoon_avg": 14.63,
+    "post_monsoon_avg": 3.86,
+    "annual_drawdown_rate": 0.15,
+    "cgwb_category": "Semi-Critical",
+    "risk_color": "#eab308",
+    "yearly_history": [
+      {
+        "year": 2019,
+        "depth": 8.63
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "RK-031",
+        "tehsil": "RAJKOT",
+        "lat": 22.40388889,
+        "lng": 70.79222222,
+        "avg_depth": 4.8
+      },
+      {
+        "name": "RK-033",
+        "tehsil": "RAJKOT",
+        "lat": 22.39777778,
+        "lng": 70.97583333,
+        "avg_depth": 10.2
+      },
+      {
+        "name": "RK-034A",
+        "tehsil": "RAJKOT",
+        "lat": 22.35166667,
+        "lng": 70.95222222,
+        "avg_depth": 5.9
+      },
+      {
+        "name": "RK-035",
+        "tehsil": "RAJKOT",
+        "lat": 22.28583333,
+        "lng": 70.97361111,
+        "avg_depth": 12.95
+      },
+      {
+        "name": "RK-036",
+        "tehsil": "RAJKOT",
+        "lat": 22.26805556,
+        "lng": 71.05,
+        "avg_depth": 7.9
+      },
+      {
+        "name": "RK-037",
+        "tehsil": "RAJKOT",
+        "lat": 22.23388889,
+        "lng": 70.90777778,
+        "avg_depth": 12.03
+      }
+    ]
+  },
+  "Sabarkantha": {
+    "district": "Sabarkantha",
+    "stations_count": 33,
+    "mean_depth": 12.58,
+    "pre_monsoon_avg": 15.75,
+    "post_monsoon_avg": 10.02,
+    "annual_drawdown_rate": -0.148,
+    "cgwb_category": "Over-Exploited",
+    "risk_color": "#ef4444",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 12.81
+      },
+      {
+        "year": 1992,
+        "depth": 13.56
+      },
+      {
+        "year": 1993,
+        "depth": 13.43
+      },
+      {
+        "year": 1994,
+        "depth": 11.16
+      },
+      {
+        "year": 1995,
+        "depth": 12.43
+      },
+      {
+        "year": 1996,
+        "depth": 15.13
+      },
+      {
+        "year": 1997,
+        "depth": 14.9
+      },
+      {
+        "year": 1998,
+        "depth": 13.11
+      },
+      {
+        "year": 1999,
+        "depth": 15.03
+      },
+      {
+        "year": 2000,
+        "depth": 18.29
+      },
+      {
+        "year": 2001,
+        "depth": 18.22
+      },
+      {
+        "year": 2002,
+        "depth": 17.91
+      },
+      {
+        "year": 2003,
+        "depth": 15.57
+      },
+      {
+        "year": 2004,
+        "depth": 15.36
+      },
+      {
+        "year": 2005,
+        "depth": 14.03
+      },
+      {
+        "year": 2006,
+        "depth": 10.43
+      },
+      {
+        "year": 2007,
+        "depth": 7.74
+      },
+      {
+        "year": 2008,
+        "depth": 10.53
+      },
+      {
+        "year": 2009,
+        "depth": 12.34
+      },
+      {
+        "year": 2010,
+        "depth": 13.46
+      },
+      {
+        "year": 2011,
+        "depth": 12.54
+      },
+      {
+        "year": 2012,
+        "depth": 11.08
+      },
+      {
+        "year": 2013,
+        "depth": 11.19
+      },
+      {
+        "year": 2014,
+        "depth": 8.89
+      },
+      {
+        "year": 2015,
+        "depth": 10.33
+      },
+      {
+        "year": 2016,
+        "depth": 11.88
+      },
+      {
+        "year": 2017,
+        "depth": 10.44
+      },
+      {
+        "year": 2018,
+        "depth": 11.78
+      },
+      {
+        "year": 2019,
+        "depth": 11.23
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "SK-024",
+        "tehsil": "HIMATNAGAR",
+        "lat": 23.61694444,
+        "lng": 72.96361111,
+        "avg_depth": 8.67
+      },
+      {
+        "name": "SK-025A",
+        "tehsil": "HIMATNAGAR",
+        "lat": 23.68638889,
+        "lng": 72.97055556,
+        "avg_depth": 14.15
+      },
+      {
+        "name": "SK-026A",
+        "tehsil": "HIMATNAGAR",
+        "lat": 23.60027778,
+        "lng": 73.18583333,
+        "avg_depth": 7.79
+      },
+      {
+        "name": "SK-028",
+        "tehsil": "HIMATNAGAR",
+        "lat": 23.6675,
+        "lng": 72.84333333,
+        "avg_depth": 34.28
+      },
+      {
+        "name": "SK-029A",
+        "tehsil": "HIMATNAGAR",
+        "lat": 23.72194444,
+        "lng": 72.90166667,
+        "avg_depth": 13.11
+      },
+      {
+        "name": "SK-034A",
+        "tehsil": "HIMATNAGAR",
+        "lat": 23.63861111,
+        "lng": 72.95166667,
+        "avg_depth": 9.1
+      }
+    ]
+  },
+  "Surat": {
+    "district": "Surat",
+    "stations_count": 42,
+    "mean_depth": 4.91,
+    "pre_monsoon_avg": 6.27,
+    "post_monsoon_avg": 3.55,
+    "annual_drawdown_rate": -0.014,
+    "cgwb_category": "Safe",
+    "risk_color": "#22c55e",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 5.33
+      },
+      {
+        "year": 1992,
+        "depth": 5.62
+      },
+      {
+        "year": 1993,
+        "depth": 5.45
+      },
+      {
+        "year": 1994,
+        "depth": 5.02
+      },
+      {
+        "year": 1995,
+        "depth": 5.32
+      },
+      {
+        "year": 1996,
+        "depth": 5.53
+      },
+      {
+        "year": 1997,
+        "depth": 5.42
+      },
+      {
+        "year": 1998,
+        "depth": 4.53
+      },
+      {
+        "year": 1999,
+        "depth": 4.61
+      },
+      {
+        "year": 2000,
+        "depth": 5.1
+      },
+      {
+        "year": 2001,
+        "depth": 5.3
+      },
+      {
+        "year": 2002,
+        "depth": 5.32
+      },
+      {
+        "year": 2003,
+        "depth": 5.14
+      },
+      {
+        "year": 2004,
+        "depth": 4.96
+      },
+      {
+        "year": 2005,
+        "depth": 4.47
+      },
+      {
+        "year": 2006,
+        "depth": 4.3
+      },
+      {
+        "year": 2007,
+        "depth": 4.21
+      },
+      {
+        "year": 2008,
+        "depth": 4.08
+      },
+      {
+        "year": 2009,
+        "depth": 4.25
+      },
+      {
+        "year": 2010,
+        "depth": 4.41
+      },
+      {
+        "year": 2011,
+        "depth": 4.49
+      },
+      {
+        "year": 2012,
+        "depth": 4.84
+      },
+      {
+        "year": 2013,
+        "depth": 4.85
+      },
+      {
+        "year": 2014,
+        "depth": 4.84
+      },
+      {
+        "year": 2015,
+        "depth": 5.48
+      },
+      {
+        "year": 2016,
+        "depth": 5.36
+      },
+      {
+        "year": 2017,
+        "depth": 5.28
+      },
+      {
+        "year": 2018,
+        "depth": 5.52
+      },
+      {
+        "year": 2019,
+        "depth": 4.82
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "SRT-03A",
+        "tehsil": "BARDOLI",
+        "lat": 21.14305556,
+        "lng": 73.23888889,
+        "avg_depth": 5.32
+      },
+      {
+        "name": "SRT-04A",
+        "tehsil": "BARDOLI",
+        "lat": 21.17527778,
+        "lng": 73.07138889,
+        "avg_depth": 1.92
+      },
+      {
+        "name": "SRT-05",
+        "tehsil": "BARDOLI",
+        "lat": 21.17583333,
+        "lng": 73.22083333,
+        "avg_depth": 2.66
+      },
+      {
+        "name": "SRT-06",
+        "tehsil": "BARDOLI",
+        "lat": 21.05472222,
+        "lng": 73.08805556,
+        "avg_depth": 5.1
+      },
+      {
+        "name": "SRT-08A",
+        "tehsil": "CHORASI",
+        "lat": 21.11055556,
+        "lng": 72.715,
+        "avg_depth": 5.9
+      },
+      {
+        "name": "SRT-09A",
+        "tehsil": "CHORASI",
+        "lat": 21.12638889,
+        "lng": 72.64944444,
+        "avg_depth": 2.72
+      }
+    ]
+  },
+  "Surendranagar": {
+    "district": "Surendranagar",
+    "stations_count": 42,
+    "mean_depth": 7.71,
+    "pre_monsoon_avg": 9.2,
+    "post_monsoon_avg": 6.16,
+    "annual_drawdown_rate": -0.097,
+    "cgwb_category": "Semi-Critical",
+    "risk_color": "#eab308",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 7.62
+      },
+      {
+        "year": 1992,
+        "depth": 8.45
+      },
+      {
+        "year": 1993,
+        "depth": 8.4
+      },
+      {
+        "year": 1994,
+        "depth": 7.5
+      },
+      {
+        "year": 1995,
+        "depth": 8.02
+      },
+      {
+        "year": 1996,
+        "depth": 9.52
+      },
+      {
+        "year": 1997,
+        "depth": 8.82
+      },
+      {
+        "year": 1998,
+        "depth": 8.68
+      },
+      {
+        "year": 1999,
+        "depth": 9.8
+      },
+      {
+        "year": 2000,
+        "depth": 10.32
+      },
+      {
+        "year": 2001,
+        "depth": 10.06
+      },
+      {
+        "year": 2002,
+        "depth": 9.75
+      },
+      {
+        "year": 2003,
+        "depth": 10.02
+      },
+      {
+        "year": 2004,
+        "depth": 8.94
+      },
+      {
+        "year": 2005,
+        "depth": 6.95
+      },
+      {
+        "year": 2006,
+        "depth": 5.76
+      },
+      {
+        "year": 2007,
+        "depth": 5.4
+      },
+      {
+        "year": 2008,
+        "depth": 5.37
+      },
+      {
+        "year": 2009,
+        "depth": 6.37
+      },
+      {
+        "year": 2010,
+        "depth": 6.29
+      },
+      {
+        "year": 2011,
+        "depth": 5.98
+      },
+      {
+        "year": 2012,
+        "depth": 5.88
+      },
+      {
+        "year": 2013,
+        "depth": 6.71
+      },
+      {
+        "year": 2014,
+        "depth": 6.67
+      },
+      {
+        "year": 2015,
+        "depth": 8.5
+      },
+      {
+        "year": 2016,
+        "depth": 8.21
+      },
+      {
+        "year": 2017,
+        "depth": 6.47
+      },
+      {
+        "year": 2018,
+        "depth": 7.16
+      },
+      {
+        "year": 2019,
+        "depth": 5.85
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "SN-001",
+        "tehsil": "DASADA",
+        "lat": 23.47361111,
+        "lng": 71.70972222,
+        "avg_depth": 4.68
+      },
+      {
+        "name": "SN-005",
+        "tehsil": "DASADA",
+        "lat": 23.34888889,
+        "lng": 71.65694444,
+        "avg_depth": 7.88
+      },
+      {
+        "name": "SN-009",
+        "tehsil": "DASADA",
+        "lat": 23.04222222,
+        "lng": 71.85416667,
+        "avg_depth": 4.65
+      },
+      {
+        "name": "SN-010",
+        "tehsil": "DASADA",
+        "lat": 23.06944444,
+        "lng": 71.7425,
+        "avg_depth": 4.77
+      },
+      {
+        "name": "SN-011",
+        "tehsil": "DHRANGADHRA",
+        "lat": 22.98333333,
+        "lng": 71.64444444,
+        "avg_depth": 7.17
+      },
+      {
+        "name": "SN-013",
+        "tehsil": "DHRANGADHRA",
+        "lat": 22.85972222,
+        "lng": 71.63888889,
+        "avg_depth": 6.41
+      }
+    ]
+  },
+  "TAPI": {
+    "district": "TAPI",
+    "stations_count": 23,
+    "mean_depth": 5.7,
+    "pre_monsoon_avg": 7.37,
+    "post_monsoon_avg": 4.03,
+    "annual_drawdown_rate": 0.041,
+    "cgwb_category": "Safe",
+    "risk_color": "#22c55e",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 5.34
+      },
+      {
+        "year": 1992,
+        "depth": 5.35
+      },
+      {
+        "year": 1993,
+        "depth": 5.24
+      },
+      {
+        "year": 1994,
+        "depth": 5.2
+      },
+      {
+        "year": 1995,
+        "depth": 5.36
+      },
+      {
+        "year": 1996,
+        "depth": 5.62
+      },
+      {
+        "year": 1997,
+        "depth": 5.52
+      },
+      {
+        "year": 1998,
+        "depth": 5.17
+      },
+      {
+        "year": 1999,
+        "depth": 5.38
+      },
+      {
+        "year": 2000,
+        "depth": 5.8
+      },
+      {
+        "year": 2001,
+        "depth": 5.93
+      },
+      {
+        "year": 2002,
+        "depth": 5.99
+      },
+      {
+        "year": 2003,
+        "depth": 5.8
+      },
+      {
+        "year": 2004,
+        "depth": 5.78
+      },
+      {
+        "year": 2005,
+        "depth": 5.34
+      },
+      {
+        "year": 2006,
+        "depth": 5.04
+      },
+      {
+        "year": 2007,
+        "depth": 4.88
+      },
+      {
+        "year": 2008,
+        "depth": 4.76
+      },
+      {
+        "year": 2009,
+        "depth": 5.07
+      },
+      {
+        "year": 2010,
+        "depth": 5.25
+      },
+      {
+        "year": 2011,
+        "depth": 5.39
+      },
+      {
+        "year": 2012,
+        "depth": 5.87
+      },
+      {
+        "year": 2013,
+        "depth": 5.76
+      },
+      {
+        "year": 2014,
+        "depth": 5.81
+      },
+      {
+        "year": 2015,
+        "depth": 7.04
+      },
+      {
+        "year": 2016,
+        "depth": 6.61
+      },
+      {
+        "year": 2017,
+        "depth": 6.93
+      },
+      {
+        "year": 2018,
+        "depth": 7.28
+      },
+      {
+        "year": 2019,
+        "depth": 5.97
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "SRT-38B",
+        "tehsil": "Nizar",
+        "lat": 21.46166667,
+        "lng": 74.105,
+        "avg_depth": 5.75
+      },
+      {
+        "name": "SRT-39",
+        "tehsil": "Nizar",
+        "lat": 21.48555556,
+        "lng": 74.26277778,
+        "avg_depth": 8.14
+      },
+      {
+        "name": "SRT-40",
+        "tehsil": "Kukarmunda",
+        "lat": 21.55861111,
+        "lng": 74.16305556,
+        "avg_depth": 5.97
+      },
+      {
+        "name": "SRT-41",
+        "tehsil": "Kukarmunda",
+        "lat": 21.52333333,
+        "lng": 74.03861111,
+        "avg_depth": 7.0
+      },
+      {
+        "name": "SRT-43",
+        "tehsil": "Nizar",
+        "lat": 21.47583333,
+        "lng": 74.19805556,
+        "avg_depth": 9.64
+      },
+      {
+        "name": "SRT-59A",
+        "tehsil": "SONGADH",
+        "lat": 21.07,
+        "lng": 73.50333333,
+        "avg_depth": 5.51
+      }
+    ]
+  },
+  "Vadodara": {
+    "district": "Vadodara",
+    "stations_count": 18,
+    "mean_depth": 11.32,
+    "pre_monsoon_avg": 12.82,
+    "post_monsoon_avg": 9.82,
+    "annual_drawdown_rate": -0.212,
+    "cgwb_category": "Critical",
+    "risk_color": "#f97316",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 12.39
+      },
+      {
+        "year": 1992,
+        "depth": 14.56
+      },
+      {
+        "year": 1993,
+        "depth": 14.32
+      },
+      {
+        "year": 1994,
+        "depth": 13.03
+      },
+      {
+        "year": 1995,
+        "depth": 13.31
+      },
+      {
+        "year": 1996,
+        "depth": 13.34
+      },
+      {
+        "year": 1997,
+        "depth": 12.45
+      },
+      {
+        "year": 1998,
+        "depth": 11.08
+      },
+      {
+        "year": 1999,
+        "depth": 12.13
+      },
+      {
+        "year": 2000,
+        "depth": 14.81
+      },
+      {
+        "year": 2001,
+        "depth": 14.59
+      },
+      {
+        "year": 2002,
+        "depth": 14.54
+      },
+      {
+        "year": 2003,
+        "depth": 13.55
+      },
+      {
+        "year": 2004,
+        "depth": 12.82
+      },
+      {
+        "year": 2005,
+        "depth": 11.71
+      },
+      {
+        "year": 2006,
+        "depth": 10.67
+      },
+      {
+        "year": 2007,
+        "depth": 10.43
+      },
+      {
+        "year": 2008,
+        "depth": 10.05
+      },
+      {
+        "year": 2009,
+        "depth": 10.67
+      },
+      {
+        "year": 2010,
+        "depth": 10.28
+      },
+      {
+        "year": 2011,
+        "depth": 9.44
+      },
+      {
+        "year": 2012,
+        "depth": 8.95
+      },
+      {
+        "year": 2013,
+        "depth": 8.25
+      },
+      {
+        "year": 2014,
+        "depth": 7.19
+      },
+      {
+        "year": 2015,
+        "depth": 8.98
+      },
+      {
+        "year": 2016,
+        "depth": 9.91
+      },
+      {
+        "year": 2017,
+        "depth": 9.77
+      },
+      {
+        "year": 2018,
+        "depth": 9.36
+      },
+      {
+        "year": 2019,
+        "depth": 8.83
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "BD-03",
+        "tehsil": "VADODARA",
+        "lat": 22.30138889,
+        "lng": 73.25166667,
+        "avg_depth": 4.85
+      },
+      {
+        "name": "BD-04",
+        "tehsil": "VAGHODIA",
+        "lat": 22.39194444,
+        "lng": 73.26138889,
+        "avg_depth": 7.26
+      },
+      {
+        "name": "BD-05",
+        "tehsil": "VADODARA",
+        "lat": 22.38888889,
+        "lng": 73.14861111,
+        "avg_depth": 15.37
+      },
+      {
+        "name": "BD-06",
+        "tehsil": "VADODARA",
+        "lat": 22.42305556,
+        "lng": 73.17,
+        "avg_depth": 15.73
+      },
+      {
+        "name": "BD-22",
+        "tehsil": "DABHOI",
+        "lat": 22.10805556,
+        "lng": 73.29833333,
+        "avg_depth": 11.35
+      },
+      {
+        "name": "BD-23",
+        "tehsil": "DABHOI",
+        "lat": 22.10138889,
+        "lng": 73.44555556,
+        "avg_depth": 14.43
+      }
+    ]
+  },
+  "Valsad": {
+    "district": "Valsad",
+    "stations_count": 46,
+    "mean_depth": 5.33,
+    "pre_monsoon_avg": 7.19,
+    "post_monsoon_avg": 3.48,
+    "annual_drawdown_rate": 0.004,
+    "cgwb_category": "Safe",
+    "risk_color": "#22c55e",
+    "yearly_history": [
+      {
+        "year": 1991,
+        "depth": 5.75
+      },
+      {
+        "year": 1992,
+        "depth": 5.6
+      },
+      {
+        "year": 1993,
+        "depth": 5.05
+      },
+      {
+        "year": 1994,
+        "depth": 5.03
+      },
+      {
+        "year": 1995,
+        "depth": 5.35
+      },
+      {
+        "year": 1996,
+        "depth": 5.51
+      },
+      {
+        "year": 1997,
+        "depth": 5.36
+      },
+      {
+        "year": 1998,
+        "depth": 4.64
+      },
+      {
+        "year": 1999,
+        "depth": 4.29
+      },
+      {
+        "year": 2000,
+        "depth": 5.16
+      },
+      {
+        "year": 2001,
+        "depth": 5.72
+      },
+      {
+        "year": 2002,
+        "depth": 5.94
+      },
+      {
+        "year": 2003,
+        "depth": 5.68
+      },
+      {
+        "year": 2004,
+        "depth": 5.6
+      },
+      {
+        "year": 2005,
+        "depth": 4.92
+      },
+      {
+        "year": 2006,
+        "depth": 5.03
+      },
+      {
+        "year": 2007,
+        "depth": 5.05
+      },
+      {
+        "year": 2008,
+        "depth": 5.09
+      },
+      {
+        "year": 2009,
+        "depth": 5.25
+      },
+      {
+        "year": 2010,
+        "depth": 5.23
+      },
+      {
+        "year": 2011,
+        "depth": 5.51
+      },
+      {
+        "year": 2012,
+        "depth": 5.38
+      },
+      {
+        "year": 2013,
+        "depth": 5.83
+      },
+      {
+        "year": 2014,
+        "depth": 6.03
+      },
+      {
+        "year": 2015,
+        "depth": 5.49
+      },
+      {
+        "year": 2016,
+        "depth": 4.98
+      },
+      {
+        "year": 2017,
+        "depth": 5.47
+      },
+      {
+        "year": 2018,
+        "depth": 5.56
+      },
+      {
+        "year": 2019,
+        "depth": 4.92
+      }
+    ],
+    "sample_wells": [
+      {
+        "name": "BLS-05A",
+        "tehsil": "VALSAD",
+        "lat": 20.55277778,
+        "lng": 73.06888889,
+        "avg_depth": 8.24
+      },
+      {
+        "name": "BLS-06",
+        "tehsil": "VALSAD",
+        "lat": 20.61444444,
+        "lng": 72.92027778,
+        "avg_depth": 7.01
+      },
+      {
+        "name": "BLS-07",
+        "tehsil": "VALSAD",
+        "lat": 20.665,
+        "lng": 72.92805556,
+        "avg_depth": 1.89
+      },
+      {
+        "name": "BLS-08A",
+        "tehsil": "VALSAD",
+        "lat": 20.58972222,
+        "lng": 72.99194444,
+        "avg_depth": 9.27
+      },
+      {
+        "name": "BLS-09",
+        "tehsil": "VALSAD",
+        "lat": 20.62388889,
+        "lng": 73.00416667,
+        "avg_depth": 3.02
+      },
+      {
+        "name": "BLS-10",
+        "tehsil": "VALSAD",
+        "lat": 20.60444444,
+        "lng": 72.92083333,
+        "avg_depth": 6.95
+      }
+    ]
+  }
+}

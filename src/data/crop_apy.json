@@ -1,0 +1,578 @@
+{
+  "Ahmedabad": {
+    "Cotton": {
+      "area_hectares": 20996.67,
+      "yield_kg_per_ha": 901.73
+    },
+    "Groundnut": {
+      "area_hectares": 43271.0,
+      "yield_kg_per_ha": 1978.37
+    },
+    "Wheat": {
+      "area_hectares": 432.5,
+      "yield_kg_per_ha": 1422.06
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 5429.33,
+      "yield_kg_per_ha": 511.79
+    }
+  },
+  "Amreli": {
+    "Cotton": {
+      "area_hectares": 73500.0,
+      "yield_kg_per_ha": 625.6
+    },
+    "Groundnut": {
+      "area_hectares": 199689.33,
+      "yield_kg_per_ha": 2257.0
+    },
+    "Wheat": {
+      "area_hectares": 162.0,
+      "yield_kg_per_ha": 1621.4
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 1043.33,
+      "yield_kg_per_ha": 690.26
+    }
+  },
+  "Anand": {
+    "Cotton": {
+      "area_hectares": 96750.0,
+      "yield_kg_per_ha": 625.6
+    },
+    "Groundnut": {
+      "area_hectares": 2143.0,
+      "yield_kg_per_ha": 2025.32
+    },
+    "Wheat": {
+      "area_hectares": 45.5,
+      "yield_kg_per_ha": 1375.87
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 3.0,
+      "yield_kg_per_ha": 569.96
+    }
+  },
+  "Aravalli": {
+    "Cotton": {
+      "area_hectares": 75000.0,
+      "yield_kg_per_ha": 693.6
+    },
+    "Groundnut": {
+      "area_hectares": 62000.0,
+      "yield_kg_per_ha": 2193.0
+    },
+    "Wheat": {
+      "area_hectares": 45000.0,
+      "yield_kg_per_ha": 2907.0
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 35000.0,
+      "yield_kg_per_ha": 1989.0
+    }
+  },
+  "Banaskantha": {
+    "Cotton": {
+      "area_hectares": 91500.0,
+      "yield_kg_per_ha": 720.8
+    },
+    "Groundnut": {
+      "area_hectares": 433298.67,
+      "yield_kg_per_ha": 2457.37
+    },
+    "Wheat": {
+      "area_hectares": 3522.67,
+      "yield_kg_per_ha": 1070.75
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 1210.0,
+      "yield_kg_per_ha": 668.88
+    }
+  },
+  "Bharuch": {
+    "Cotton": {
+      "area_hectares": 2220.67,
+      "yield_kg_per_ha": 773.43
+    },
+    "Groundnut": {
+      "area_hectares": 8837.0,
+      "yield_kg_per_ha": 1343.55
+    },
+    "Wheat": {
+      "area_hectares": 2745.33,
+      "yield_kg_per_ha": 1262.36
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 794.33,
+      "yield_kg_per_ha": 1011.7
+    }
+  },
+  "Bhavnagar": {
+    "Cotton": {
+      "area_hectares": 321.33,
+      "yield_kg_per_ha": 891.64
+    },
+    "Groundnut": {
+      "area_hectares": 123525.67,
+      "yield_kg_per_ha": 2246.35
+    },
+    "Wheat": {
+      "area_hectares": 58.5,
+      "yield_kg_per_ha": 1451.01
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 667.0,
+      "yield_kg_per_ha": 775.25
+    }
+  },
+  "Botad": {
+    "Cotton": {
+      "area_hectares": 81000.0,
+      "yield_kg_per_ha": 680.0
+    },
+    "Groundnut": {
+      "area_hectares": 15688.33,
+      "yield_kg_per_ha": 1732.94
+    },
+    "Wheat": {
+      "area_hectares": 48600.0,
+      "yield_kg_per_ha": 2850.0
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 75.67,
+      "yield_kg_per_ha": 604.27
+    }
+  },
+  "Chhota Udaipur": {
+    "Cotton": {
+      "area_hectares": 93750.0,
+      "yield_kg_per_ha": 618.8
+    },
+    "Groundnut": {
+      "area_hectares": 77500.0,
+      "yield_kg_per_ha": 1956.5
+    },
+    "Wheat": {
+      "area_hectares": 56250.0,
+      "yield_kg_per_ha": 2593.5
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 43750.0,
+      "yield_kg_per_ha": 1774.5
+    }
+  },
+  "Dang": {
+    "Cotton": {
+      "area_hectares": 81000.0,
+      "yield_kg_per_ha": 734.4
+    },
+    "Groundnut": {
+      "area_hectares": 66960.0,
+      "yield_kg_per_ha": 2322.0
+    },
+    "Wheat": {
+      "area_hectares": 48600.0,
+      "yield_kg_per_ha": 3078.0
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 37800.0,
+      "yield_kg_per_ha": 2106.0
+    }
+  },
+  "Devbhumi Dwarka": {
+    "Cotton": {
+      "area_hectares": 99000.0,
+      "yield_kg_per_ha": 707.2
+    },
+    "Groundnut": {
+      "area_hectares": 81840.0,
+      "yield_kg_per_ha": 2236.0
+    },
+    "Wheat": {
+      "area_hectares": 59400.0,
+      "yield_kg_per_ha": 2964.0
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 46200.0,
+      "yield_kg_per_ha": 2028.0
+    }
+  },
+  "Dohad": {
+    "Cotton": {
+      "area_hectares": 93000.0,
+      "yield_kg_per_ha": 612.0
+    },
+    "Groundnut": {
+      "area_hectares": 76880.0,
+      "yield_kg_per_ha": 1935.0
+    },
+    "Wheat": {
+      "area_hectares": 55800.0,
+      "yield_kg_per_ha": 2565.0
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 43400.0,
+      "yield_kg_per_ha": 1755.0
+    }
+  },
+  "Gandhinagar": {
+    "Cotton": {
+      "area_hectares": 95250.0,
+      "yield_kg_per_ha": 666.4
+    },
+    "Groundnut": {
+      "area_hectares": 36666.0,
+      "yield_kg_per_ha": 2353.26
+    },
+    "Wheat": {
+      "area_hectares": 21.0,
+      "yield_kg_per_ha": 1257.06
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 698.33,
+      "yield_kg_per_ha": 607.06
+    }
+  },
+  "Jamnagar": {
+    "Cotton": {
+      "area_hectares": 13.33,
+      "yield_kg_per_ha": 918.35
+    },
+    "Groundnut": {
+      "area_hectares": 177610.67,
+      "yield_kg_per_ha": 3050.78
+    },
+    "Wheat": {
+      "area_hectares": 45450.0,
+      "yield_kg_per_ha": 2593.5
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 1883.67,
+      "yield_kg_per_ha": 981.78
+    }
+  },
+  "Junagadh": {
+    "Cotton": {
+      "area_hectares": 73500.0,
+      "yield_kg_per_ha": 625.6
+    },
+    "Groundnut": {
+      "area_hectares": 291544.67,
+      "yield_kg_per_ha": 2623.1
+    },
+    "Wheat": {
+      "area_hectares": 400.67,
+      "yield_kg_per_ha": 1452.89
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 9140.67,
+      "yield_kg_per_ha": 1404.12
+    }
+  },
+  "Kachchh": {
+    "Cotton": {
+      "area_hectares": 69750.0,
+      "yield_kg_per_ha": 625.6
+    },
+    "Groundnut": {
+      "area_hectares": 322369.67,
+      "yield_kg_per_ha": 1756.7
+    },
+    "Wheat": {
+      "area_hectares": 295.0,
+      "yield_kg_per_ha": 1257.06
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 1685.33,
+      "yield_kg_per_ha": 576.26
+    }
+  },
+  "Kheda": {
+    "Cotton": {
+      "area_hectares": 57750.0,
+      "yield_kg_per_ha": 727.6
+    },
+    "Groundnut": {
+      "area_hectares": 22887.0,
+      "yield_kg_per_ha": 1924.39
+    },
+    "Wheat": {
+      "area_hectares": 58.33,
+      "yield_kg_per_ha": 1442.92
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 351.33,
+      "yield_kg_per_ha": 617.68
+    }
+  },
+  "Mahesana": {
+    "Cotton": {
+      "area_hectares": 84750.0,
+      "yield_kg_per_ha": 734.4
+    },
+    "Groundnut": {
+      "area_hectares": 70060.0,
+      "yield_kg_per_ha": 2322.0
+    },
+    "Wheat": {
+      "area_hectares": 50850.0,
+      "yield_kg_per_ha": 3078.0
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 39550.0,
+      "yield_kg_per_ha": 2106.0
+    }
+  },
+  "Mahisagar": {
+    "Cotton": {
+      "area_hectares": 72750.0,
+      "yield_kg_per_ha": 673.2
+    },
+    "Groundnut": {
+      "area_hectares": 8691.33,
+      "yield_kg_per_ha": 1744.2
+    },
+    "Wheat": {
+      "area_hectares": 43650.0,
+      "yield_kg_per_ha": 2821.5
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 285.67,
+      "yield_kg_per_ha": 607.07
+    }
+  },
+  "Morbi": {
+    "Cotton": {
+      "area_hectares": 96000.0,
+      "yield_kg_per_ha": 646.0
+    },
+    "Groundnut": {
+      "area_hectares": 97056.67,
+      "yield_kg_per_ha": 1984.36
+    },
+    "Wheat": {
+      "area_hectares": 57600.0,
+      "yield_kg_per_ha": 2707.5
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 1184.0,
+      "yield_kg_per_ha": 393.8
+    }
+  },
+  "Narmada": {
+    "Cotton": {
+      "area_hectares": 47250.0,
+      "yield_kg_per_ha": 693.6
+    },
+    "Groundnut": {
+      "area_hectares": 2673.67,
+      "yield_kg_per_ha": 1608.11
+    },
+    "Wheat": {
+      "area_hectares": 2744.67,
+      "yield_kg_per_ha": 1502.59
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 307.0,
+      "yield_kg_per_ha": 778.05
+    }
+  },
+  "Navsari": {
+    "Cotton": {
+      "area_hectares": 98250.0,
+      "yield_kg_per_ha": 639.2
+    },
+    "Groundnut": {
+      "area_hectares": 21.67,
+      "yield_kg_per_ha": 1883.2
+    },
+    "Wheat": {
+      "area_hectares": 90.33,
+      "yield_kg_per_ha": 1587.35
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 225.67,
+      "yield_kg_per_ha": 639.15
+    }
+  },
+  "Panchmahals": {
+    "Cotton": {
+      "area_hectares": 88500.0,
+      "yield_kg_per_ha": 612.0
+    },
+    "Groundnut": {
+      "area_hectares": 73160.0,
+      "yield_kg_per_ha": 1935.0
+    },
+    "Wheat": {
+      "area_hectares": 53100.0,
+      "yield_kg_per_ha": 2565.0
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 41300.0,
+      "yield_kg_per_ha": 1755.0
+    }
+  },
+  "Patan": {
+    "Cotton": {
+      "area_hectares": 125.0,
+      "yield_kg_per_ha": 1166.64
+    },
+    "Groundnut": {
+      "area_hectares": 125185.67,
+      "yield_kg_per_ha": 2037.4
+    },
+    "Wheat": {
+      "area_hectares": 73.0,
+      "yield_kg_per_ha": 1317.32
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 20092.0,
+      "yield_kg_per_ha": 430.06
+    }
+  },
+  "Porbandar": {
+    "Cotton": {
+      "area_hectares": 102750.0,
+      "yield_kg_per_ha": 618.8
+    },
+    "Groundnut": {
+      "area_hectares": 82093.33,
+      "yield_kg_per_ha": 2382.34
+    },
+    "Wheat": {
+      "area_hectares": 6673.33,
+      "yield_kg_per_ha": 1897.21
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 126.67,
+      "yield_kg_per_ha": 1061.31
+    }
+  },
+  "Rajkot": {
+    "Cotton": {
+      "area_hectares": 57000.0,
+      "yield_kg_per_ha": 741.2
+    },
+    "Groundnut": {
+      "area_hectares": 278099.67,
+      "yield_kg_per_ha": 2676.95
+    },
+    "Wheat": {
+      "area_hectares": 34200.0,
+      "yield_kg_per_ha": 3106.5
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 1517.67,
+      "yield_kg_per_ha": 883.55
+    }
+  },
+  "Sabarkantha": {
+    "Cotton": {
+      "area_hectares": 88500.0,
+      "yield_kg_per_ha": 612.0
+    },
+    "Groundnut": {
+      "area_hectares": 121692.67,
+      "yield_kg_per_ha": 2571.24
+    },
+    "Wheat": {
+      "area_hectares": 53100.0,
+      "yield_kg_per_ha": 2565.0
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 6583.0,
+      "yield_kg_per_ha": 677.3
+    }
+  },
+  "Surat": {
+    "Cotton": {
+      "area_hectares": 104250.0,
+      "yield_kg_per_ha": 659.6
+    },
+    "Groundnut": {
+      "area_hectares": 12211.33,
+      "yield_kg_per_ha": 1330.94
+    },
+    "Wheat": {
+      "area_hectares": 8612.67,
+      "yield_kg_per_ha": 1225.93
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 898.33,
+      "yield_kg_per_ha": 1035.76
+    }
+  },
+  "Surendranagar": {
+    "Cotton": {
+      "area_hectares": 2316.33,
+      "yield_kg_per_ha": 1239.24
+    },
+    "Groundnut": {
+      "area_hectares": 119943.33,
+      "yield_kg_per_ha": 1746.22
+    },
+    "Wheat": {
+      "area_hectares": 31950.0,
+      "yield_kg_per_ha": 3049.5
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 2669.33,
+      "yield_kg_per_ha": 478.77
+    }
+  },
+  "TAPI": {
+    "Cotton": {
+      "area_hectares": 83250.0,
+      "yield_kg_per_ha": 625.6
+    },
+    "Groundnut": {
+      "area_hectares": 68820.0,
+      "yield_kg_per_ha": 1978.0
+    },
+    "Wheat": {
+      "area_hectares": 49950.0,
+      "yield_kg_per_ha": 2622.0
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 38850.0,
+      "yield_kg_per_ha": 1794.0
+    }
+  },
+  "Vadodara": {
+    "Cotton": {
+      "area_hectares": 73500.0,
+      "yield_kg_per_ha": 625.6
+    },
+    "Groundnut": {
+      "area_hectares": 45415.67,
+      "yield_kg_per_ha": 1972.53
+    },
+    "Wheat": {
+      "area_hectares": 1128.67,
+      "yield_kg_per_ha": 2208.35
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 31.0,
+      "yield_kg_per_ha": 594.39
+    }
+  },
+  "Valsad": {
+    "Cotton": {
+      "area_hectares": 48750.0,
+      "yield_kg_per_ha": 632.4
+    },
+    "Groundnut": {
+      "area_hectares": 17.67,
+      "yield_kg_per_ha": 2555.28
+    },
+    "Wheat": {
+      "area_hectares": 29250.0,
+      "yield_kg_per_ha": 2650.5
+    },
+    "Pearl Millet (Bajra)": {
+      "area_hectares": 4240.67,
+      "yield_kg_per_ha": 592.35
+    }
+  }
+}

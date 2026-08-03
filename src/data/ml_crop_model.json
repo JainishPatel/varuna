@@ -1,0 +1,4301 @@
+{
+  "type": "RandomForestClassifier",
+  "n_estimators": 15,
+  "classes": [
+    "Cotton",
+    "Groundnut",
+    "Wheat",
+    "Pearl Millet (Bajra)"
+  ],
+  "feature_names": [
+    "mean_depth",
+    "drawdown_rate",
+    "pre_monsoon",
+    "post_monsoon"
+  ],
+  "feature_importances": {
+    "mean_depth": 0.4308,
+    "drawdown_rate": 0.1198,
+    "pre_monsoon": 0.1516,
+    "post_monsoon": 0.2978
+  },
+  "accuracy": 0.9479,
+  "training_samples": 960,
+  "trees": [
+    {
+      "leaf": false,
+      "feature": 3,
+      "feature_name": "post_monsoon",
+      "threshold": 9.141108,
+      "left": {
+        "leaf": false,
+        "feature": 0,
+        "feature_name": "mean_depth",
+        "threshold": 6.519332,
+        "left": {
+          "leaf": false,
+          "feature": 0,
+          "feature_name": "mean_depth",
+          "threshold": 3.923373,
+          "left": {
+            "leaf": false,
+            "feature": 0,
+            "feature_name": "mean_depth",
+            "threshold": 3.184406,
+            "left": {
+              "leaf": false,
+              "feature": 1,
+              "feature_name": "drawdown_rate",
+              "threshold": 0.049315,
+              "left": {
+                "leaf": true,
+                "value": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": false,
+                "feature": 2,
+                "feature_name": "pre_monsoon",
+                "threshold": 3.739511,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.5,
+                    0.5,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              }
+            },
+            "right": {
+              "leaf": false,
+              "feature": 3,
+              "feature_name": "post_monsoon",
+              "threshold": 2.080192,
+              "left": {
+                "leaf": false,
+                "feature": 2,
+                "feature_name": "pre_monsoon",
+                "threshold": 4.252068,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.3157894736842105,
+                    0.6842105263157895,
+                    0.0,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": false,
+                "feature": 1,
+                "feature_name": "drawdown_rate",
+                "threshold": 0.031425,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.5,
+                    0.5,
+                    0.0,
+                    0.0
+                  ]
+                }
+              }
+            }
+          },
+          "right": {
+            "leaf": false,
+            "feature": 3,
+            "feature_name": "post_monsoon",
+            "threshold": 4.640913,
+            "left": {
+              "leaf": false,
+              "feature": 1,
+              "feature_name": "drawdown_rate",
+              "threshold": 0.05393,
+              "left": {
+                "leaf": true,
+                "value": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "right": {
+              "leaf": false,
+              "feature": 1,
+              "feature_name": "drawdown_rate",
+              "threshold": 0.047347,
+              "left": {
+                "leaf": true,
+                "value": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 1,
+          "feature_name": "drawdown_rate",
+          "threshold": 0.150282,
+          "left": {
+            "leaf": false,
+            "feature": 3,
+            "feature_name": "post_monsoon",
+            "threshold": 7.075819,
+            "left": {
+              "leaf": false,
+              "feature": 2,
+              "feature_name": "pre_monsoon",
+              "threshold": 9.768059,
+              "left": {
+                "leaf": false,
+                "feature": 3,
+                "feature_name": "post_monsoon",
+                "threshold": 6.394141,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.8,
+                    0.2,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "right": {
+              "leaf": false,
+              "feature": 2,
+              "feature_name": "pre_monsoon",
+              "threshold": 10.664803,
+              "left": {
+                "leaf": false,
+                "feature": 3,
+                "feature_name": "post_monsoon",
+                "threshold": 7.157916,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.4,
+                    0.6,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": false,
+                "feature": 3,
+                "feature_name": "post_monsoon",
+                "threshold": 8.665824,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.9484536082474226,
+                    0.041237113402061855,
+                    0.010309278350515464
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.4634146341463415,
+                    0.2926829268292683,
+                    0.24390243902439024
+                  ]
+                }
+              }
+            }
+          },
+          "right": {
+            "leaf": true,
+            "value": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      },
+      "right": {
+        "leaf": false,
+        "feature": 0,
+        "feature_name": "mean_depth",
+        "threshold": 11.008302,
+        "left": {
+          "leaf": false,
+          "feature": 2,
+          "feature_name": "pre_monsoon",
+          "threshold": 12.664311,
+          "left": {
+            "leaf": false,
+            "feature": 0,
+            "feature_name": "mean_depth",
+            "threshold": 9.834271,
+            "left": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.0,
+                0.5,
+                0.5
+              ]
+            },
+            "right": {
+              "leaf": false,
+              "feature": 0,
+              "feature_name": "mean_depth",
+              "threshold": 10.60532,
+              "left": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  0.0,
+                  0.8,
+                  0.2
+                ]
+              }
+            }
+          },
+          "right": {
+            "leaf": false,
+            "feature": 1,
+            "feature_name": "drawdown_rate",
+            "threshold": 0.126118,
+            "left": {
+              "leaf": true,
+              "value": [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ]
+            },
+            "right": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            }
+          }
+        },
+        "right": {
+          "leaf": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "leaf": false,
+      "feature": 3,
+      "feature_name": "post_monsoon",
+      "threshold": 9.141316,
+      "left": {
+        "leaf": false,
+        "feature": 3,
+        "feature_name": "post_monsoon",
+        "threshold": 4.592148,
+        "left": {
+          "leaf": false,
+          "feature": 0,
+          "feature_name": "mean_depth",
+          "threshold": 6.490611,
+          "left": {
+            "leaf": false,
+            "feature": 3,
+            "feature_name": "post_monsoon",
+            "threshold": 1.611901,
+            "left": {
+              "leaf": false,
+              "feature": 0,
+              "feature_name": "mean_depth",
+              "threshold": 3.319265,
+              "left": {
+                "leaf": false,
+                "feature": 0,
+                "feature_name": "mean_depth",
+                "threshold": 1.607141,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.7037037037037037,
+                    0.2222222222222222,
+                    0.07407407407407407,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": false,
+                "feature": 1,
+                "feature_name": "drawdown_rate",
+                "threshold": 0.040526,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              }
+            },
+            "right": {
+              "leaf": false,
+              "feature": 0,
+              "feature_name": "mean_depth",
+              "threshold": 3.504703,
+              "left": {
+                "leaf": true,
+                "value": [
+                  0.6666666666666666,
+                  0.3333333333333333,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": false,
+                "feature": 1,
+                "feature_name": "drawdown_rate",
+                "threshold": 0.05138,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              }
+            }
+          },
+          "right": {
+            "leaf": false,
+            "feature": 1,
+            "feature_name": "drawdown_rate",
+            "threshold": 0.016415,
+            "left": {
+              "leaf": true,
+              "value": [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ]
+            },
+            "right": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.3333333333333333,
+                0.0,
+                0.6666666666666666
+              ]
+            }
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 0,
+          "feature_name": "mean_depth",
+          "threshold": 6.510431,
+          "left": {
+            "leaf": false,
+            "feature": 1,
+            "feature_name": "drawdown_rate",
+            "threshold": 0.049157,
+            "left": {
+              "leaf": true,
+              "value": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "right": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.5,
+                0.5,
+                0.0
+              ]
+            }
+          },
+          "right": {
+            "leaf": false,
+            "feature": 1,
+            "feature_name": "drawdown_rate",
+            "threshold": 0.151442,
+            "left": {
+              "leaf": false,
+              "feature": 3,
+              "feature_name": "post_monsoon",
+              "threshold": 6.934465,
+              "left": {
+                "leaf": false,
+                "feature": 2,
+                "feature_name": "pre_monsoon",
+                "threshold": 9.758354,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.8305084745762712,
+                    0.1694915254237288,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": false,
+                "feature": 2,
+                "feature_name": "pre_monsoon",
+                "threshold": 10.651687,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.8439716312056738,
+                    0.11347517730496454,
+                    0.0425531914893617
+                  ]
+                }
+              }
+            },
+            "right": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            }
+          }
+        }
+      },
+      "right": {
+        "leaf": false,
+        "feature": 0,
+        "feature_name": "mean_depth",
+        "threshold": 10.977262,
+        "left": {
+          "leaf": false,
+          "feature": 1,
+          "feature_name": "drawdown_rate",
+          "threshold": 0.126118,
+          "left": {
+            "leaf": false,
+            "feature": 2,
+            "feature_name": "pre_monsoon",
+            "threshold": 12.664311,
+            "left": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ]
+            },
+            "right": {
+              "leaf": true,
+              "value": [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "right": {
+            "leaf": true,
+            "value": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "right": {
+          "leaf": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "leaf": false,
+      "feature": 0,
+      "feature_name": "mean_depth",
+      "threshold": 10.990386,
+      "left": {
+        "leaf": false,
+        "feature": 3,
+        "feature_name": "post_monsoon",
+        "threshold": 4.640773,
+        "left": {
+          "leaf": false,
+          "feature": 1,
+          "feature_name": "drawdown_rate",
+          "threshold": 0.050921,
+          "left": {
+            "leaf": false,
+            "feature": 2,
+            "feature_name": "pre_monsoon",
+            "threshold": 9.467325,
+            "left": {
+              "leaf": false,
+              "feature": 0,
+              "feature_name": "mean_depth",
+              "threshold": 6.500414,
+              "left": {
+                "leaf": true,
+                "value": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "right": {
+              "leaf": true,
+              "value": [
+                0.3333333333333333,
+                0.6666666666666666,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "right": {
+            "leaf": false,
+            "feature": 1,
+            "feature_name": "drawdown_rate",
+            "threshold": 0.098807,
+            "left": {
+              "leaf": true,
+              "value": [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ]
+            },
+            "right": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.3333333333333333,
+                0.0,
+                0.6666666666666666
+              ]
+            }
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 0,
+          "feature_name": "mean_depth",
+          "threshold": 9.126125,
+          "left": {
+            "leaf": false,
+            "feature": 1,
+            "feature_name": "drawdown_rate",
+            "threshold": 0.105588,
+            "left": {
+              "leaf": false,
+              "feature": 3,
+              "feature_name": "post_monsoon",
+              "threshold": 6.750455,
+              "left": {
+                "leaf": false,
+                "feature": 2,
+                "feature_name": "pre_monsoon",
+                "threshold": 8.584256,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.13333333333333333,
+                    0.8666666666666667,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.9841269841269841,
+                    0.015873015873015872,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": false,
+                "feature": 2,
+                "feature_name": "pre_monsoon",
+                "threshold": 9.98564,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.14285714285714285,
+                    0.8571428571428571,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              }
+            },
+            "right": {
+              "leaf": false,
+              "feature": 1,
+              "feature_name": "drawdown_rate",
+              "threshold": 0.153372,
+              "left": {
+                "leaf": false,
+                "feature": 0,
+                "feature_name": "mean_depth",
+                "threshold": 7.440601,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.5,
+                    0.5,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          "right": {
+            "leaf": false,
+            "feature": 3,
+            "feature_name": "post_monsoon",
+            "threshold": 8.653265,
+            "left": {
+              "leaf": false,
+              "feature": 3,
+              "feature_name": "post_monsoon",
+              "threshold": 7.898859,
+              "left": {
+                "leaf": false,
+                "feature": 2,
+                "feature_name": "pre_monsoon",
+                "threshold": 9.990818,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.3333333333333333,
+                    0.6666666666666666,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.98,
+                    0.0,
+                    0.02
+                  ]
+                }
+              },
+              "right": {
+                "leaf": false,
+                "feature": 2,
+                "feature_name": "pre_monsoon",
+                "threshold": 11.058159,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              }
+            },
+            "right": {
+              "leaf": false,
+              "feature": 0,
+              "feature_name": "mean_depth",
+              "threshold": 10.716587,
+              "left": {
+                "leaf": false,
+                "feature": 2,
+                "feature_name": "pre_monsoon",
+                "threshold": 12.493711,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.1,
+                    0.9,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": false,
+                "feature": 0,
+                "feature_name": "mean_depth",
+                "threshold": 10.891594,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.5,
+                    0.5,
+                    0.0
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "right": {
+        "leaf": true,
+        "value": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "leaf": false,
+      "feature": 2,
+      "feature_name": "pre_monsoon",
+      "threshold": 13.340721,
+      "left": {
+        "leaf": false,
+        "feature": 0,
+        "feature_name": "mean_depth",
+        "threshold": 6.539119,
+        "left": {
+          "leaf": false,
+          "feature": 1,
+          "feature_name": "drawdown_rate",
+          "threshold": 0.048803,
+          "left": {
+            "leaf": true,
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "right": {
+            "leaf": false,
+            "feature": 2,
+            "feature_name": "pre_monsoon",
+            "threshold": 4.251769,
+            "left": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ]
+            },
+            "right": {
+              "leaf": false,
+              "feature": 1,
+              "feature_name": "drawdown_rate",
+              "threshold": 0.083821,
+              "left": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  0.3333333333333333,
+                  0.6666666666666666,
+                  0.0
+                ]
+              }
+            }
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 0,
+          "feature_name": "mean_depth",
+          "threshold": 11.030853,
+          "left": {
+            "leaf": false,
+            "feature": 3,
+            "feature_name": "post_monsoon",
+            "threshold": 9.092818,
+            "left": {
+              "leaf": false,
+              "feature": 2,
+              "feature_name": "pre_monsoon",
+              "threshold": 11.027532,
+              "left": {
+                "leaf": false,
+                "feature": 3,
+                "feature_name": "post_monsoon",
+                "threshold": 7.720965,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.8663101604278075,
+                    0.08021390374331551,
+                    0.053475935828877004
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": false,
+                "feature": 0,
+                "feature_name": "mean_depth",
+                "threshold": 10.510823,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.9850746268656716,
+                    0.007462686567164179,
+                    0.007462686567164179
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.7333333333333333,
+                    0.26666666666666666,
+                    0.0
+                  ]
+                }
+              }
+            },
+            "right": {
+              "leaf": false,
+              "feature": 2,
+              "feature_name": "pre_monsoon",
+              "threshold": 12.664311,
+              "left": {
+                "leaf": false,
+                "feature": 2,
+                "feature_name": "pre_monsoon",
+                "threshold": 12.486101,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.25,
+                    0.5,
+                    0.25
+                  ]
+                }
+              },
+              "right": {
+                "leaf": false,
+                "feature": 3,
+                "feature_name": "post_monsoon",
+                "threshold": 9.71404,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.3333333333333333,
+                    0.0,
+                    0.6666666666666666
+                  ]
+                }
+              }
+            }
+          },
+          "right": {
+            "leaf": true,
+            "value": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      },
+      "right": {
+        "leaf": false,
+        "feature": 2,
+        "feature_name": "pre_monsoon",
+        "threshold": 14.147058,
+        "left": {
+          "leaf": false,
+          "feature": 0,
+          "feature_name": "mean_depth",
+          "threshold": 10.972494,
+          "left": {
+            "leaf": true,
+            "value": [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ]
+          },
+          "right": {
+            "leaf": true,
+            "value": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 2,
+          "feature_name": "pre_monsoon",
+          "threshold": 14.253864,
+          "left": {
+            "leaf": false,
+            "feature": 1,
+            "feature_name": "drawdown_rate",
+            "threshold": -0.006819,
+            "left": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            },
+            "right": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.5,
+                0.0,
+                0.5
+              ]
+            }
+          },
+          "right": {
+            "leaf": true,
+            "value": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "leaf": false,
+      "feature": 3,
+      "feature_name": "post_monsoon",
+      "threshold": 9.605604,
+      "left": {
+        "leaf": false,
+        "feature": 2,
+        "feature_name": "pre_monsoon",
+        "threshold": 8.166615,
+        "left": {
+          "leaf": false,
+          "feature": 1,
+          "feature_name": "drawdown_rate",
+          "threshold": 0.048803,
+          "left": {
+            "leaf": false,
+            "feature": 2,
+            "feature_name": "pre_monsoon",
+            "threshold": 7.673249,
+            "left": {
+              "leaf": true,
+              "value": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "right": {
+              "leaf": false,
+              "feature": 0,
+              "feature_name": "mean_depth",
+              "threshold": 6.509473,
+              "left": {
+                "leaf": true,
+                "value": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          },
+          "right": {
+            "leaf": false,
+            "feature": 1,
+            "feature_name": "drawdown_rate",
+            "threshold": 0.09135,
+            "left": {
+              "leaf": true,
+              "value": [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ]
+            },
+            "right": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.6666666666666666,
+                0.3333333333333333,
+                0.0
+              ]
+            }
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 3,
+          "feature_name": "post_monsoon",
+          "threshold": 8.541613,
+          "left": {
+            "leaf": false,
+            "feature": 0,
+            "feature_name": "mean_depth",
+            "threshold": 6.519332,
+            "left": {
+              "leaf": false,
+              "feature": 1,
+              "feature_name": "drawdown_rate",
+              "threshold": 0.040036,
+              "left": {
+                "leaf": true,
+                "value": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "right": {
+              "leaf": false,
+              "feature": 3,
+              "feature_name": "post_monsoon",
+              "threshold": 7.723592,
+              "left": {
+                "leaf": false,
+                "feature": 1,
+                "feature_name": "drawdown_rate",
+                "threshold": 0.137356,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.975609756097561,
+                    0.024390243902439025,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": false,
+                "feature": 0,
+                "feature_name": "mean_depth",
+                "threshold": 9.768752,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.4444444444444444,
+                    0.5,
+                    0.05555555555555555
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.9047619047619048,
+                    0.07142857142857142,
+                    0.023809523809523808
+                  ]
+                }
+              }
+            }
+          },
+          "right": {
+            "leaf": false,
+            "feature": 2,
+            "feature_name": "pre_monsoon",
+            "threshold": 12.099989,
+            "left": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ]
+            },
+            "right": {
+              "leaf": false,
+              "feature": 2,
+              "feature_name": "pre_monsoon",
+              "threshold": 14.147667,
+              "left": {
+                "leaf": false,
+                "feature": 0,
+                "feature_name": "mean_depth",
+                "threshold": 10.986269,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.9666666666666667,
+                    0.03333333333333333,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            }
+          }
+        }
+      },
+      "right": {
+        "leaf": false,
+        "feature": 2,
+        "feature_name": "pre_monsoon",
+        "threshold": 11.8285,
+        "left": {
+          "leaf": true,
+          "value": [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "right": {
+          "leaf": false,
+          "feature": 0,
+          "feature_name": "mean_depth",
+          "threshold": 10.976107,
+          "left": {
+            "leaf": false,
+            "feature": 1,
+            "feature_name": "drawdown_rate",
+            "threshold": 0.126118,
+            "left": {
+              "leaf": false,
+              "feature": 2,
+              "feature_name": "pre_monsoon",
+              "threshold": 13.015655,
+              "left": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  0.6666666666666666,
+                  0.3333333333333333,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "right": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            }
+          },
+          "right": {
+            "leaf": true,
+            "value": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "leaf": false,
+      "feature": 3,
+      "feature_name": "post_monsoon",
+      "threshold": 8.871128,
+      "left": {
+        "leaf": false,
+        "feature": 0,
+        "feature_name": "mean_depth",
+        "threshold": 6.519332,
+        "left": {
+          "leaf": false,
+          "feature": 1,
+          "feature_name": "drawdown_rate",
+          "threshold": 0.050112,
+          "left": {
+            "leaf": true,
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "right": {
+            "leaf": false,
+            "feature": 0,
+            "feature_name": "mean_depth",
+            "threshold": 3.157222,
+            "left": {
+              "leaf": false,
+              "feature": 1,
+              "feature_name": "drawdown_rate",
+              "threshold": 0.083669,
+              "left": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              }
+            },
+            "right": {
+              "leaf": true,
+              "value": [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 1,
+          "feature_name": "drawdown_rate",
+          "threshold": 0.137356,
+          "left": {
+            "leaf": false,
+            "feature": 2,
+            "feature_name": "pre_monsoon",
+            "threshold": 10.665872,
+            "left": {
+              "leaf": false,
+              "feature": 0,
+              "feature_name": "mean_depth",
+              "threshold": 8.382537,
+              "left": {
+                "leaf": false,
+                "feature": 3,
+                "feature_name": "post_monsoon",
+                "threshold": 6.970608,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.9893617021276596,
+                    0.010638297872340425,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.5,
+                    0.5,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": false,
+                "feature": 1,
+                "feature_name": "drawdown_rate",
+                "threshold": 0.022696,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.3958333333333333,
+                    0.6041666666666666,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.8461538461538461,
+                    0.15384615384615385,
+                    0.0
+                  ]
+                }
+              }
+            },
+            "right": {
+              "leaf": false,
+              "feature": 3,
+              "feature_name": "post_monsoon",
+              "threshold": 8.662718,
+              "left": {
+                "leaf": false,
+                "feature": 2,
+                "feature_name": "pre_monsoon",
+                "threshold": 10.770584,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.8888888888888888,
+                    0.1111111111111111,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.993103448275862,
+                    0.006896551724137931,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": false,
+                "feature": 2,
+                "feature_name": "pre_monsoon",
+                "threshold": 11.961306,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.8,
+                    0.0,
+                    0.2
+                  ]
+                }
+              }
+            }
+          },
+          "right": {
+            "leaf": true,
+            "value": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      },
+      "right": {
+        "leaf": false,
+        "feature": 2,
+        "feature_name": "pre_monsoon",
+        "threshold": 12.150887,
+        "left": {
+          "leaf": false,
+          "feature": 2,
+          "feature_name": "pre_monsoon",
+          "threshold": 12.039667,
+          "left": {
+            "leaf": false,
+            "feature": 3,
+            "feature_name": "post_monsoon",
+            "threshold": 9.871727,
+            "left": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ]
+            },
+            "right": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.0,
+                0.5,
+                0.5
+              ]
+            }
+          },
+          "right": {
+            "leaf": true,
+            "value": [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 0,
+          "feature_name": "mean_depth",
+          "threshold": 10.976107,
+          "left": {
+            "leaf": false,
+            "feature": 2,
+            "feature_name": "pre_monsoon",
+            "threshold": 13.230145,
+            "left": {
+              "leaf": false,
+              "feature": 1,
+              "feature_name": "drawdown_rate",
+              "threshold": 0.058951,
+              "left": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            },
+            "right": {
+              "leaf": true,
+              "value": [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "right": {
+            "leaf": true,
+            "value": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "leaf": false,
+      "feature": 0,
+      "feature_name": "mean_depth",
+      "threshold": 11.030853,
+      "left": {
+        "leaf": false,
+        "feature": 0,
+        "feature_name": "mean_depth",
+        "threshold": 6.502236,
+        "left": {
+          "leaf": false,
+          "feature": 1,
+          "feature_name": "drawdown_rate",
+          "threshold": 0.050112,
+          "left": {
+            "leaf": true,
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "right": {
+            "leaf": false,
+            "feature": 3,
+            "feature_name": "post_monsoon",
+            "threshold": 4.796505,
+            "left": {
+              "leaf": true,
+              "value": [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ]
+            },
+            "right": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.5,
+                0.5,
+                0.0
+              ]
+            }
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 1,
+          "feature_name": "drawdown_rate",
+          "threshold": 0.14729,
+          "left": {
+            "leaf": false,
+            "feature": 3,
+            "feature_name": "post_monsoon",
+            "threshold": 7.723592,
+            "left": {
+              "leaf": false,
+              "feature": 3,
+              "feature_name": "post_monsoon",
+              "threshold": 7.075819,
+              "left": {
+                "leaf": false,
+                "feature": 3,
+                "feature_name": "post_monsoon",
+                "threshold": 6.475793,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.9655172413793104,
+                    0.034482758620689655,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": false,
+                "feature": 0,
+                "feature_name": "mean_depth",
+                "threshold": 9.353015,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.5555555555555556,
+                    0.4444444444444444,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              }
+            },
+            "right": {
+              "leaf": false,
+              "feature": 2,
+              "feature_name": "pre_monsoon",
+              "threshold": 11.199235,
+              "left": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": false,
+                "feature": 3,
+                "feature_name": "post_monsoon",
+                "threshold": 9.488111,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.926829268292683,
+                    0.07317073170731707,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.36,
+                    0.64,
+                    0.0
+                  ]
+                }
+              }
+            }
+          },
+          "right": {
+            "leaf": true,
+            "value": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      },
+      "right": {
+        "leaf": true,
+        "value": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "leaf": false,
+      "feature": 0,
+      "feature_name": "mean_depth",
+      "threshold": 11.008427,
+      "left": {
+        "leaf": false,
+        "feature": 3,
+        "feature_name": "post_monsoon",
+        "threshold": 4.924223,
+        "left": {
+          "leaf": false,
+          "feature": 1,
+          "feature_name": "drawdown_rate",
+          "threshold": 0.050112,
+          "left": {
+            "leaf": false,
+            "feature": 2,
+            "feature_name": "pre_monsoon",
+            "threshold": 7.685605,
+            "left": {
+              "leaf": false,
+              "feature": 0,
+              "feature_name": "mean_depth",
+              "threshold": 6.172081,
+              "left": {
+                "leaf": true,
+                "value": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.5,
+                  0.5,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "right": {
+              "leaf": false,
+              "feature": 3,
+              "feature_name": "post_monsoon",
+              "threshold": 3.825413,
+              "left": {
+                "leaf": true,
+                "value": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": false,
+                "feature": 1,
+                "feature_name": "drawdown_rate",
+                "threshold": 0.015506,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.5769230769230769,
+                    0.4230769230769231,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.25,
+                    0.75,
+                    0.0,
+                    0.0
+                  ]
+                }
+              }
+            }
+          },
+          "right": {
+            "leaf": false,
+            "feature": 2,
+            "feature_name": "pre_monsoon",
+            "threshold": 4.251769,
+            "left": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.3333333333333333,
+                0.6666666666666666,
+                0.0
+              ]
+            },
+            "right": {
+              "leaf": false,
+              "feature": 1,
+              "feature_name": "drawdown_rate",
+              "threshold": 0.098807,
+              "left": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  0.6666666666666666,
+                  0.0,
+                  0.3333333333333333
+                ]
+              }
+            }
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 3,
+          "feature_name": "post_monsoon",
+          "threshold": 7.075819,
+          "left": {
+            "leaf": false,
+            "feature": 1,
+            "feature_name": "drawdown_rate",
+            "threshold": 0.131261,
+            "left": {
+              "leaf": false,
+              "feature": 2,
+              "feature_name": "pre_monsoon",
+              "threshold": 7.670065,
+              "left": {
+                "leaf": true,
+                "value": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": false,
+                "feature": 2,
+                "feature_name": "pre_monsoon",
+                "threshold": 9.818558,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.06896551724137931,
+                    0.8620689655172413,
+                    0.06896551724137931,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              }
+            },
+            "right": {
+              "leaf": false,
+              "feature": 2,
+              "feature_name": "pre_monsoon",
+              "threshold": 9.636783,
+              "left": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  0.0,
+                  0.5,
+                  0.5
+                ]
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          "right": {
+            "leaf": false,
+            "feature": 2,
+            "feature_name": "pre_monsoon",
+            "threshold": 11.279552,
+            "left": {
+              "leaf": false,
+              "feature": 2,
+              "feature_name": "pre_monsoon",
+              "threshold": 10.150435,
+              "left": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": false,
+                "feature": 3,
+                "feature_name": "post_monsoon",
+                "threshold": 7.968425,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.76,
+                    0.04,
+                    0.2
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.05555555555555555,
+                    0.9166666666666666,
+                    0.027777777777777776
+                  ]
+                }
+              }
+            },
+            "right": {
+              "leaf": false,
+              "feature": 2,
+              "feature_name": "pre_monsoon",
+              "threshold": 12.591145,
+              "left": {
+                "leaf": false,
+                "feature": 3,
+                "feature_name": "post_monsoon",
+                "threshold": 8.741652,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.9772727272727273,
+                    0.0,
+                    0.022727272727272728
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.3333333333333333,
+                    0.5238095238095238,
+                    0.14285714285714285
+                  ]
+                }
+              },
+              "right": {
+                "leaf": false,
+                "feature": 0,
+                "feature_name": "mean_depth",
+                "threshold": 10.41281,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.90625,
+                    0.0,
+                    0.09375
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "right": {
+        "leaf": true,
+        "value": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "leaf": false,
+      "feature": 0,
+      "feature_name": "mean_depth",
+      "threshold": 11.008427,
+      "left": {
+        "leaf": false,
+        "feature": 2,
+        "feature_name": "pre_monsoon",
+        "threshold": 8.122038,
+        "left": {
+          "leaf": false,
+          "feature": 1,
+          "feature_name": "drawdown_rate",
+          "threshold": 0.050112,
+          "left": {
+            "leaf": false,
+            "feature": 2,
+            "feature_name": "pre_monsoon",
+            "threshold": 7.649215,
+            "left": {
+              "leaf": false,
+              "feature": 3,
+              "feature_name": "post_monsoon",
+              "threshold": 3.507977,
+              "left": {
+                "leaf": true,
+                "value": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": false,
+                "feature": 2,
+                "feature_name": "pre_monsoon",
+                "threshold": 7.346547,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.75,
+                    0.25,
+                    0.0,
+                    0.0
+                  ]
+                }
+              }
+            },
+            "right": {
+              "leaf": false,
+              "feature": 0,
+              "feature_name": "mean_depth",
+              "threshold": 6.48078,
+              "left": {
+                "leaf": true,
+                "value": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          },
+          "right": {
+            "leaf": false,
+            "feature": 1,
+            "feature_name": "drawdown_rate",
+            "threshold": 0.091966,
+            "left": {
+              "leaf": true,
+              "value": [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ]
+            },
+            "right": {
+              "leaf": false,
+              "feature": 3,
+              "feature_name": "post_monsoon",
+              "threshold": 3.706957,
+              "left": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  0.5,
+                  0.5,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              }
+            }
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 3,
+          "feature_name": "post_monsoon",
+          "threshold": 4.282172,
+          "left": {
+            "leaf": false,
+            "feature": 1,
+            "feature_name": "drawdown_rate",
+            "threshold": -0.035061,
+            "left": {
+              "leaf": true,
+              "value": [
+                0.5,
+                0.5,
+                0.0,
+                0.0
+              ]
+            },
+            "right": {
+              "leaf": true,
+              "value": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "right": {
+            "leaf": false,
+            "feature": 3,
+            "feature_name": "post_monsoon",
+            "threshold": 6.876855,
+            "left": {
+              "leaf": false,
+              "feature": 0,
+              "feature_name": "mean_depth",
+              "threshold": 6.519332,
+              "left": {
+                "leaf": false,
+                "feature": 2,
+                "feature_name": "pre_monsoon",
+                "threshold": 9.207722,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.5,
+                    0.5,
+                    0.0,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": false,
+                "feature": 1,
+                "feature_name": "drawdown_rate",
+                "threshold": 0.105901,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.9877300613496932,
+                    0.012269938650306749,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.3333333333333333,
+                    0.6666666666666666
+                  ]
+                }
+              }
+            },
+            "right": {
+              "leaf": false,
+              "feature": 2,
+              "feature_name": "pre_monsoon",
+              "threshold": 10.665872,
+              "left": {
+                "leaf": false,
+                "feature": 3,
+                "feature_name": "post_monsoon",
+                "threshold": 7.157916,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.4166666666666667,
+                    0.5833333333333334,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.96,
+                    0.04
+                  ]
+                }
+              },
+              "right": {
+                "leaf": false,
+                "feature": 3,
+                "feature_name": "post_monsoon",
+                "threshold": 8.662718,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.944954128440367,
+                    0.027522935779816515,
+                    0.027522935779816515
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.6111111111111112,
+                    0.35185185185185186,
+                    0.037037037037037035
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "right": {
+        "leaf": true,
+        "value": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "leaf": false,
+      "feature": 3,
+      "feature_name": "post_monsoon",
+      "threshold": 9.59757,
+      "left": {
+        "leaf": false,
+        "feature": 3,
+        "feature_name": "post_monsoon",
+        "threshold": 4.608318,
+        "left": {
+          "leaf": false,
+          "feature": 0,
+          "feature_name": "mean_depth",
+          "threshold": 6.500414,
+          "left": {
+            "leaf": false,
+            "feature": 2,
+            "feature_name": "pre_monsoon",
+            "threshold": 3.121064,
+            "left": {
+              "leaf": true,
+              "value": [
+                0.25,
+                0.0,
+                0.75,
+                0.0
+              ]
+            },
+            "right": {
+              "leaf": false,
+              "feature": 1,
+              "feature_name": "drawdown_rate",
+              "threshold": 0.050112,
+              "left": {
+                "leaf": true,
+                "value": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": false,
+                "feature": 1,
+                "feature_name": "drawdown_rate",
+                "threshold": 0.091966,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.5,
+                    0.5,
+                    0.0
+                  ]
+                }
+              }
+            }
+          },
+          "right": {
+            "leaf": false,
+            "feature": 2,
+            "feature_name": "pre_monsoon",
+            "threshold": 8.8102,
+            "left": {
+              "leaf": true,
+              "value": [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ]
+            },
+            "right": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.5,
+                0.0,
+                0.5
+              ]
+            }
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 0,
+          "feature_name": "mean_depth",
+          "threshold": 11.05266,
+          "left": {
+            "leaf": false,
+            "feature": 3,
+            "feature_name": "post_monsoon",
+            "threshold": 8.662718,
+            "left": {
+              "leaf": false,
+              "feature": 0,
+              "feature_name": "mean_depth",
+              "threshold": 6.519332,
+              "left": {
+                "leaf": false,
+                "feature": 1,
+                "feature_name": "drawdown_rate",
+                "threshold": 0.03075,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.6666666666666666,
+                    0.0,
+                    0.3333333333333333,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": false,
+                "feature": 3,
+                "feature_name": "post_monsoon",
+                "threshold": 7.075819,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.9402173913043478,
+                    0.02717391304347826,
+                    0.03260869565217391
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.7246376811594203,
+                    0.2536231884057971,
+                    0.021739130434782608
+                  ]
+                }
+              }
+            },
+            "right": {
+              "leaf": false,
+              "feature": 2,
+              "feature_name": "pre_monsoon",
+              "threshold": 12.056089,
+              "left": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": false,
+                "feature": 1,
+                "feature_name": "drawdown_rate",
+                "threshold": 0.003669,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.9545454545454546,
+                    0.045454545454545456,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.7142857142857143,
+                    0.2857142857142857,
+                    0.0
+                  ]
+                }
+              }
+            }
+          },
+          "right": {
+            "leaf": true,
+            "value": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      },
+      "right": {
+        "leaf": false,
+        "feature": 0,
+        "feature_name": "mean_depth",
+        "threshold": 10.970244,
+        "left": {
+          "leaf": false,
+          "feature": 2,
+          "feature_name": "pre_monsoon",
+          "threshold": 12.930145,
+          "left": {
+            "leaf": false,
+            "feature": 1,
+            "feature_name": "drawdown_rate",
+            "threshold": 0.098553,
+            "left": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ]
+            },
+            "right": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            }
+          },
+          "right": {
+            "leaf": false,
+            "feature": 0,
+            "feature_name": "mean_depth",
+            "threshold": 10.751155,
+            "left": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.5,
+                0.0,
+                0.5
+              ]
+            },
+            "right": {
+              "leaf": true,
+              "value": [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "right": {
+          "leaf": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "leaf": false,
+      "feature": 0,
+      "feature_name": "mean_depth",
+      "threshold": 11.008427,
+      "left": {
+        "leaf": false,
+        "feature": 3,
+        "feature_name": "post_monsoon",
+        "threshold": 4.608318,
+        "left": {
+          "leaf": false,
+          "feature": 1,
+          "feature_name": "drawdown_rate",
+          "threshold": 0.050112,
+          "left": {
+            "leaf": false,
+            "feature": 2,
+            "feature_name": "pre_monsoon",
+            "threshold": 7.652843,
+            "left": {
+              "leaf": true,
+              "value": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "right": {
+              "leaf": false,
+              "feature": 2,
+              "feature_name": "pre_monsoon",
+              "threshold": 7.784455,
+              "left": {
+                "leaf": true,
+                "value": [
+                  0.5,
+                  0.5,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": false,
+                "feature": 0,
+                "feature_name": "mean_depth",
+                "threshold": 6.600078,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              }
+            }
+          },
+          "right": {
+            "leaf": false,
+            "feature": 1,
+            "feature_name": "drawdown_rate",
+            "threshold": 0.091966,
+            "left": {
+              "leaf": true,
+              "value": [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ]
+            },
+            "right": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.0,
+                0.6666666666666666,
+                0.3333333333333333
+              ]
+            }
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 3,
+          "feature_name": "post_monsoon",
+          "threshold": 7.07502,
+          "left": {
+            "leaf": false,
+            "feature": 0,
+            "feature_name": "mean_depth",
+            "threshold": 6.524092,
+            "left": {
+              "leaf": false,
+              "feature": 1,
+              "feature_name": "drawdown_rate",
+              "threshold": 0.001629,
+              "left": {
+                "leaf": true,
+                "value": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.6666666666666666,
+                  0.3333333333333333,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "right": {
+              "leaf": false,
+              "feature": 1,
+              "feature_name": "drawdown_rate",
+              "threshold": 0.117947,
+              "left": {
+                "leaf": false,
+                "feature": 3,
+                "feature_name": "post_monsoon",
+                "threshold": 6.8805,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.875,
+                    0.125,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": false,
+                "feature": 1,
+                "feature_name": "drawdown_rate",
+                "threshold": 0.173937,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.5,
+                    0.5
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              }
+            }
+          },
+          "right": {
+            "leaf": false,
+            "feature": 1,
+            "feature_name": "drawdown_rate",
+            "threshold": 0.150282,
+            "left": {
+              "leaf": false,
+              "feature": 1,
+              "feature_name": "drawdown_rate",
+              "threshold": 0.044835,
+              "left": {
+                "leaf": false,
+                "feature": 2,
+                "feature_name": "pre_monsoon",
+                "threshold": 11.213669,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.3448275862068966,
+                    0.6551724137931034,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.875,
+                    0.125,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": false,
+                "feature": 0,
+                "feature_name": "mean_depth",
+                "threshold": 10.733721,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.21428571428571427,
+                    0.7857142857142857,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              }
+            },
+            "right": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            }
+          }
+        }
+      },
+      "right": {
+        "leaf": true,
+        "value": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "leaf": false,
+      "feature": 3,
+      "feature_name": "post_monsoon",
+      "threshold": 9.141316,
+      "left": {
+        "leaf": false,
+        "feature": 0,
+        "feature_name": "mean_depth",
+        "threshold": 6.502236,
+        "left": {
+          "leaf": false,
+          "feature": 3,
+          "feature_name": "post_monsoon",
+          "threshold": 2.187073,
+          "left": {
+            "leaf": false,
+            "feature": 3,
+            "feature_name": "post_monsoon",
+            "threshold": 1.381987,
+            "left": {
+              "leaf": false,
+              "feature": 1,
+              "feature_name": "drawdown_rate",
+              "threshold": 0.052614,
+              "left": {
+                "leaf": true,
+                "value": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": false,
+                "feature": 1,
+                "feature_name": "drawdown_rate",
+                "threshold": 0.075524,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.5,
+                    0.5,
+                    0.0
+                  ]
+                }
+              }
+            },
+            "right": {
+              "leaf": false,
+              "feature": 2,
+              "feature_name": "pre_monsoon",
+              "threshold": 5.544816,
+              "left": {
+                "leaf": false,
+                "feature": 0,
+                "feature_name": "mean_depth",
+                "threshold": 3.563264,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.5,
+                    0.5,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": false,
+                "feature": 3,
+                "feature_name": "post_monsoon",
+                "threshold": 1.611901,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.5454545454545454,
+                    0.45454545454545453,
+                    0.0,
+                    0.0
+                  ]
+                }
+              }
+            }
+          },
+          "right": {
+            "leaf": false,
+            "feature": 1,
+            "feature_name": "drawdown_rate",
+            "threshold": 0.050112,
+            "left": {
+              "leaf": true,
+              "value": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "right": {
+              "leaf": false,
+              "feature": 1,
+              "feature_name": "drawdown_rate",
+              "threshold": 0.078482,
+              "left": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  0.5,
+                  0.5,
+                  0.0
+                ]
+              }
+            }
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 0,
+          "feature_name": "mean_depth",
+          "threshold": 11.116815,
+          "left": {
+            "leaf": false,
+            "feature": 1,
+            "feature_name": "drawdown_rate",
+            "threshold": 0.150282,
+            "left": {
+              "leaf": false,
+              "feature": 0,
+              "feature_name": "mean_depth",
+              "threshold": 8.38314,
+              "left": {
+                "leaf": false,
+                "feature": 1,
+                "feature_name": "drawdown_rate",
+                "threshold": 0.073273,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.984375,
+                    0.015625,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.5,
+                    0.5,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": false,
+                "feature": 2,
+                "feature_name": "pre_monsoon",
+                "threshold": 11.023532,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.5324675324675324,
+                    0.4675324675324675,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.9485294117647058,
+                    0.051470588235294115,
+                    0.0
+                  ]
+                }
+              }
+            },
+            "right": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            }
+          },
+          "right": {
+            "leaf": true,
+            "value": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      },
+      "right": {
+        "leaf": false,
+        "feature": 2,
+        "feature_name": "pre_monsoon",
+        "threshold": 11.633476,
+        "left": {
+          "leaf": true,
+          "value": [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "right": {
+          "leaf": false,
+          "feature": 0,
+          "feature_name": "mean_depth",
+          "threshold": 10.976107,
+          "left": {
+            "leaf": false,
+            "feature": 2,
+            "feature_name": "pre_monsoon",
+            "threshold": 12.930145,
+            "left": {
+              "leaf": false,
+              "feature": 1,
+              "feature_name": "drawdown_rate",
+              "threshold": 0.102793,
+              "left": {
+                "leaf": false,
+                "feature": 2,
+                "feature_name": "pre_monsoon",
+                "threshold": 12.416552,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.75,
+                    0.25,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            },
+            "right": {
+              "leaf": true,
+              "value": [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "right": {
+            "leaf": true,
+            "value": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "leaf": false,
+      "feature": 0,
+      "feature_name": "mean_depth",
+      "threshold": 11.039467,
+      "left": {
+        "leaf": false,
+        "feature": 2,
+        "feature_name": "pre_monsoon",
+        "threshold": 8.166615,
+        "left": {
+          "leaf": false,
+          "feature": 0,
+          "feature_name": "mean_depth",
+          "threshold": 6.493335,
+          "left": {
+            "leaf": false,
+            "feature": 3,
+            "feature_name": "post_monsoon",
+            "threshold": 2.319113,
+            "left": {
+              "leaf": false,
+              "feature": 1,
+              "feature_name": "drawdown_rate",
+              "threshold": 0.049315,
+              "left": {
+                "leaf": true,
+                "value": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": false,
+                "feature": 0,
+                "feature_name": "mean_depth",
+                "threshold": 2.438571,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.5,
+                    0.5,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              }
+            },
+            "right": {
+              "leaf": false,
+              "feature": 3,
+              "feature_name": "post_monsoon",
+              "threshold": 5.179381,
+              "left": {
+                "leaf": false,
+                "feature": 1,
+                "feature_name": "drawdown_rate",
+                "threshold": 0.048635,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.5,
+                  0.0,
+                  0.5,
+                  0.0
+                ]
+              }
+            }
+          },
+          "right": {
+            "leaf": true,
+            "value": [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 3,
+          "feature_name": "post_monsoon",
+          "threshold": 4.601859,
+          "left": {
+            "leaf": false,
+            "feature": 1,
+            "feature_name": "drawdown_rate",
+            "threshold": 0.040566,
+            "left": {
+              "leaf": false,
+              "feature": 2,
+              "feature_name": "pre_monsoon",
+              "threshold": 9.546711,
+              "left": {
+                "leaf": true,
+                "value": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": false,
+                "feature": 2,
+                "feature_name": "pre_monsoon",
+                "threshold": 9.731957,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.6666666666666666,
+                    0.3333333333333333,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.5,
+                    0.5,
+                    0.0,
+                    0.0
+                  ]
+                }
+              }
+            },
+            "right": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.75,
+                0.0,
+                0.25
+              ]
+            }
+          },
+          "right": {
+            "leaf": false,
+            "feature": 3,
+            "feature_name": "post_monsoon",
+            "threshold": 7.082502,
+            "left": {
+              "leaf": false,
+              "feature": 1,
+              "feature_name": "drawdown_rate",
+              "threshold": 0.119991,
+              "left": {
+                "leaf": false,
+                "feature": 0,
+                "feature_name": "mean_depth",
+                "threshold": 6.519332,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.6,
+                    0.4,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.9939024390243902,
+                    0.006097560975609756,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            },
+            "right": {
+              "leaf": false,
+              "feature": 2,
+              "feature_name": "pre_monsoon",
+              "threshold": 11.708359,
+              "left": {
+                "leaf": false,
+                "feature": 3,
+                "feature_name": "post_monsoon",
+                "threshold": 8.035362,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.5102040816326531,
+                    0.30612244897959184,
+                    0.1836734693877551
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.08823529411764706,
+                    0.9117647058823529,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": false,
+                "feature": 1,
+                "feature_name": "drawdown_rate",
+                "threshold": 0.15291,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.946236559139785,
+                    0.053763440860215055,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "right": {
+        "leaf": true,
+        "value": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "leaf": false,
+      "feature": 0,
+      "feature_name": "mean_depth",
+      "threshold": 11.012812,
+      "left": {
+        "leaf": false,
+        "feature": 0,
+        "feature_name": "mean_depth",
+        "threshold": 6.500414,
+        "left": {
+          "leaf": false,
+          "feature": 1,
+          "feature_name": "drawdown_rate",
+          "threshold": 0.050623,
+          "left": {
+            "leaf": true,
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "right": {
+            "leaf": false,
+            "feature": 0,
+            "feature_name": "mean_depth",
+            "threshold": 3.220828,
+            "left": {
+              "leaf": false,
+              "feature": 0,
+              "feature_name": "mean_depth",
+              "threshold": 1.946694,
+              "left": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  0.25,
+                  0.75,
+                  0.0
+                ]
+              }
+            },
+            "right": {
+              "leaf": false,
+              "feature": 0,
+              "feature_name": "mean_depth",
+              "threshold": 5.799635,
+              "left": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": false,
+                "feature": 2,
+                "feature_name": "pre_monsoon",
+                "threshold": 8.010804,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.5,
+                    0.5,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 1,
+          "feature_name": "drawdown_rate",
+          "threshold": 0.151965,
+          "left": {
+            "leaf": false,
+            "feature": 3,
+            "feature_name": "post_monsoon",
+            "threshold": 7.07502,
+            "left": {
+              "leaf": false,
+              "feature": 1,
+              "feature_name": "drawdown_rate",
+              "threshold": 0.112308,
+              "left": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  0.3333333333333333,
+                  0.6666666666666666,
+                  0.0
+                ]
+              }
+            },
+            "right": {
+              "leaf": false,
+              "feature": 2,
+              "feature_name": "pre_monsoon",
+              "threshold": 10.813044,
+              "left": {
+                "leaf": false,
+                "feature": 1,
+                "feature_name": "drawdown_rate",
+                "threshold": -0.047164,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.2857142857142857,
+                    0.7142857142857143,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": false,
+                "feature": 2,
+                "feature_name": "pre_monsoon",
+                "threshold": 11.649999,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.6896551724137931,
+                    0.3103448275862069,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.941747572815534,
+                    0.05825242718446602,
+                    0.0
+                  ]
+                }
+              }
+            }
+          },
+          "right": {
+            "leaf": true,
+            "value": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      },
+      "right": {
+        "leaf": true,
+        "value": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "leaf": false,
+      "feature": 3,
+      "feature_name": "post_monsoon",
+      "threshold": 9.103639,
+      "left": {
+        "leaf": false,
+        "feature": 0,
+        "feature_name": "mean_depth",
+        "threshold": 6.502236,
+        "left": {
+          "leaf": false,
+          "feature": 1,
+          "feature_name": "drawdown_rate",
+          "threshold": 0.05021,
+          "left": {
+            "leaf": true,
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "right": {
+            "leaf": false,
+            "feature": 1,
+            "feature_name": "drawdown_rate",
+            "threshold": 0.092313,
+            "left": {
+              "leaf": true,
+              "value": [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ]
+            },
+            "right": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 3,
+          "feature_name": "post_monsoon",
+          "threshold": 6.898772,
+          "left": {
+            "leaf": false,
+            "feature": 1,
+            "feature_name": "drawdown_rate",
+            "threshold": 0.105588,
+            "left": {
+              "leaf": false,
+              "feature": 0,
+              "feature_name": "mean_depth",
+              "threshold": 8.133767,
+              "left": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "right": {
+                "leaf": false,
+                "feature": 2,
+                "feature_name": "pre_monsoon",
+                "threshold": 9.770955,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.5,
+                    0.5,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              }
+            },
+            "right": {
+              "leaf": false,
+              "feature": 2,
+              "feature_name": "pre_monsoon",
+              "threshold": 9.47597,
+              "left": {
+                "leaf": false,
+                "feature": 3,
+                "feature_name": "post_monsoon",
+                "threshold": 6.029386,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.3333333333333333,
+                    0.6666666666666666
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  0.5,
+                  0.0,
+                  0.5
+                ]
+              }
+            }
+          },
+          "right": {
+            "leaf": false,
+            "feature": 2,
+            "feature_name": "pre_monsoon",
+            "threshold": 10.452354,
+            "left": {
+              "leaf": false,
+              "feature": 3,
+              "feature_name": "post_monsoon",
+              "threshold": 7.157916,
+              "left": {
+                "leaf": false,
+                "feature": 3,
+                "feature_name": "post_monsoon",
+                "threshold": 7.106014,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.14285714285714285,
+                    0.8571428571428571,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": false,
+                "feature": 1,
+                "feature_name": "drawdown_rate",
+                "threshold": 0.028162,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.5,
+                    0.5
+                  ]
+                }
+              }
+            },
+            "right": {
+              "leaf": false,
+              "feature": 0,
+              "feature_name": "mean_depth",
+              "threshold": 11.030853,
+              "left": {
+                "leaf": false,
+                "feature": 2,
+                "feature_name": "pre_monsoon",
+                "threshold": 11.193019,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.6756756756756757,
+                    0.2972972972972973,
+                    0.02702702702702703
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.8928571428571429,
+                    0.05357142857142857,
+                    0.05357142857142857
+                  ]
+                }
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              }
+            }
+          }
+        }
+      },
+      "right": {
+        "leaf": false,
+        "feature": 3,
+        "feature_name": "post_monsoon",
+        "threshold": 9.872215,
+        "left": {
+          "leaf": false,
+          "feature": 0,
+          "feature_name": "mean_depth",
+          "threshold": 11.001558,
+          "left": {
+            "leaf": false,
+            "feature": 1,
+            "feature_name": "drawdown_rate",
+            "threshold": 0.080346,
+            "left": {
+              "leaf": false,
+              "feature": 0,
+              "feature_name": "mean_depth",
+              "threshold": 10.796841,
+              "left": {
+                "leaf": false,
+                "feature": 3,
+                "feature_name": "post_monsoon",
+                "threshold": 9.528377,
+                "left": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.2727272727272727,
+                    0.7272727272727273,
+                    0.0
+                  ]
+                },
+                "right": {
+                  "leaf": true,
+                  "value": [
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0
+                  ]
+                }
+              },
+              "right": {
+                "leaf": true,
+                "value": [
+                  0.0,
+                  0.6666666666666666,
+                  0.3333333333333333,
+                  0.0
+                ]
+              }
+            },
+            "right": {
+              "leaf": true,
+              "value": [
+                0.0,
+                0.6666666666666666,
+                0.0,
+                0.3333333333333333
+              ]
+            }
+          },
+          "right": {
+            "leaf": true,
+            "value": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 0,
+          "feature_name": "mean_depth",
+          "threshold": 10.976107,
+          "left": {
+            "leaf": true,
+            "value": [
+              0.0,
+              0.3333333333333333,
+              0.6666666666666666,
+              0.0
+            ]
+          },
+          "right": {
+            "leaf": true,
+            "value": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
