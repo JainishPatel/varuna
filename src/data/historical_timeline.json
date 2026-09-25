@@ -1,0 +1,2333 @@
+{
+  "years": [
+    "1995",
+    "2000",
+    "2005",
+    "2010",
+    "2015",
+    "2020",
+    "2025"
+  ],
+  "by_year": {
+    "1995": {
+      "Gandhinagar": {
+        "depth": 9.7,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Ahmedabad": {
+        "depth": 6.15,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Botad": {
+        "depth": 10.21,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Junagadh": {
+        "depth": 11.21,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Amreli": {
+        "depth": 12.67,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Vadodara": {
+        "depth": 13.52,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Chhota Udaipur": {
+        "depth": 7.05,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Narmada": {
+        "depth": 9.19,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Banaskantha": {
+        "depth": 9.85,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Navsari": {
+        "depth": 4.49,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Valsad": {
+        "depth": 5.36,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Bharuch": {
+        "depth": 8.81,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Bhavnagar": {
+        "depth": 10.41,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Dang": {
+        "depth": 4.01,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Devbhumi Dwarka": {
+        "depth": 11.28,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Jamnagar": {
+        "depth": 11.25,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Porbandar": {
+        "depth": 11.33,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Kachchh": {
+        "depth": 9.51,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Anand": {
+        "depth": 10.71,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Mahisagar": {
+        "depth": 7.81,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Kheda": {
+        "depth": 8.69,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Mahesana": {
+        "depth": 10.7,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Patan": {
+        "depth": 18.74,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Dohad": {
+        "depth": 4.78,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Panchmahals": {
+        "depth": 5.9,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Morbi": {
+        "depth": 7.95,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Rajkot": {
+        "depth": 8.0,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Aravalli": {
+        "depth": 9.46,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Sabarkantha": {
+        "depth": 12.67,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Surendranagar": {
+        "depth": 8.0,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Surat": {
+        "depth": 5.35,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Tapi": {
+        "depth": 5.3,
+        "category": "Safe",
+        "color": "#10b981"
+      }
+    },
+    "2000": {
+      "Gandhinagar": {
+        "depth": 9.86,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Ahmedabad": {
+        "depth": 7.68,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Botad": {
+        "depth": 9.13,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Junagadh": {
+        "depth": 12.39,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Amreli": {
+        "depth": 14.26,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Vadodara": {
+        "depth": 12.76,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Chhota Udaipur": {
+        "depth": 7.2,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Narmada": {
+        "depth": 8.16,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Banaskantha": {
+        "depth": 12.31,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Navsari": {
+        "depth": 4.78,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Valsad": {
+        "depth": 4.98,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Bharuch": {
+        "depth": 8.9,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Bhavnagar": {
+        "depth": 12.45,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Dang": {
+        "depth": 4.09,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Devbhumi Dwarka": {
+        "depth": 10.95,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Jamnagar": {
+        "depth": 11.99,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Porbandar": {
+        "depth": 11.63,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Kachchh": {
+        "depth": 9.49,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Anand": {
+        "depth": 10.25,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Mahisagar": {
+        "depth": 8.24,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Kheda": {
+        "depth": 8.59,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Mahesana": {
+        "depth": 11.92,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Patan": {
+        "depth": 19.3,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Dohad": {
+        "depth": 5.47,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Panchmahals": {
+        "depth": 6.3,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Morbi": {
+        "depth": 8.54,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Rajkot": {
+        "depth": 8.0,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Aravalli": {
+        "depth": 9.33,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Sabarkantha": {
+        "depth": 15.31,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Surendranagar": {
+        "depth": 9.45,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Surat": {
+        "depth": 4.98,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Tapi": {
+        "depth": 5.5,
+        "category": "Safe",
+        "color": "#10b981"
+      }
+    },
+    "2005": {
+      "Gandhinagar": {
+        "depth": 12.57,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Ahmedabad": {
+        "depth": 7.01,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Botad": {
+        "depth": 11.27,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Junagadh": {
+        "depth": 11.93,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Amreli": {
+        "depth": 13.82,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Vadodara": {
+        "depth": 13.42,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Chhota Udaipur": {
+        "depth": 7.81,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Narmada": {
+        "depth": 8.55,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Banaskantha": {
+        "depth": 15.44,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Navsari": {
+        "depth": 5.2,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Valsad": {
+        "depth": 5.57,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Bharuch": {
+        "depth": 8.61,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Bhavnagar": {
+        "depth": 10.91,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Dang": {
+        "depth": 4.56,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Devbhumi Dwarka": {
+        "depth": 11.32,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Jamnagar": {
+        "depth": 11.79,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Porbandar": {
+        "depth": 11.77,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Kachchh": {
+        "depth": 10.12,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Anand": {
+        "depth": 13.13,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Mahisagar": {
+        "depth": 10.73,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Kheda": {
+        "depth": 10.97,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Mahesana": {
+        "depth": 12.28,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Patan": {
+        "depth": 16.83,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Dohad": {
+        "depth": 6.19,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Panchmahals": {
+        "depth": 8.08,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Morbi": {
+        "depth": 8.72,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Rajkot": {
+        "depth": 8.0,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Aravalli": {
+        "depth": 12.69,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Sabarkantha": {
+        "depth": 15.62,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Surendranagar": {
+        "depth": 9.21,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Surat": {
+        "depth": 5.03,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Tapi": {
+        "depth": 5.75,
+        "category": "Safe",
+        "color": "#10b981"
+      }
+    },
+    "2010": {
+      "Gandhinagar": {
+        "depth": 11.43,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Ahmedabad": {
+        "depth": 3.95,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Botad": {
+        "depth": 9.11,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Junagadh": {
+        "depth": 8.48,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Amreli": {
+        "depth": 9.69,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Vadodara": {
+        "depth": 10.42,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Chhota Udaipur": {
+        "depth": 6.91,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Narmada": {
+        "depth": 7.19,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Banaskantha": {
+        "depth": 10.21,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Navsari": {
+        "depth": 4.51,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Valsad": {
+        "depth": 5.13,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Bharuch": {
+        "depth": 6.95,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Bhavnagar": {
+        "depth": 8.41,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Dang": {
+        "depth": 4.19,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Devbhumi Dwarka": {
+        "depth": 8.7,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Jamnagar": {
+        "depth": 8.54,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Porbandar": {
+        "depth": 7.34,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Kachchh": {
+        "depth": 9.05,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Anand": {
+        "depth": 9.97,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Mahisagar": {
+        "depth": 8.4,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Kheda": {
+        "depth": 7.82,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Mahesana": {
+        "depth": 9.05,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Patan": {
+        "depth": 12.96,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Dohad": {
+        "depth": 4.96,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Panchmahals": {
+        "depth": 5.93,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Morbi": {
+        "depth": 6.17,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Rajkot": {
+        "depth": 8.0,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Aravalli": {
+        "depth": 9.25,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Sabarkantha": {
+        "depth": 10.81,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Surendranagar": {
+        "depth": 5.84,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Surat": {
+        "depth": 4.25,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Tapi": {
+        "depth": 5.0,
+        "category": "Safe",
+        "color": "#10b981"
+      }
+    },
+    "2015": {
+      "Gandhinagar": {
+        "depth": 12.54,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Ahmedabad": {
+        "depth": 4.41,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Botad": {
+        "depth": 10.83,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Junagadh": {
+        "depth": 10.24,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Amreli": {
+        "depth": 12.68,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Vadodara": {
+        "depth": 8.56,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Chhota Udaipur": {
+        "depth": 7.1,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Narmada": {
+        "depth": 7.06,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Banaskantha": {
+        "depth": 10.15,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Navsari": {
+        "depth": 5.2,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Valsad": {
+        "depth": 5.65,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Bharuch": {
+        "depth": 6.55,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Bhavnagar": {
+        "depth": 10.24,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Dang": {
+        "depth": 4.64,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Devbhumi Dwarka": {
+        "depth": 9.52,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Jamnagar": {
+        "depth": 9.43,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Porbandar": {
+        "depth": 8.94,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Kachchh": {
+        "depth": 8.83,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Anand": {
+        "depth": 10.5,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Mahisagar": {
+        "depth": 8.28,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Kheda": {
+        "depth": 8.1,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Mahesana": {
+        "depth": 9.43,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Patan": {
+        "depth": 12.54,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Dohad": {
+        "depth": 5.13,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Panchmahals": {
+        "depth": 5.91,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Morbi": {
+        "depth": 6.6,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Rajkot": {
+        "depth": 8.0,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Aravalli": {
+        "depth": 9.26,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Sabarkantha": {
+        "depth": 10.86,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Surendranagar": {
+        "depth": 6.74,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Surat": {
+        "depth": 4.9,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Tapi": {
+        "depth": 5.98,
+        "category": "Safe",
+        "color": "#10b981"
+      }
+    },
+    "2020": {
+      "Gandhinagar": {
+        "depth": 14.9,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Ahmedabad": {
+        "depth": 5.08,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Botad": {
+        "depth": 9.11,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Junagadh": {
+        "depth": 10.05,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Amreli": {
+        "depth": 12.78,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Vadodara": {
+        "depth": 9.47,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Chhota Udaipur": {
+        "depth": 7.63,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Narmada": {
+        "depth": 8.01,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Banaskantha": {
+        "depth": 11.37,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Navsari": {
+        "depth": 5.77,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Valsad": {
+        "depth": 5.24,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Bharuch": {
+        "depth": 7.27,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Bhavnagar": {
+        "depth": 10.31,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Dang": {
+        "depth": 4.48,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Devbhumi Dwarka": {
+        "depth": 10.23,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Jamnagar": {
+        "depth": 11.25,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Porbandar": {
+        "depth": 14.46,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Kachchh": {
+        "depth": 10.56,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Anand": {
+        "depth": 11.45,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Mahisagar": {
+        "depth": 8.43,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Kheda": {
+        "depth": 7.02,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Mahesana": {
+        "depth": 10.06,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Patan": {
+        "depth": 12.25,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Dohad": {
+        "depth": 5.42,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Panchmahals": {
+        "depth": 6.76,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Morbi": {
+        "depth": 6.34,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Rajkot": {
+        "depth": 8.63,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Aravalli": {
+        "depth": 10.26,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Sabarkantha": {
+        "depth": 11.33,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Surendranagar": {
+        "depth": 6.93,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Surat": {
+        "depth": 5.25,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Tapi": {
+        "depth": 6.72,
+        "category": "Safe",
+        "color": "#10b981"
+      }
+    },
+    "2025": {
+      "Gandhinagar": {
+        "depth": 14.9,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Ahmedabad": {
+        "depth": 5.08,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Botad": {
+        "depth": 9.11,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Junagadh": {
+        "depth": 10.05,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Amreli": {
+        "depth": 12.78,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Vadodara": {
+        "depth": 9.47,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Chhota Udaipur": {
+        "depth": 7.63,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Narmada": {
+        "depth": 8.01,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Banaskantha": {
+        "depth": 11.37,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Navsari": {
+        "depth": 5.77,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Valsad": {
+        "depth": 5.24,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Bharuch": {
+        "depth": 7.27,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Bhavnagar": {
+        "depth": 10.31,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Dang": {
+        "depth": 4.48,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Devbhumi Dwarka": {
+        "depth": 10.23,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Jamnagar": {
+        "depth": 11.25,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Porbandar": {
+        "depth": 14.46,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Kachchh": {
+        "depth": 10.56,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Anand": {
+        "depth": 11.45,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Mahisagar": {
+        "depth": 8.43,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Kheda": {
+        "depth": 7.02,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Mahesana": {
+        "depth": 10.06,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Patan": {
+        "depth": 12.25,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "Dohad": {
+        "depth": 5.42,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Panchmahals": {
+        "depth": 6.76,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Morbi": {
+        "depth": 6.34,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Rajkot": {
+        "depth": 8.63,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "Aravalli": {
+        "depth": 10.26,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Sabarkantha": {
+        "depth": 11.33,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "Surendranagar": {
+        "depth": 6.93,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Surat": {
+        "depth": 5.25,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "Tapi": {
+        "depth": 6.72,
+        "category": "Safe",
+        "color": "#10b981"
+      }
+    }
+  },
+  "by_district": {
+    "Gandhinagar": {
+      "1995": {
+        "depth": 9.7,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2000": {
+        "depth": 9.86,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2005": {
+        "depth": 12.57,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2010": {
+        "depth": 11.43,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2015": {
+        "depth": 12.54,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2020": {
+        "depth": 14.9,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2025": {
+        "depth": 14.9,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      }
+    },
+    "Ahmedabad": {
+      "1995": {
+        "depth": 6.15,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2000": {
+        "depth": 7.68,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2005": {
+        "depth": 7.01,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2010": {
+        "depth": 3.95,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2015": {
+        "depth": 4.41,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2020": {
+        "depth": 5.08,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2025": {
+        "depth": 5.08,
+        "category": "Safe",
+        "color": "#10b981"
+      }
+    },
+    "Botad": {
+      "1995": {
+        "depth": 10.21,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2000": {
+        "depth": 9.13,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2005": {
+        "depth": 11.27,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2010": {
+        "depth": 9.11,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2015": {
+        "depth": 10.83,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2020": {
+        "depth": 9.11,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2025": {
+        "depth": 9.11,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      }
+    },
+    "Junagadh": {
+      "1995": {
+        "depth": 11.21,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2000": {
+        "depth": 12.39,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2005": {
+        "depth": 11.93,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2010": {
+        "depth": 8.48,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2015": {
+        "depth": 10.24,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2020": {
+        "depth": 10.05,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2025": {
+        "depth": 10.05,
+        "category": "Critical",
+        "color": "#f97316"
+      }
+    },
+    "Amreli": {
+      "1995": {
+        "depth": 12.67,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2000": {
+        "depth": 14.26,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2005": {
+        "depth": 13.82,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2010": {
+        "depth": 9.69,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2015": {
+        "depth": 12.68,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2020": {
+        "depth": 12.78,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2025": {
+        "depth": 12.78,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      }
+    },
+    "Vadodara": {
+      "1995": {
+        "depth": 13.52,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2000": {
+        "depth": 12.76,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2005": {
+        "depth": 13.42,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2010": {
+        "depth": 10.42,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2015": {
+        "depth": 8.56,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2020": {
+        "depth": 9.47,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2025": {
+        "depth": 9.47,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      }
+    },
+    "Chhota Udaipur": {
+      "1995": {
+        "depth": 7.05,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2000": {
+        "depth": 7.2,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2005": {
+        "depth": 7.81,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2010": {
+        "depth": 6.91,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2015": {
+        "depth": 7.1,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2020": {
+        "depth": 7.63,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2025": {
+        "depth": 7.63,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      }
+    },
+    "Narmada": {
+      "1995": {
+        "depth": 9.19,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2000": {
+        "depth": 8.16,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2005": {
+        "depth": 8.55,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2010": {
+        "depth": 7.19,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2015": {
+        "depth": 7.06,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2020": {
+        "depth": 8.01,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2025": {
+        "depth": 8.01,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      }
+    },
+    "Banaskantha": {
+      "1995": {
+        "depth": 9.85,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2000": {
+        "depth": 12.31,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2005": {
+        "depth": 15.44,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2010": {
+        "depth": 10.21,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2015": {
+        "depth": 10.15,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2020": {
+        "depth": 11.37,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2025": {
+        "depth": 11.37,
+        "category": "Critical",
+        "color": "#f97316"
+      }
+    },
+    "Navsari": {
+      "1995": {
+        "depth": 4.49,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2000": {
+        "depth": 4.78,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2005": {
+        "depth": 5.2,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2010": {
+        "depth": 4.51,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2015": {
+        "depth": 5.2,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2020": {
+        "depth": 5.77,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2025": {
+        "depth": 5.77,
+        "category": "Safe",
+        "color": "#10b981"
+      }
+    },
+    "Valsad": {
+      "1995": {
+        "depth": 5.36,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2000": {
+        "depth": 4.98,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2005": {
+        "depth": 5.57,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2010": {
+        "depth": 5.13,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2015": {
+        "depth": 5.65,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2020": {
+        "depth": 5.24,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2025": {
+        "depth": 5.24,
+        "category": "Safe",
+        "color": "#10b981"
+      }
+    },
+    "Bharuch": {
+      "1995": {
+        "depth": 8.81,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2000": {
+        "depth": 8.9,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2005": {
+        "depth": 8.61,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2010": {
+        "depth": 6.95,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2015": {
+        "depth": 6.55,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2020": {
+        "depth": 7.27,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2025": {
+        "depth": 7.27,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      }
+    },
+    "Bhavnagar": {
+      "1995": {
+        "depth": 10.41,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2000": {
+        "depth": 12.45,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2005": {
+        "depth": 10.91,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2010": {
+        "depth": 8.41,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2015": {
+        "depth": 10.24,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2020": {
+        "depth": 10.31,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2025": {
+        "depth": 10.31,
+        "category": "Critical",
+        "color": "#f97316"
+      }
+    },
+    "Dang": {
+      "1995": {
+        "depth": 4.01,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2000": {
+        "depth": 4.09,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2005": {
+        "depth": 4.56,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2010": {
+        "depth": 4.19,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2015": {
+        "depth": 4.64,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2020": {
+        "depth": 4.48,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2025": {
+        "depth": 4.48,
+        "category": "Safe",
+        "color": "#10b981"
+      }
+    },
+    "Devbhumi Dwarka": {
+      "1995": {
+        "depth": 11.28,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2000": {
+        "depth": 10.95,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2005": {
+        "depth": 11.32,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2010": {
+        "depth": 8.7,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2015": {
+        "depth": 9.52,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2020": {
+        "depth": 10.23,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2025": {
+        "depth": 10.23,
+        "category": "Critical",
+        "color": "#f97316"
+      }
+    },
+    "Jamnagar": {
+      "1995": {
+        "depth": 11.25,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2000": {
+        "depth": 11.99,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2005": {
+        "depth": 11.79,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2010": {
+        "depth": 8.54,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2015": {
+        "depth": 9.43,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2020": {
+        "depth": 11.25,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2025": {
+        "depth": 11.25,
+        "category": "Critical",
+        "color": "#f97316"
+      }
+    },
+    "Porbandar": {
+      "1995": {
+        "depth": 11.33,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2000": {
+        "depth": 11.63,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2005": {
+        "depth": 11.77,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2010": {
+        "depth": 7.34,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2015": {
+        "depth": 8.94,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2020": {
+        "depth": 14.46,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2025": {
+        "depth": 14.46,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      }
+    },
+    "Kachchh": {
+      "1995": {
+        "depth": 9.51,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2000": {
+        "depth": 9.49,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2005": {
+        "depth": 10.12,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2010": {
+        "depth": 9.05,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2015": {
+        "depth": 8.83,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2020": {
+        "depth": 10.56,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2025": {
+        "depth": 10.56,
+        "category": "Critical",
+        "color": "#f97316"
+      }
+    },
+    "Anand": {
+      "1995": {
+        "depth": 10.71,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2000": {
+        "depth": 10.25,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2005": {
+        "depth": 13.13,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2010": {
+        "depth": 9.97,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2015": {
+        "depth": 10.5,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2020": {
+        "depth": 11.45,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2025": {
+        "depth": 11.45,
+        "category": "Critical",
+        "color": "#f97316"
+      }
+    },
+    "Mahisagar": {
+      "1995": {
+        "depth": 7.81,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2000": {
+        "depth": 8.24,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2005": {
+        "depth": 10.73,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2010": {
+        "depth": 8.4,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2015": {
+        "depth": 8.28,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2020": {
+        "depth": 8.43,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2025": {
+        "depth": 8.43,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      }
+    },
+    "Kheda": {
+      "1995": {
+        "depth": 8.69,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2000": {
+        "depth": 8.59,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2005": {
+        "depth": 10.97,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2010": {
+        "depth": 7.82,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2015": {
+        "depth": 8.1,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2020": {
+        "depth": 7.02,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2025": {
+        "depth": 7.02,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      }
+    },
+    "Mahesana": {
+      "1995": {
+        "depth": 10.7,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2000": {
+        "depth": 11.92,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2005": {
+        "depth": 12.28,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2010": {
+        "depth": 9.05,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2015": {
+        "depth": 9.43,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2020": {
+        "depth": 10.06,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2025": {
+        "depth": 10.06,
+        "category": "Critical",
+        "color": "#f97316"
+      }
+    },
+    "Patan": {
+      "1995": {
+        "depth": 18.74,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2000": {
+        "depth": 19.3,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2005": {
+        "depth": 16.83,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2010": {
+        "depth": 12.96,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2015": {
+        "depth": 12.54,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2020": {
+        "depth": 12.25,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2025": {
+        "depth": 12.25,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      }
+    },
+    "Dohad": {
+      "1995": {
+        "depth": 4.78,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2000": {
+        "depth": 5.47,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2005": {
+        "depth": 6.19,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2010": {
+        "depth": 4.96,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2015": {
+        "depth": 5.13,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2020": {
+        "depth": 5.42,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2025": {
+        "depth": 5.42,
+        "category": "Safe",
+        "color": "#10b981"
+      }
+    },
+    "Panchmahals": {
+      "1995": {
+        "depth": 5.9,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2000": {
+        "depth": 6.3,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2005": {
+        "depth": 8.08,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2010": {
+        "depth": 5.93,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2015": {
+        "depth": 5.91,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2020": {
+        "depth": 6.76,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2025": {
+        "depth": 6.76,
+        "category": "Safe",
+        "color": "#10b981"
+      }
+    },
+    "Morbi": {
+      "1995": {
+        "depth": 7.95,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2000": {
+        "depth": 8.54,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2005": {
+        "depth": 8.72,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2010": {
+        "depth": 6.17,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2015": {
+        "depth": 6.6,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2020": {
+        "depth": 6.34,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2025": {
+        "depth": 6.34,
+        "category": "Safe",
+        "color": "#10b981"
+      }
+    },
+    "Rajkot": {
+      "1995": {
+        "depth": 8.0,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2000": {
+        "depth": 8.0,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2005": {
+        "depth": 8.0,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2010": {
+        "depth": 8.0,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2015": {
+        "depth": 8.0,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2020": {
+        "depth": 8.63,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2025": {
+        "depth": 8.63,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      }
+    },
+    "Aravalli": {
+      "1995": {
+        "depth": 9.46,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2000": {
+        "depth": 9.33,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2005": {
+        "depth": 12.69,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2010": {
+        "depth": 9.25,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2015": {
+        "depth": 9.26,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2020": {
+        "depth": 10.26,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2025": {
+        "depth": 10.26,
+        "category": "Critical",
+        "color": "#f97316"
+      }
+    },
+    "Sabarkantha": {
+      "1995": {
+        "depth": 12.67,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2000": {
+        "depth": 15.31,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2005": {
+        "depth": 15.62,
+        "category": "Over-Exploited",
+        "color": "#ef4444"
+      },
+      "2010": {
+        "depth": 10.81,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2015": {
+        "depth": 10.86,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2020": {
+        "depth": 11.33,
+        "category": "Critical",
+        "color": "#f97316"
+      },
+      "2025": {
+        "depth": 11.33,
+        "category": "Critical",
+        "color": "#f97316"
+      }
+    },
+    "Surendranagar": {
+      "1995": {
+        "depth": 8.0,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2000": {
+        "depth": 9.45,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2005": {
+        "depth": 9.21,
+        "category": "Semi-Critical",
+        "color": "#f59e0b"
+      },
+      "2010": {
+        "depth": 5.84,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2015": {
+        "depth": 6.74,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2020": {
+        "depth": 6.93,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2025": {
+        "depth": 6.93,
+        "category": "Safe",
+        "color": "#10b981"
+      }
+    },
+    "Surat": {
+      "1995": {
+        "depth": 5.35,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2000": {
+        "depth": 4.98,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2005": {
+        "depth": 5.03,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2010": {
+        "depth": 4.25,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2015": {
+        "depth": 4.9,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2020": {
+        "depth": 5.25,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2025": {
+        "depth": 5.25,
+        "category": "Safe",
+        "color": "#10b981"
+      }
+    },
+    "Tapi": {
+      "1995": {
+        "depth": 5.3,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2000": {
+        "depth": 5.5,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2005": {
+        "depth": 5.75,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2010": {
+        "depth": 5.0,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2015": {
+        "depth": 5.98,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2020": {
+        "depth": 6.72,
+        "category": "Safe",
+        "color": "#10b981"
+      },
+      "2025": {
+        "depth": 6.72,
+        "category": "Safe",
+        "color": "#10b981"
+      }
+    }
+  }
+}

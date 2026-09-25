@@ -1,31 +1,36 @@
 import React, { useState, useMemo } from 'react';
 import { useAuth } from './contexts/AuthContext';
 import LoginPage from './components/LoginPage';
-import Header from './components/Header';
+import Sidebar from './components/Sidebar';
+import TopBar from './components/TopBar';
+import CrisisPage from './components/CrisisPage';
+import DiagnoseHub from './components/DiagnoseHub';
 import ScenarioBuilder from './components/ScenarioBuilder';
-import SpatialMap from './components/SpatialMap';
-import AnalyticsPanel from './components/AnalyticsPanel';
-import DistrictRankings from './components/DistrictRankings';
+import CropTransitionLab from './components/CropTransitionLab';
+import StressTestLab from './components/StressTestLab';
+import ScenarioStudio from './components/ScenarioStudio';
+import DistrictDossier from './components/DistrictDossier';
 import MethodologyTab from './components/MethodologyTab';
-import ExecutiveReport from './components/ExecutiveReport';
 import DataExplorer from './components/DataExplorer';
 import UserManagement from './components/UserManagement';
 
-// Import processed dataset JSONs
+// Processed dataset JSONs
 import groundwaterData from './data/groundwater_summary.json';
 import marketPrices from './data/market_prices.json';
 import cropApy from './data/crop_apy.json';
 import gujaratDistrictsGeoJSON from './data/gujarat_districts.json';
 
-// Import Engine
+// Simulation Engine
 import { calculateSimulation } from './utils/simulationEngine.js';
 
 export default function App() {
   const { currentUser, isLoading } = useAuth();
 
-  const [activeTab, setActiveTab] = useState('scenario');
+  // Navigation: page-based instead of tabs
+  const [activePage, setActivePage] = useState('crisis');
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [selectedDistrict, setSelectedDistrict] = useState('ALL');
-  
+
   // Baseline crop allocation percentages (%)
   const baselineAllocations = {
     'Cotton': 40.0,
@@ -36,6 +41,7 @@ export default function App() {
 
   const [cropAllocations, setCropAllocations] = useState(baselineAllocations);
   const [sowingShift, setSowingShift] = useState(0);
+  const [microIrrigationAdoption, setMicroIrrigationAdoption] = useState(0);
   const [activePreset, setActivePreset] = useState('baseline');
 
   const districts = useMemo(() => Object.keys(groundwaterData || {}), []);
@@ -45,6 +51,7 @@ export default function App() {
     if (presetKey === 'baseline') {
       setCropAllocations(baselineAllocations);
       setSowingShift(0);
+      setMicroIrrigationAdoption(0);
     } else if (presetKey === 'bajra_swap') {
       setCropAllocations({
         'Cotton': 20.0,
@@ -53,6 +60,16 @@ export default function App() {
         'Pearl Millet (Bajra)': 40.0
       });
       setSowingShift(15);
+      setMicroIrrigationAdoption(20);
+    } else if (presetKey === 'high_drip') {
+      setCropAllocations({
+        'Cotton': 35.0,
+        'Groundnut': 30.0,
+        'Wheat': 20.0,
+        'Pearl Millet (Bajra)': 15.0
+      });
+      setSowingShift(10);
+      setMicroIrrigationAdoption(50);
     } else if (presetKey === 'gw_rescue') {
       setCropAllocations({
         'Cotton': 10.0,
@@ -61,6 +78,7 @@ export default function App() {
         'Pearl Millet (Bajra)': 55.0
       });
       setSowingShift(20);
+      setMicroIrrigationAdoption(40);
     } else if (presetKey === 'max_revenue') {
       setCropAllocations({
         'Cotton': 50.0,
@@ -69,6 +87,7 @@ export default function App() {
         'Pearl Millet (Bajra)': 5.0
       });
       setSowingShift(0);
+      setMicroIrrigationAdoption(15);
     }
   };
 
@@ -76,11 +95,7 @@ export default function App() {
     applyPreset('baseline');
   };
 
-  const handleSelectDistrictFromRankings = (districtName) => {
-    setSelectedDistrict(districtName);
-    setActiveTab('scenario');
-  };
-
+  // Run full hydro-economic & WEF nexus simulation
   const simulationResults = useMemo(() => {
     return calculateSimulation(
       cropAllocations,
@@ -89,9 +104,10 @@ export default function App() {
       baselineAllocations,
       marketPrices,
       cropApy,
-      groundwaterData
+      groundwaterData,
+      microIrrigationAdoption
     );
-  }, [cropAllocations, sowingShift, selectedDistrict]);
+  }, [cropAllocations, sowingShift, selectedDistrict, microIrrigationAdoption]);
 
   const handleExportReport = () => {
     window.print();
@@ -100,10 +116,12 @@ export default function App() {
   // Loading state
   if (isLoading) {
     return (
-      <div className="h-screen flex items-center justify-center bg-[#fdfbf7]">
-        <div className="flex flex-col items-center gap-3">
-          <div className="w-8 h-8 border-2 border-emerald-600 border-t-transparent rounded-full animate-spin" />
-          <p className="text-xs text-slate-500 font-bold">Loading Varuna Engine...</p>
+      <div className="loading-screen">
+        <div className="loading-screen__inner">
+          <div className="loading-screen__spinner" />
+          <p className="loading-screen__text">
+            INITIALIZING VARUNA ENGINE...
+          </p>
         </div>
       </div>
     );
@@ -115,27 +133,67 @@ export default function App() {
   }
 
   return (
-    <div className="h-screen flex flex-col bg-[#fdfbf7] text-slate-800 font-sans overflow-hidden">
-      {/* Header */}
-      <Header
-        activeTab={activeTab}
-        setActiveTab={setActiveTab}
-        selectedDistrict={selectedDistrict}
-        setSelectedDistrict={setSelectedDistrict}
-        districts={districts}
-        onResetScenario={resetScenario}
-        onExportReport={handleExportReport}
+    <div className="app-shell">
+      {/* Sidebar Navigation */}
+      <Sidebar
+        activePage={activePage}
+        setActivePage={setActivePage}
+        collapsed={sidebarCollapsed}
+        setCollapsed={setSidebarCollapsed}
       />
 
-      {/* Main Content — fills remaining height */}
-      <main className="flex-1 overflow-y-auto">
-        {activeTab === 'scenario' && (
-          <div className="p-4 lg:p-6 animate-fadeInUp">
+      {/* Main Content Area */}
+      <main className={`app-main ${sidebarCollapsed ? 'app-main--expanded' : ''}`}>
+        {/* Global Persistent TopBar */}
+        <TopBar
+          activePage={activePage}
+          setActivePage={setActivePage}
+          selectedDistrict={selectedDistrict}
+          setSelectedDistrict={setSelectedDistrict}
+          groundwaterData={groundwaterData}
+          activePreset={activePreset}
+          applyPreset={applyPreset}
+          simulationResults={simulationResults}
+          onExportReport={handleExportReport}
+          onResetScenario={resetScenario}
+        />
+
+        {/* Page: The Crisis */}
+        {activePage === 'crisis' && (
+          <CrisisPage
+            groundwaterData={groundwaterData}
+            onNavigateToMap={() => setActivePage('map')}
+            onNavigateToCropLab={() => setActivePage('croplab')}
+            onNavigateToStressTest={() => setActivePage('stresstest')}
+            onSelectDistrict={(d) => setSelectedDistrict(d)}
+          />
+        )}
+
+        {/* Page: Spatial Intelligence (Map) */}
+        {activePage === 'map' && (
+          <div className="page-container page-container--flush">
+            <DiagnoseHub
+              geojson={gujaratDistrictsGeoJSON}
+              groundwaterData={groundwaterData}
+              selectedDistrict={selectedDistrict}
+              setSelectedDistrict={setSelectedDistrict}
+              simulatedDistricts={simulationResults.simulatedDistricts}
+              cropApy={cropApy}
+              onNavigateToSimulate={() => setActivePage('simulate')}
+            />
+          </div>
+        )}
+
+        {/* Page: Simulation Lab */}
+        {activePage === 'simulate' && (
+          <div className="page-container">
             <ScenarioBuilder
               cropAllocations={cropAllocations}
               setCropAllocations={setCropAllocations}
               sowingShift={sowingShift}
               setSowingShift={setSowingShift}
+              microIrrigationAdoption={microIrrigationAdoption}
+              setMicroIrrigationAdoption={setMicroIrrigationAdoption}
               activePreset={activePreset}
               applyPreset={applyPreset}
               simulationResults={simulationResults}
@@ -144,57 +202,73 @@ export default function App() {
               marketPrices={marketPrices}
               cropApy={cropApy}
               groundwaterData={groundwaterData}
+              onNavigateToNexus={() => setActivePage('impact')}
             />
           </div>
         )}
 
-        {activeTab === 'map' && (
-          <div className="h-full">
-            <SpatialMap
-              geojson={gujaratDistrictsGeoJSON}
+        {/* Page: Crop Economics & Transition Lab */}
+        {activePage === 'croplab' && (
+          <div className="page-container">
+            <CropTransitionLab
               groundwaterData={groundwaterData}
               selectedDistrict={selectedDistrict}
               setSelectedDistrict={setSelectedDistrict}
-              simulatedDistricts={simulationResults.simulatedDistricts}
+              marketPrices={marketPrices}
               cropApy={cropApy}
+              onNavigateToSimulate={() => setActivePage('simulate')}
             />
           </div>
         )}
 
-        {activeTab === 'analytics' && (
-          <div className="p-4 lg:p-6 animate-fadeInUp">
-            <AnalyticsPanel
+        {/* Page: Aquifer Stress Lab & Day Zero Simulator */}
+        {activePage === 'stresstest' && (
+          <div className="page-container">
+            <StressTestLab
+              groundwaterData={groundwaterData}
+              selectedDistrict={selectedDistrict}
+              setSelectedDistrict={setSelectedDistrict}
+              onNavigateToSimulate={() => setActivePage('simulate')}
+              onNavigateToCropLab={() => setActivePage('croplab')}
+            />
+          </div>
+        )}
+
+        {/* Page: Impact Analysis */}
+        {activePage === 'impact' && (
+          <div className="page-container">
+            <ScenarioStudio
               simulationResults={simulationResults}
               selectedDistrict={selectedDistrict}
               marketPrices={marketPrices}
               cropAllocations={cropAllocations}
               sowingShift={sowingShift}
+              microIrrigationAdoption={microIrrigationAdoption}
               groundwaterData={groundwaterData}
+              onNavigateToDossier={() => setActivePage('dossier')}
             />
           </div>
         )}
 
-        {activeTab === 'rankings' && (
-          <div className="p-4 lg:p-6 animate-fadeInUp">
-            <DistrictRankings onSelectDistrict={handleSelectDistrictFromRankings} />
+        {/* Page: Policy Brief */}
+        {activePage === 'dossier' && (
+          <div className="page-container">
+            <DistrictDossier
+              selectedDistrict={selectedDistrict}
+              simulationResults={simulationResults}
+              cropAllocations={cropAllocations}
+              sowingShift={sowingShift}
+              microIrrigationAdoption={microIrrigationAdoption}
+              groundwaterData={groundwaterData}
+              onExportReport={handleExportReport}
+            />
           </div>
         )}
 
-        {activeTab === 'methodology' && (
-          <div className="p-4 lg:p-6 animate-fadeInUp">
-            <MethodologyTab />
-          </div>
-        )}
-
-        {activeTab === 'report' && (
-          <div className="p-4 lg:p-6 animate-fadeInUp">
-            <ExecutiveReport onExportReport={handleExportReport} />
-          </div>
-        )}
-
-        {activeTab === 'explorer' && (
-          <div className="p-4 lg:p-6 animate-fadeInUp">
-            <DataExplorer
+        {/* Page: Methodology & Data */}
+        {activePage === 'reference' && (
+          <div className="page-container">
+            <ReferenceSection
               groundwaterData={groundwaterData}
               marketPrices={marketPrices}
               cropApy={cropApy}
@@ -202,12 +276,52 @@ export default function App() {
           </div>
         )}
 
-        {activeTab === 'users' && (
-          <div className="p-4 lg:p-6 animate-fadeInUp">
+        {/* Page: User Management */}
+        {activePage === 'users' && (
+          <div className="page-container">
             <UserManagement />
           </div>
         )}
       </main>
+    </div>
+  );
+}
+
+// Combined Methodology + Data Explorer in tabbed view
+function ReferenceSection({ groundwaterData, marketPrices, cropApy }) {
+  const [activeRefTab, setActiveRefTab] = useState('methodology');
+
+  return (
+    <div className="reference-section">
+      <div className="reference-section__header">
+        <h1 className="reference-section__title">Methodology & Data Reference</h1>
+        <p className="reference-section__subtitle">
+          Technical documentation of the FAO-56 Penman-Monteith engine and complete telemetry data inventory.
+        </p>
+        <div className="reference-section__tabs">
+          <button
+            onClick={() => setActiveRefTab('methodology')}
+            className={`reference-section__tab ${activeRefTab === 'methodology' ? 'reference-section__tab--active' : ''}`}
+          >
+            Methodology & Physics
+          </button>
+          <button
+            onClick={() => setActiveRefTab('data')}
+            className={`reference-section__tab ${activeRefTab === 'data' ? 'reference-section__tab--active' : ''}`}
+          >
+            Data Inventory
+          </button>
+        </div>
+      </div>
+
+      {activeRefTab === 'methodology' && <MethodologyTab />}
+      {activeRefTab === 'data' && (
+        <DataExplorer
+          groundwaterData={groundwaterData}
+          marketPrices={marketPrices}
+          cropApy={cropApy}
+        />
+      )}
     </div>
   );
 }

@@ -183,23 +183,23 @@ export default function DistrictRankings({ onSelectDistrict }) {
                   <td className="font-bold text-slate-900">
                     <button
                       onClick={() => onSelectDistrict && onSelectDistrict(item.district)}
-                      className="hover:text-emerald-700 transition-colors text-left font-bold"
+                      className="hover:text-emerald-700 transition-colors text-left font-bold text-sm"
                     >
                       {item.district}
                     </button>
-                    <div className="text-[10px] text-slate-400 font-normal font-mono">{item.stationsCount} wells logged</div>
+                    <div className="text-xs text-slate-500 font-medium font-mono">{item.stationsCount} wells logged</div>
                   </td>
                   <td>
                     <span
-                      className="px-2.5 py-0.5 rounded text-[10px] font-bold border"
-                      style={{ borderColor: `${item.riskColor}40`, color: item.riskColor, backgroundColor: `${item.riskColor}15` }}
+                      className="v-badge text-xs font-extrabold border"
+                      style={{ borderColor: `${item.riskColor}60`, color: item.riskColor, backgroundColor: `${item.riskColor}18` }}
                     >
                       {item.category}
                     </span>
                   </td>
-                  <td className="font-mono font-semibold text-slate-800">{item.meanDepth} m bgl</td>
-                  <td className="font-mono font-bold text-rose-700">+{item.drawdown} m/yr</td>
-                  <td className="font-mono text-slate-700">{item.cottonRatio}%</td>
+                  <td className="font-mono font-bold text-slate-900 text-xs">{item.meanDepth} m bgl</td>
+                  <td className="font-mono font-extrabold text-rose-700 text-xs">+{item.drawdown} m/yr</td>
+                  <td className="font-mono font-bold text-slate-800 text-xs">{item.cottonRatio}%</td>
                   <td>
                     <div className="flex items-center gap-2">
                       <div className="w-16 bg-slate-100 rounded-full h-2 overflow-hidden border border-slate-200">

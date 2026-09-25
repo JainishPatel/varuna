@@ -4,12 +4,13 @@ export function roundVal(val) {
 
 export function calculateSimulation(
   cropAllocations,
-  sowingShift,
-  selectedDistrict,
+  sowingShift = 0,
+  selectedDistrict = 'ALL',
   baselineAllocations,
   marketPrices,
   cropApy,
-  groundwaterData
+  groundwaterData,
+  microIrrigationAdoption = 0 // 0 to 100%
 ) {
   let baselineWaterDemandPerHa = 0;
   let simulatedWaterDemandPerHa = 0;
@@ -18,11 +19,19 @@ export function calculateSimulation(
   let simulatedRevenuePerHa = 0;
 
   const cropColors = {
-    'Cotton': '#3b82f6', // blue-500
-    'Groundnut': '#6366f1', // indigo-500
-    'Wheat': '#8b5cf6', // violet-500
-    'Pearl Millet (Bajra)': '#06b6d4' // cyan-500
+    'Cotton': '#2563eb', // blue-600
+    'Groundnut': '#7c3aed', // violet-600
+    'Wheat': '#d97706', // amber-600
+    'Pearl Millet (Bajra)': '#16a34a' // emerald-600
   };
+
+  // Micro-irrigation efficiency factor:
+  // Baseline flood irrigation has ~45% application efficiency.
+  // Drip achieves ~85% application efficiency.
+  // Net water requirement drops by up to 35% at 100% drip adoption.
+  const dripWaterSavingsFactor = 1.0 - (Math.min(100, Math.max(0, microIrrigationAdoption)) / 100.0) * 0.35;
+  // Drip fertigation yields a slight 5-8% boost in productivity.
+  const dripYieldBoost = 1.0 + (Math.min(100, Math.max(0, microIrrigationAdoption)) / 100.0) * 0.06;
 
   const breakdown = [];
 
@@ -31,25 +40,26 @@ export function calculateSimulation(
     const baseShare = baselineAllocations[crop] || 25;
 
     const waterPerHa = priceMeta.water_req_m3_ha;
+    // Sowing shift efficiency (aligning vegetative peak with monsoon)
     const shiftEfficiency = 1.0 - (Math.abs(sowingShift) * 0.002);
     
     baselineWaterDemandPerHa += (baseShare / 100.0) * waterPerHa;
-    simulatedWaterDemandPerHa += (sharePercent / 100.0) * (waterPerHa * shiftEfficiency);
+    simulatedWaterDemandPerHa += (sharePercent / 100.0) * (waterPerHa * shiftEfficiency * dripWaterSavingsFactor);
 
     const avgYields = { 'Cotton': 680, 'Groundnut': 2150, 'Wheat': 2850, 'Pearl Millet (Bajra)': 1950 };
-    const yieldKgHa = avgYields[crop] || 2000;
+    const yieldKgHa = (avgYields[crop] || 2000) * dripYieldBoost;
     const pricePerKg = priceMeta.price_per_kg || 25;
 
     const grossRevHa = (yieldKgHa * pricePerKg);
-    baselineRevenuePerHa += (baseShare / 100.0) * grossRevHa;
+    baselineRevenuePerHa += (baseShare / 100.0) * (avgYields[crop] || 2000) * pricePerKg;
     simulatedRevenuePerHa += (sharePercent / 100.0) * grossRevHa;
 
     breakdown.push({
       name: crop,
       share: sharePercent,
-      waterReq: Math.round(waterPerHa * shiftEfficiency),
+      waterReq: Math.round(waterPerHa * shiftEfficiency * dripWaterSavingsFactor),
       mandiPrice: priceMeta.mandi_price_per_quintal || 2500,
-      grossRevenue: grossRevHa,
+      grossRevenue: Math.round(grossRevHa),
       color: cropColors[crop] || '#0284c7'
     });
   });
@@ -74,6 +84,7 @@ export function calculateSimulation(
   const simulatedVolumetricMCM = (simulatedWaterDemandPerHa * totalAgriHectares) / 1000000.0;
   const waterSavedMCM = Math.max(0, baselineVolumetricMCM - simulatedVolumetricMCM);
   const waterSavedPercent = baselineVolumetricMCM > 0 ? (waterSavedMCM / baselineVolumetricMCM) * 100.0 : 0;
+  const waterSavedM3 = waterSavedMCM * 1000000.0;
 
   const baselineTotalRupees = baselineRevenuePerHa * totalAgriHectares;
   const simulatedTotalRupees = simulatedRevenuePerHa * totalAgriHectares;
@@ -81,6 +92,33 @@ export function calculateSimulation(
   const revenueChangeCrores = revenueChangeRupees / 10000000.0;
   const revenueChangePercent = baselineTotalRupees > 0 ? (revenueChangeRupees / baselineTotalRupees) * 100.0 : 0;
 
+  // Farmer Transition Subsidy & Incentive Calculations
+  const farmerRevenueGapRupees = Math.max(0, baselineTotalRupees - simulatedTotalRupees);
+  const farmerRevenueGapCrores = farmerRevenueGapRupees / 10000000.0;
+  const subsidyPerHectare = totalAgriHectares > 0 ? Math.round(farmerRevenueGapRupees / totalAgriHectares) : 0;
+  
+  // Cost per m3 of water saved (in Rs/m3)
+  const costPerM3Saved = waterSavedM3 > 0 ? roundVal(farmerRevenueGapRupees / waterSavedM3) : 0;
+
+  // Water-Energy-Food (WEF) Nexus Calculations:
+  // Submersible deep-well pumping electricity consumption
+  const baseDist = selectedDistrict === 'ALL' ? groundwaterData['Banaskantha'] : (groundwaterData[selectedDistrict] || groundwaterData['Banaskantha']);
+  const meanDepth = baseDist ? baseDist.mean_depth : 12.5;
+  const totalPumpingHeadMeters = meanDepth + 15.0; // Dynamic head + surface discharge pressure
+
+  // Physics: Energy (kWh) = (Volume_m3 * Head_m * 9.81) / (3600 * pump_efficiency 0.50)
+  // ~ Volume_m3 * Head_m * 0.00545 kWh
+  const energySavedKWh = waterSavedM3 * totalPumpingHeadMeters * 0.00545;
+  const energySavedMWh = roundVal(energySavedKWh / 1000.0);
+  const energySavedGWh = roundVal(energySavedKWh / 1000000.0);
+
+  // Gujarat state power subsidy savings (GUVNL subsidizes ~Rs 6.40 per kWh of agricultural power)
+  const powerSubsidySavedCrores = roundVal((energySavedKWh * 6.40) / 10000000.0);
+
+  // Carbon emissions avoided (Western India grid factor ~0.82 kg CO2 / kWh)
+  const avoidedCarbonTons = roundVal((energySavedKWh * 0.82) / 1000.0);
+
+  // Simulated Districts Map & Choropleth
   const simulatedDistricts = {};
   Object.entries(groundwaterData).forEach(([dist, gw]) => {
     const originalDepth = gw.mean_depth;
@@ -115,8 +153,7 @@ export function calculateSimulation(
     };
   });
 
-  const baseDist = selectedDistrict === 'ALL' ? groundwaterData['Banaskantha'] : (groundwaterData[selectedDistrict] || groundwaterData['Banaskantha']);
-  const startDepth = baseDist ? baseDist.mean_depth : 10.5;
+  const startDepth = meanDepth;
   const baseRate = baseDist ? baseDist.annual_drawdown_rate : 0.18;
   const simRate = Math.max(-0.05, baseRate * (1.0 - (waterSavedPercent / 100.0) * 1.8));
 
@@ -135,10 +172,24 @@ export function calculateSimulation(
   return {
     waterSavedMCM: roundVal(waterSavedMCM),
     waterSavedPercent: roundVal(waterSavedPercent),
+    baselineVolumetricMCM: roundVal(baselineVolumetricMCM),
+    simulatedVolumetricMCM: roundVal(simulatedVolumetricMCM),
     revenueChangeCrores: roundVal(revenueChangeCrores),
     revenueChangePercent: roundVal(revenueChangePercent),
     simulatedRevenuePerHa: roundVal(simulatedRevenuePerHa),
     baselineRevenuePerHa: roundVal(baselineRevenuePerHa),
+    totalAgriHectares: Math.round(totalAgriHectares),
+    microIrrigationAdoption,
+    // Farmer Incentive & Policy Subsidy
+    farmerRevenueGapCrores: roundVal(farmerRevenueGapCrores),
+    subsidyPerHectare,
+    costPerM3Saved,
+    // WEF Nexus Co-Benefits
+    energySavedMWh,
+    energySavedGWh,
+    powerSubsidySavedCrores,
+    avoidedCarbonTons,
+    meanDepth: roundVal(meanDepth),
     simulatedDistricts,
     trajectoryData,
     cropValueBreakdown: breakdown

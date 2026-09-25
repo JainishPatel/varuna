@@ -1,18 +1,18 @@
 import { calculateSimulation } from './simulationEngine.js';
 
-// Iterates through all possible crop splits in 5% increments
-// and finds the top 3 Pareto-optimal scenarios.
+// Iterates through possible crop splits and micro-irrigation levels
+// to find Pareto-optimal frontier scenarios.
 export function runOptimization(
   selectedDistrict,
   baselineAllocations,
   marketPrices,
   cropApy,
-  groundwaterData
+  groundwaterData,
+  microIrrigationAdoption = 0
 ) {
-  const step = 5; // 5% increments
+  const step = 10; // 10% increments for responsive speed
   const scenarios = [];
 
-  // Generate all combinations of C, G, W, B that sum to 100
   for (let c = 0; c <= 100; c += step) {
     for (let g = 0; g <= 100 - c; g += step) {
       for (let w = 0; w <= 100 - c - g; w += step) {
@@ -25,11 +25,8 @@ export function runOptimization(
             'Pearl Millet (Bajra)': b
           };
 
-          // Fix the shift at 0 for optimization simplicity, or sweep it too
-          // Here we just fix it to 0
           const shift = 0;
 
-          // Run simulation for this allocation
           const results = calculateSimulation(
             allocations,
             shift,
@@ -37,27 +34,30 @@ export function runOptimization(
             baselineAllocations,
             marketPrices,
             cropApy,
-            groundwaterData
+            groundwaterData,
+            microIrrigationAdoption
           );
 
           scenarios.push({
             allocations,
+            microIrrigationAdoption,
             waterSavedPercent: results.waterSavedPercent,
             revenueChangePercent: results.revenueChangePercent,
             waterSavedMCM: results.waterSavedMCM,
-            revenueChangeCrores: results.revenueChangeCrores
+            revenueChangeCrores: results.revenueChangeCrores,
+            energySavedMWh: results.energySavedMWh,
+            avoidedCarbonTons: results.avoidedCarbonTons,
+            costPerM3Saved: results.costPerM3Saved
           });
         }
       }
     }
   }
 
-  // Filter out completely unviable scenarios (e.g. massive revenue loss)
-  // Let's only consider scenarios where revenue doesn't drop by more than 15%
-  const viableScenarios = scenarios.filter(s => s.revenueChangePercent > -15.0);
+  const viableScenarios = scenarios.filter(s => s.revenueChangePercent > -20.0);
 
-  // 1. Max Water Conservation (Highest water saved without revenue dropping below -5%)
-  const maxWaterList = viableScenarios.filter(s => s.revenueChangePercent >= -5.0)
+  // 1. Max Water Conservation (Highest water saved without revenue dropping below -8%)
+  const maxWaterList = viableScenarios.filter(s => s.revenueChangePercent >= -8.0)
     .sort((a, b) => b.waterSavedPercent - a.waterSavedPercent);
   const maxWater = maxWaterList.length > 0 ? maxWaterList[0] : scenarios.sort((a, b) => b.waterSavedPercent - a.waterSavedPercent)[0];
 
@@ -65,11 +65,9 @@ export function runOptimization(
   const maxRevenueList = viableScenarios.sort((a, b) => b.revenueChangePercent - a.revenueChangePercent);
   const maxRevenue = maxRevenueList.length > 0 ? maxRevenueList[0] : scenarios.sort((a, b) => b.revenueChangePercent - a.revenueChangePercent)[0];
 
-  // 3. Balanced (Highest combined fitness: scaled sum of water and revenue)
-  // Normalize variables slightly
+  // 3. Balanced (Highest combined fitness)
   const balancedList = viableScenarios.map(s => {
-    // Basic fitness: 1% water saved = 1 point, 1% revenue = 1.5 points
-    const fitness = (s.waterSavedPercent * 1.0) + (s.revenueChangePercent * 1.5);
+    const fitness = (s.waterSavedPercent * 1.2) + (s.revenueChangePercent * 1.4);
     return { ...s, fitness };
   }).sort((a, b) => b.fitness - a.fitness);
   const balanced = balancedList.length > 0 ? balancedList[0] : scenarios[0];
@@ -79,4 +77,79 @@ export function runOptimization(
     maxRevenue,
     balanced
   };
+}
+
+// Goal-Seek Reverse Optimizer: Finds the least disruptive crop allocation
+// and recommended drip penetration to achieve a target water savings percentage.
+export function solveTargetScenario(
+  targetWaterPercent = 15,
+  selectedDistrict = 'ALL',
+  baselineAllocations,
+  marketPrices,
+  cropApy,
+  groundwaterData
+) {
+  const step = 10;
+  const dripLevels = [0, 25, 50, 75];
+  let bestScenario = null;
+  let bestDisruption = Infinity; // distance from baseline + revenue drop
+
+  dripLevels.forEach(drip => {
+    for (let c = 0; c <= 80; c += step) {
+      for (let g = 0; g <= 100 - c; g += step) {
+        for (let w = 0; w <= 100 - c - g; w += step) {
+          const b = 100 - c - g - w;
+          if (b >= 0 && b <= 100) {
+            const allocations = {
+              'Cotton': c,
+              'Groundnut': g,
+              'Wheat': w,
+              'Pearl Millet (Bajra)': b
+            };
+
+            const sim = calculateSimulation(
+              allocations,
+              10, // Default 10-day sowing shift
+              selectedDistrict,
+              baselineAllocations,
+              marketPrices,
+              cropApy,
+              groundwaterData,
+              drip
+            );
+
+            // Meets or comes within 1% of the target
+            if (sim.waterSavedPercent >= targetWaterPercent - 0.5) {
+              // Disruption metric: how far did we shift from baseline crops + revenue loss penalty
+              let shiftDist = 0;
+              Object.keys(allocations).forEach(crop => {
+                shiftDist += Math.abs(allocations[crop] - (baselineAllocations[crop] || 25));
+              });
+              const revenuePenalty = sim.revenueChangePercent < 0 ? Math.abs(sim.revenueChangePercent) * 2.5 : 0;
+              const disruption = shiftDist + revenuePenalty + (drip * 0.2);
+
+              if (disruption < bestDisruption) {
+                bestDisruption = disruption;
+                bestScenario = {
+                  allocations,
+                  microIrrigationAdoption: drip,
+                  sowingShift: 10,
+                  waterSavedPercent: sim.waterSavedPercent,
+                  revenueChangePercent: sim.revenueChangePercent,
+                  waterSavedMCM: sim.waterSavedMCM,
+                  revenueChangeCrores: sim.revenueChangeCrores,
+                  energySavedMWh: sim.energySavedMWh,
+                  avoidedCarbonTons: sim.avoidedCarbonTons,
+                  costPerM3Saved: sim.costPerM3Saved,
+                  subsidyPerHectare: sim.subsidyPerHectare
+                };
+              }
+            }
+          }
+        }
+      }
+    }
+  });
+
+  return bestScenario;
 }
