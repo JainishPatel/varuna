@@ -255,11 +255,13 @@ export default function App() {
           <div className="page-container">
             <DistrictDossier
               selectedDistrict={selectedDistrict}
+              setSelectedDistrict={setSelectedDistrict}
               simulationResults={simulationResults}
               cropAllocations={cropAllocations}
               sowingShift={sowingShift}
               microIrrigationAdoption={microIrrigationAdoption}
               groundwaterData={groundwaterData}
+              cropApy={cropApy}
               onExportReport={handleExportReport}
             />
           </div>

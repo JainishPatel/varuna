@@ -93,9 +93,13 @@ export default function StressTestLab({
     // Net drawdown under Varuna policy (can even achieve net recharge)
     const varunaAnnualDrawdown = Math.max(-0.35, (stressAnnualDrawdown * (1 - policySavings)) - artificialRechargeCredit);
 
-    // Salinity & Bedrock thresholds
-    const salinityThreshold = 45.0; // meters
-    const exhaustionThreshold = 85.0; // meters (Day Zero)
+    // Critical Operable Day Zero Threshold & Salinity Limit
+    // In CGWB & NITI Aayog CWMI benchmarks: tubewell suction failure, pump cavitation,
+    // and severe saline/fluoride contamination occur when unconfined water table drops past 26m-32m.
+    const exhaustionThreshold = district.cgwb_category?.includes('Over-Exploited')
+      ? 26.0
+      : (district.cgwb_category?.includes('Critical') ? 28.0 : 32.0);
+    const salinityThreshold = 22.0; // Early warning for saline/fluoride ingress
 
     const years = [];
     let curBAUDepth = baseDepth;
@@ -140,17 +144,17 @@ export default function StressTestLab({
       });
     }
 
-    // Dynamic scale bounds for focused view
+    // Dynamic scale bounds for focused view ensuring thresholds are visible
     const allDepths = years.flatMap(y => [
       y['Status Quo (BAU)'],
       y['Stress Tested Reality'],
       y['With Varuna Plan']
     ]);
     const minD = Math.min(...allDepths);
-    const maxD = Math.max(...allDepths);
+    const maxD = Math.max(...allDepths, exhaustionThreshold);
     const focusedDomain = [
       Math.max(0, Math.floor(minD - 2)),
-      Math.ceil(maxD + 4)
+      Math.ceil(maxD + 3)
     ];
 
     return {
@@ -170,33 +174,65 @@ export default function StressTestLab({
     enableCropShift, enableDripMandate, enableCheckDams, enableSolarRationing
   ]);
 
-  // Statewide Vulnerability Ranking under current stress scenario
+  // Statewide Vulnerability Ranking under active climate stress scenario
   const rankedDistricts = useMemo(() => {
     return districtList.map(name => {
       const d = groundwaterData[name] || {};
-      const depth = d.mean_depth || 10.0;
-      const rate = Math.max(0.35, Math.abs(d.annual_drawdown_rate || 0.40));
+      const depth = d.mean_depth || 12.0;
+      const cgwb = d.cgwb_category || 'Safe';
 
-      const rainfallFactor = 1.0 - (monsoonDeficit / 100) * 1.5;
-      const stressRate = rate * rainfallFactor * (1 + extractionGrowth / 100);
+      // 1. Categorical base annual drawdown rate calibrated by CGWB exploitation level
+      let catRate = 0.40;
+      if (cgwb.includes('Over-Exploited')) catRate = 1.15;
+      else if (cgwb.includes('Critical')) catRate = 0.85;
+      else if (cgwb.includes('Semi-Critical')) catRate = 0.55;
+      else catRate = 0.35;
+
+      const historicalAnnualRate = Math.max(catRate * 0.9, Math.abs(d.annual_drawdown_rate || catRate) * 1.35);
+
+      // 2. Climate Stress adjustments (monsoon anomaly, canal reliability, extraction growth)
+      const rainfallStressAdd = monsoonDeficit < 0 ? (-monsoonDeficit / 10) * 0.40 : (monsoonDeficit / 10) * -0.20;
+      const canalDeficitPenalty = ((100 - canalReliability) / 100) * 0.35;
+      const extractionFactor = (extractionGrowth / 100) * 0.50;
+
+      const stressRate = Math.max(0.30, historicalAnnualRate + rainfallStressAdd + canalDeficitPenalty + extractionFactor);
       const projected2030Depth = depth + (stressRate * 6);
-      const yearsToDayZero = Math.max(1, Math.round((85.0 - depth) / stressRate));
 
+      // 3. Operable Day Zero Threshold (where tubewells run dry, pumps cavitate, and salinity/fluoride surges)
+      // CGWB & NITI Aayog CWMI benchmarks: critical aquifer failure occurs at 26m-30m in western India.
+      const dayZeroThreshold = cgwb.includes('Over-Exploited')
+        ? 26.0
+        : (cgwb.includes('Critical') ? 28.0 : 32.0);
+
+      const availableHeadMeters = Math.max(0.5, dayZeroThreshold - depth);
+      const yearsToDayZero = Math.max(1, Math.round(availableHeadMeters / stressRate));
+
+      // 4. Risk Tier Classification
       let riskTier = 'Moderate';
-      if (projected2030Depth > 40 || yearsToDayZero <= 8) riskTier = 'Extreme';
-      else if (projected2030Depth > 25 || yearsToDayZero <= 15) riskTier = 'High';
+      if (yearsToDayZero <= 8 || projected2030Depth >= 25 || cgwb.includes('Over-Exploited')) {
+        riskTier = 'Extreme';
+      } else if (yearsToDayZero <= 15 || projected2030Depth >= 20 || cgwb.includes('Critical')) {
+        riskTier = 'High';
+      } else if (cgwb.includes('Semi-Critical') || yearsToDayZero <= 22) {
+        riskTier = 'Moderate';
+      } else {
+        riskTier = 'Low';
+      }
+
+      // Risk color matching
+      const riskColor = riskTier === 'Extreme' ? '#ef4444' : (riskTier === 'High' ? '#f97316' : (riskTier === 'Moderate' ? '#eab308' : '#10b981'));
 
       return {
         name,
         currentDepth: depth,
         projected2030Depth: parseFloat(projected2030Depth.toFixed(1)),
         yearsToDayZero,
-        cgwb: d.cgwb_category || 'Safe',
+        cgwb,
         riskTier,
-        riskColor: d.risk_color || '#3b82f6'
+        riskColor: d.risk_color || riskColor
       };
     }).sort((a, b) => b.projected2030Depth - a.projected2030Depth);
-  }, [districtList, groundwaterData, monsoonDeficit, extractionGrowth]);
+  }, [districtList, groundwaterData, monsoonDeficit, extractionGrowth, canalReliability]);
 
   const filteredRankings = rankedDistricts.filter(item => {
     const matchesSearch = item.name.toLowerCase().includes(searchTerm.toLowerCase());
@@ -259,7 +295,7 @@ export default function StressTestLab({
             {simulationTrajectory.dayZeroStress}
           </div>
           <div className="text-xs text-slate-600 font-medium mt-2">
-            Aquifer reaches 85m bedrock depletion threshold
+            Aquifer breaches {simulationTrajectory.exhaustionThreshold}m critical depletion limit
           </div>
         </div>
 
@@ -393,22 +429,18 @@ export default function StressTestLab({
                   <Legend wrapperStyle={{ fontSize: '11px', paddingTop: '10px' }} />
 
                   {/* Threshold Lines - displayed when in range */}
-                  {chartYDomain[1] >= 45 && (
-                    <ReferenceLine
-                      y={45}
-                      label={{ value: 'Salinity Limit (45m)', fill: '#ea580c', fontSize: 10, position: 'right' }}
-                      stroke="#ea580c"
-                      strokeDasharray="4 4"
-                    />
-                  )}
-                  {chartYDomain[1] >= 85 && (
-                    <ReferenceLine
-                      y={85}
-                      label={{ value: 'Bedrock Collapse (85m)', fill: '#dc2626', fontSize: 10, position: 'right' }}
-                      stroke="#dc2626"
-                      strokeDasharray="4 4"
-                    />
-                  )}
+                  <ReferenceLine
+                    y={simulationTrajectory.exhaustionThreshold}
+                    label={{ value: `Day Zero Failure (${simulationTrajectory.exhaustionThreshold}m)`, fill: '#dc2626', fontSize: 10, position: 'right' }}
+                    stroke="#dc2626"
+                    strokeDasharray="4 4"
+                  />
+                  <ReferenceLine
+                    y={simulationTrajectory.salinityThreshold}
+                    label={{ value: `Salinity Ingress (${simulationTrajectory.salinityThreshold}m)`, fill: '#ea580c', fontSize: 10, position: 'right' }}
+                    stroke="#ea580c"
+                    strokeDasharray="3 3"
+                  />
 
                   {/* Local acute stress line for focused view */}
                   {chartScaleMode === 'focused' && (
@@ -453,7 +485,7 @@ export default function StressTestLab({
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-4 border-t border-slate-200 mt-2 text-xs">
               <div className="p-2.5 rounded-lg bg-amber-50 border border-amber-200">
                 <span className="font-bold text-amber-900 block">Status Quo (BAU):</span>
-                <span className="text-amber-800">Historical trend continues. Bedrock hit by {simulationTrajectory.dayZeroBAU}.</span>
+                <span className="text-amber-800">Historical trend continues. Operable limit breached by {simulationTrajectory.dayZeroBAU}.</span>
               </div>
               <div className="p-2.5 rounded-lg bg-rose-50 border border-rose-200">
                 <span className="font-bold text-rose-900 block">Stress Tested:</span>
@@ -461,7 +493,7 @@ export default function StressTestLab({
               </div>
               <div className="p-2.5 rounded-lg bg-emerald-50 border border-emerald-200">
                 <span className="font-bold text-emerald-900 block">Varuna Defense:</span>
-                <span className="text-emerald-800">Crop shift + drip flattens trajectory, keeping basin safely above bedrock.</span>
+                <span className="text-emerald-800">Crop shift + drip flattens trajectory, keeping basin safely above critical failure limit.</span>
               </div>
             </div>
           </div>

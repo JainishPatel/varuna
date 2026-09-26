@@ -174,10 +174,24 @@ export default function CropTransitionLab({
   const rawIncomeGap = baselineTotalNetFarmIncome - transitionNetFarmIncome;
 
   // Recommended Varuna Green Transition Incentive Subsidy
-  // Guaranteed income parity + incentive bonus % on shifted land
+  // 1. Guaranteed Income Parity: covers 100% of any per-hectare profit shortfall
   const perHectareParityGap = Math.max(0, srcNetPerHa - tgtNetPerHa);
-  const recommendedIncentivePerHa = perHectareParityGap * (1 + incentiveBonusPercent / 100);
-  const totalFarmSubsidyRs = recommendedIncentivePerHa * shiftedHectares;
+
+  // 2. Ecological Stewardship Grant:
+  // Even when the target crop is profitable, farmers bear transition friction, learning curves,
+  // and agronomic adoption risks. Meanwhile, the state avoids heavy GUVNL power subsidies (~₹5.90/kWh).
+  // The state dedicates an aquifer stewardship grant (sharing ~25% of power subsidy savings or min ₹3,500/ha floor),
+  // dynamically amplified by the farmer adoption bonus slider.
+  const waterSavedPerShiftedHa = Math.max(0, src.waterReqM3Ha - (tgt.waterReqM3Ha * dripEfficiencyMultiplier));
+  const kwhSavedPerShiftedHa = waterSavedPerShiftedHa * kwhPerM3;
+  const powerSubsidySavedPerShiftedHa = kwhSavedPerShiftedHa * (utilityCostRate - 0.60);
+
+  const baseStewardshipGrantPerHa = Math.max(3500, Math.round(powerSubsidySavedPerShiftedHa * 0.25));
+  const stewardshipIncentivePerHa = Math.round(baseStewardshipGrantPerHa * (1 + incentiveBonusPercent / 100));
+
+  // Total Recommended DBT Subsidy per Hectare shifted
+  const recommendedIncentivePerHa = perHectareParityGap + stewardshipIncentivePerHa;
+  const totalFarmSubsidyRs = shiftedHectares > 0 ? recommendedIncentivePerHa * shiftedHectares : 0;
 
   const finalNetFarmIncomeWithSubsidy = transitionNetFarmIncome + totalFarmSubsidyRs;
   const netFarmerGainVsBaseline = finalNetFarmIncomeWithSubsidy - baselineTotalNetFarmIncome;
@@ -296,6 +310,11 @@ export default function CropTransitionLab({
           </div>
           <div className="text-xs text-slate-600 font-medium mt-2">
             Total payout: ₹<strong>{Math.round(totalFarmSubsidyRs).toLocaleString()}</strong> for {shiftedHectares.toFixed(1)} Ha
+          </div>
+          <div className="text-[10px] text-emerald-700 font-semibold mt-1">
+            {perHectareParityGap > 0
+              ? `Parity deficit (₹${Math.round(perHectareParityGap).toLocaleString()}) + Eco grant (₹${Math.round(stewardshipIncentivePerHa).toLocaleString()})`
+              : `Aquifer stewardship & adoption grant (Zero parity deficit)`}
           </div>
         </div>
 
@@ -514,7 +533,7 @@ export default function CropTransitionLab({
               <div>
                 <div className="flex items-center justify-between mb-1.5">
                   <span className="text-xs font-bold text-slate-700">
-                    Transition Bonus Above Income Parity (DBT Incentive)
+                    Aquifer Stewardship DBT Incentive Bonus
                   </span>
                   <span className="text-sm font-extrabold text-teal-800 bg-teal-50 px-2.5 py-0.5 rounded border border-teal-200">
                     +{incentiveBonusPercent}% Premium
@@ -530,7 +549,7 @@ export default function CropTransitionLab({
                   className="w-full"
                 />
                 <div className="flex justify-between text-xs text-slate-500 font-medium mt-1">
-                  <span>0% (Strict Parity)</span>
+                  <span>0% (Base Grant)</span>
                   <span>15% (Recommended Adoption Incentive)</span>
                   <span>35% (Aggressive Conversion)</span>
                 </div>

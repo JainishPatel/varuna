@@ -33,11 +33,43 @@ export function calculateSimulation(
   // Drip fertigation yields a slight 5-8% boost in productivity.
   const dripYieldBoost = 1.0 + (Math.min(100, Math.max(0, microIrrigationAdoption)) / 100.0) * 0.06;
 
+  // Derive authentic baseline crop shares for the selected district (or statewide)
+  const authenticBaselineShares = {};
+  const cropsList = ['Cotton', 'Groundnut', 'Wheat', 'Pearl Millet (Bajra)'];
+  let distBaseTotalHa = 0;
+
+  if (cropApy) {
+    if (selectedDistrict === 'ALL') {
+      const totals = {};
+      cropsList.forEach(c => totals[c] = 0);
+      Object.values(cropApy).forEach(dist => {
+        cropsList.forEach(c => {
+          const a = dist[c]?.area_hectares || 0;
+          totals[c] += a;
+          distBaseTotalHa += a;
+        });
+      });
+      cropsList.forEach(c => {
+        authenticBaselineShares[c] = distBaseTotalHa > 0 ? (totals[c] / distBaseTotalHa) * 100 : (baselineAllocations[c] || 25);
+      });
+    } else {
+      const distData = cropApy[selectedDistrict] || {};
+      cropsList.forEach(c => {
+        const a = distData[c]?.area_hectares || 0;
+        distBaseTotalHa += a;
+      });
+      cropsList.forEach(c => {
+        const a = distData[c]?.area_hectares || 0;
+        authenticBaselineShares[c] = distBaseTotalHa > 0 ? (a / distBaseTotalHa) * 100 : (baselineAllocations[c] || 25);
+      });
+    }
+  }
+
   const breakdown = [];
 
   Object.entries(cropAllocations).forEach(([crop, sharePercent]) => {
     const priceMeta = marketPrices[crop] || { water_req_m3_ha: 5000, price_per_kg: 25, mandi_price_per_quintal: 2500 };
-    const baseShare = baselineAllocations[crop] || 25;
+    const baseShare = authenticBaselineShares[crop] ?? (baselineAllocations[crop] || 25);
 
     const waterPerHa = priceMeta.water_req_m3_ha;
     // Sowing shift efficiency (aligning vegetative peak with monsoon)
@@ -92,14 +124,6 @@ export function calculateSimulation(
   const revenueChangeCrores = revenueChangeRupees / 10000000.0;
   const revenueChangePercent = baselineTotalRupees > 0 ? (revenueChangeRupees / baselineTotalRupees) * 100.0 : 0;
 
-  // Farmer Transition Subsidy & Incentive Calculations
-  const farmerRevenueGapRupees = Math.max(0, baselineTotalRupees - simulatedTotalRupees);
-  const farmerRevenueGapCrores = farmerRevenueGapRupees / 10000000.0;
-  const subsidyPerHectare = totalAgriHectares > 0 ? Math.round(farmerRevenueGapRupees / totalAgriHectares) : 0;
-  
-  // Cost per m3 of water saved (in Rs/m3)
-  const costPerM3Saved = waterSavedM3 > 0 ? roundVal(farmerRevenueGapRupees / waterSavedM3) : 0;
-
   // Water-Energy-Food (WEF) Nexus Calculations:
   // Submersible deep-well pumping electricity consumption
   const baseDist = selectedDistrict === 'ALL' ? groundwaterData['Banaskantha'] : (groundwaterData[selectedDistrict] || groundwaterData['Banaskantha']);
@@ -113,10 +137,45 @@ export function calculateSimulation(
   const energySavedGWh = roundVal(energySavedKWh / 1000000.0);
 
   // Gujarat state power subsidy savings (GUVNL subsidizes ~Rs 6.40 per kWh of agricultural power)
-  const powerSubsidySavedCrores = roundVal((energySavedKWh * 6.40) / 10000000.0);
+  const powerSubsidySavedRupees = energySavedKWh * 6.40;
+  const powerSubsidySavedCrores = roundVal(powerSubsidySavedRupees / 10000000.0);
 
   // Carbon emissions avoided (Western India grid factor ~0.82 kg CO2 / kWh)
   const avoidedCarbonTons = roundVal((energySavedKWh * 0.82) / 1000.0);
+
+  // Farmer Transition Subsidy & Incentive Calculations:
+  // 1. Agrarian Revenue Gap: covers direct income deficit if simulated gross revenue drops below baseline
+  const rawIncomeGapRupees = Math.max(0, baselineTotalRupees - simulatedTotalRupees);
+  const farmerRevenueGapCrores = rawIncomeGapRupees / 10000000.0;
+
+  // 2. Ecological Stewardship Grant:
+  // When farmers adopt water-saving crops or drip irrigation, the state treasury saves massive GUVNL power subsidies.
+  // Sustainable hydro-economic policy dedicates a share (~25%) of avoided power subsidies or a base transition grant
+  // (~₹3,500/ha on shifted land) to overcome adoption friction and learning curves.
+  let shiftedSharePercent = 0;
+  Object.entries(cropAllocations).forEach(([crop, sharePercent]) => {
+    const baseShare = authenticBaselineShares[crop] ?? (baselineAllocations[crop] || 25);
+    if (sharePercent > baseShare) {
+      shiftedSharePercent += (sharePercent - baseShare);
+    }
+  });
+  const shiftedHa = (shiftedSharePercent / 100.0) * totalAgriHectares;
+  const dripInterventionHa = (Math.min(100, Math.max(0, microIrrigationAdoption)) / 100.0) * totalAgriHectares;
+  const activeInterventionHa = Math.max(1, shiftedHa + (dripInterventionHa * 0.5));
+
+  const stewardshipIncentiveRupees = waterSavedM3 > 0
+    ? Math.min(powerSubsidySavedRupees * 0.35, Math.max(powerSubsidySavedRupees * 0.20, Math.min(shiftedHa * 3500, powerSubsidySavedRupees * 0.40) || (waterSavedM3 * 0.75)))
+    : 0;
+
+  const totalTransitionBudgetRupees = rawIncomeGapRupees + stewardshipIncentiveRupees;
+  const transitionBudgetCrores = totalTransitionBudgetRupees / 10000000.0;
+
+  const subsidyPerHectare = (waterSavedM3 > 0 || rawIncomeGapRupees > 0) && activeInterventionHa > 0
+    ? Math.round(totalTransitionBudgetRupees / activeInterventionHa)
+    : 0;
+
+  // Cost per m3 of water saved (in Rs/m3)
+  const costPerM3Saved = waterSavedM3 > 0 ? roundVal(totalTransitionBudgetRupees / waterSavedM3) : 0;
 
   // Simulated Districts Map & Choropleth
   const simulatedDistricts = {};
@@ -182,6 +241,8 @@ export function calculateSimulation(
     microIrrigationAdoption,
     // Farmer Incentive & Policy Subsidy
     farmerRevenueGapCrores: roundVal(farmerRevenueGapCrores),
+    transitionBudgetCrores: roundVal(transitionBudgetCrores),
+    totalTransitionBudgetCrores: roundVal(transitionBudgetCrores),
     subsidyPerHectare,
     costPerM3Saved,
     // WEF Nexus Co-Benefits
