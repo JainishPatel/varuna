@@ -13,6 +13,7 @@ import DistrictDossier from './components/DistrictDossier';
 import MethodologyTab from './components/MethodologyTab';
 import DataExplorer from './components/DataExplorer';
 import UserManagement from './components/UserManagement';
+import MachineLearningStudio from './components/MachineLearningStudio';
 
 // Processed dataset JSONs
 import groundwaterData from './data/groundwater_summary.json';
@@ -203,6 +204,19 @@ export default function App() {
               cropApy={cropApy}
               groundwaterData={groundwaterData}
               onNavigateToNexus={() => setActivePage('impact')}
+            />
+          </div>
+        )}
+
+        {/* Page: Machine Learning Intelligence Lab */}
+        {activePage === 'mlstudio' && (
+          <div className="page-container">
+            <MachineLearningStudio
+              groundwaterData={groundwaterData}
+              selectedDistrict={selectedDistrict}
+              setSelectedDistrict={setSelectedDistrict}
+              cropApy={cropApy}
+              onNavigateToSimulate={() => setActivePage('simulate')}
             />
           </div>
         )}

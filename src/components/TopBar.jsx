@@ -2,13 +2,14 @@ import React from 'react';
 import {
   MapPin, Sliders, RefreshCw, Printer, AlertTriangle,
   ChevronDown, Droplet, Sprout, BarChart3, ShieldAlert,
-  Compass, Zap, BookOpen, FileText, CheckCircle2
+  Compass, Zap, BookOpen, FileText, CheckCircle2, Brain
 } from 'lucide-react';
 
 const PAGE_METADATA = {
   crisis: { title: 'The Crisis', category: 'Executive Overview', icon: AlertTriangle },
   map: { title: 'Spatial Intelligence', category: 'GIS Telemetry', icon: MapPin },
   simulate: { title: 'Simulation Lab', category: 'FAO-56 Policy Engine', icon: Sliders },
+  mlstudio: { title: 'ML Intelligence Lab', category: 'Predictive Hydro-Economic AI', icon: Brain },
   croplab: { title: 'Crop Transition Lab', category: 'Farmer Economics', icon: Sprout },
   stresstest: { title: 'Aquifer Stress Lab', category: 'Drought & Day Zero', icon: Zap },
   impact: { title: 'Impact Analysis', category: 'WEF Nexus Studio', icon: BarChart3 },

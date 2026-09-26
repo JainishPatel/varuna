@@ -3,7 +3,7 @@ import {
   Droplet, AlertTriangle, Map as MapIcon, Sliders, BarChart3,
   FileText, BookOpen, ChevronLeft, ChevronRight, LogOut,
   Waves, Zap, Database, Users, Settings, PanelLeftClose, PanelLeft,
-  Sprout
+  Sprout, Brain
 } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 
@@ -11,6 +11,7 @@ const NAV_ITEMS = [
   { key: 'crisis',     label: 'The Crisis',          icon: AlertTriangle, group: 'narrative', badge: 'Overview', badgeColor: 'bg-rose-50 text-rose-700 border-rose-200' },
   { key: 'map',        label: 'Spatial Intelligence', icon: MapIcon,       group: 'narrative', badge: 'GIS', badgeColor: 'bg-sky-50 text-sky-700 border-sky-200' },
   { key: 'simulate',   label: 'Simulation Lab',       icon: Sliders,       group: 'analysis', badge: 'Model', badgeColor: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
+  { key: 'mlstudio',   label: 'ML Intelligence Lab',  icon: Brain,         group: 'analysis', badge: 'AI/ML', badgeColor: 'bg-violet-50 text-violet-700 border-violet-200' },
   { key: 'croplab',    label: 'Crop Economics Lab',   icon: Sprout,        group: 'analysis', badge: 'DBT', badgeColor: 'bg-teal-50 text-teal-700 border-teal-200' },
   { key: 'stresstest', label: 'Aquifer Stress Lab',   icon: Zap,           group: 'analysis', badge: 'Shock', badgeColor: 'bg-amber-50 text-amber-700 border-amber-200' },
   { key: 'impact',     label: 'Impact Analysis',      icon: BarChart3,     group: 'analysis', badge: 'Nexus', badgeColor: 'bg-indigo-50 text-indigo-700 border-indigo-200' },
