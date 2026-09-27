@@ -6,6 +6,7 @@ import {
   Sprout, Brain
 } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
+import ThemeToggle from './ThemeToggle';
 
 const NAV_ITEMS = [
   { key: 'crisis',     label: 'The Crisis',          icon: AlertTriangle, group: 'narrative', badge: 'Overview', badgeColor: 'bg-rose-50 text-rose-700 border-rose-200' },
@@ -98,6 +99,9 @@ export default function Sidebar({ activePage, setActivePage, collapsed, setColla
 
       {/* Bottom section */}
       <div className="sidebar__footer">
+        {/* Theme mode toggle */}
+        <ThemeToggle variant="sidebar" collapsed={collapsed} />
+
         {/* Collapse toggle */}
         <button
           onClick={() => setCollapsed(!collapsed)}

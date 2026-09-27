@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { Droplet, Lock, User, AlertCircle, Eye, EyeOff, ArrowRight, ShieldCheck, Database, Layers, Activity, CheckCircle2 } from 'lucide-react';
+import ThemeToggle from './ThemeToggle';
 
 export default function LoginPage() {
   const { login } = useAuth();
@@ -122,7 +123,12 @@ export default function LoginPage() {
       </div>
 
       {/* Right Panel: Clean Secure Authentication */}
-      <div className="portal-login-right">
+      <div className="portal-login-right relative">
+        {/* Floating Theme Toggle */}
+        <div className="absolute top-4 right-4 z-20">
+          <ThemeToggle variant="minimal" />
+        </div>
+
         <div className={`w-full max-w-md ${shake ? 'animate-shake' : ''}`}>
           {/* Mobile Header */}
           <div className="flex lg:hidden items-center gap-2.5 mb-6">

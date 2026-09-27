@@ -8,6 +8,7 @@ import { ResponsiveContainer, AreaChart, Area, XAxis, YAxis, Tooltip as ReToolti
 
 import riverStations from '../data/river_stations.json';
 import historicalTimeline from '../data/historical_timeline.json';
+import { useTheme } from '../contexts/ThemeContext';
 
 const TIMELINE_YEARS = ['1995', '2000', '2005', '2010', '2015', '2020', '2025', '2030', '2035'];
 
@@ -48,6 +49,7 @@ function MapViewController({ selectedDistrict, geojson }) {
 }
 
 export default function SpatialMap({ geojson, groundwaterData, selectedDistrict, setSelectedDistrict, simulatedDistricts = {}, cropApy }) {
+  const { isDark } = useTheme();
   const [showWells, setShowWells] = useState(true);
   const [showRivers, setShowRivers] = useState(true);
   const [timelineYear, setTimelineYear] = useState('2025');
@@ -195,8 +197,13 @@ export default function SpatialMap({ geojson, groundwaterData, selectedDistrict,
             style={{ width: '100%', height: '100%' }}
           >
             <TileLayer
+              key={isDark ? 'dark-tiles' : 'light-tiles'}
               attribution='&copy; <a href="https://www.esri.com/">Esri</a> &mdash; Esri, DeLorme, NAVTEQ'
-              url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}"
+              url={
+                isDark
+                  ? "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}"
+                  : "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}"
+              }
               maxZoom={16}
             />
             <GeoJSON

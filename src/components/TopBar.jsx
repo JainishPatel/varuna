@@ -5,6 +5,8 @@ import {
   Compass, Zap, BookOpen, FileText, CheckCircle2, Brain
 } from 'lucide-react';
 
+import ThemeToggle from './ThemeToggle';
+
 const PAGE_METADATA = {
   crisis: { title: 'The Crisis', category: 'Executive Overview', icon: AlertTriangle },
   map: { title: 'Spatial Intelligence', category: 'GIS Telemetry', icon: MapPin },
@@ -118,6 +120,9 @@ export default function TopBar({
 
         {/* Action Buttons */}
         <div className="varuna-topbar__actions">
+          {/* Dark / Light Mode Toggle */}
+          <ThemeToggle variant="topbar" />
+
           {onResetScenario && (
             <button
               onClick={onResetScenario}

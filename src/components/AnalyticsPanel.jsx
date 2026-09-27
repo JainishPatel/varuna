@@ -5,17 +5,27 @@ import {
 } from 'recharts';
 import { TrendingUp, IndianRupee, Droplet, ArrowUpRight, ArrowDownRight, Layers, BarChart3, Activity, Cpu } from 'lucide-react';
 import { predictRevenue, getModelMetadata } from '../utils/mlInference.js';
-
-const lightTooltipStyle = {
-  background: '#ffffff',
-  border: '1px solid #cbd5e1',
-  borderRadius: '8px',
-  fontSize: '11px',
-  color: '#0f172a',
-  boxShadow: '0 4px 12px rgba(15, 23, 42, 0.08)',
-};
+import { useTheme } from '../contexts/ThemeContext';
 
 export default function AnalyticsPanel({ simulationResults, selectedDistrict, marketPrices, cropAllocations, sowingShift = 0, groundwaterData = {} }) {
+  const { isDark } = useTheme();
+
+  const tooltipStyle = isDark ? {
+    background: '#0d1322',
+    border: '1px solid #27354f',
+    borderRadius: '8px',
+    fontSize: '11px',
+    color: '#f8fafc',
+    boxShadow: '0 4px 16px rgba(0, 0, 0, 0.5)',
+  } : {
+    background: '#ffffff',
+    border: '1px solid #cbd5e1',
+    borderRadius: '8px',
+    fontSize: '11px',
+    color: '#0f172a',
+    boxShadow: '0 4px 12px rgba(15, 23, 42, 0.08)',
+  };
+
   const {
     waterSavedMCM, waterSavedPercent, revenueChangeCrores, revenueChangePercent,
     simulatedRevenuePerHa, baselineRevenuePerHa, trajectoryData, cropValueBreakdown
@@ -159,7 +169,7 @@ export default function AnalyticsPanel({ simulationResults, selectedDistrict, ma
                 </defs>
                 <XAxis dataKey="year" stroke="#94a3b8" tick={{ fontSize: 10, fill: '#475569' }} tickLine={false} axisLine={false} />
                 <YAxis reversed domain={['auto', 'auto']} stroke="#94a3b8" tick={{ fontSize: 10, fill: '#475569' }} tickLine={false} axisLine={false} />
-                <Tooltip contentStyle={lightTooltipStyle} formatter={(value) => [`${value} m bgl`, '']} />
+                <Tooltip contentStyle={tooltipStyle} formatter={(value) => [`${value} m bgl`, '']} />
                 <Legend wrapperStyle={{ fontSize: '10px', paddingTop: '8px' }} />
                 <Area type="monotone" dataKey="baselineDepth" name="Baseline" stroke="#dc2626" fillOpacity={1} fill="url(#baseGrad)" strokeWidth={1.5} strokeDasharray="5 5" />
                 <Area type="monotone" dataKey="simulatedDepth" name="Simulated" stroke="#16a34a" fillOpacity={1} fill="url(#simGrad)" strokeWidth={2} />
@@ -182,7 +192,7 @@ export default function AnalyticsPanel({ simulationResults, selectedDistrict, ma
               <BarChart data={waterBarData} margin={{ top: 5, right: 10, left: -15, bottom: 0 }} barSize={32}>
                 <XAxis dataKey="name" stroke="#94a3b8" tick={{ fontSize: 10, fill: '#475569' }} tickLine={false} axisLine={false} />
                 <YAxis stroke="#94a3b8" tick={{ fontSize: 10, fill: '#475569' }} tickLine={false} axisLine={false} />
-                <Tooltip contentStyle={lightTooltipStyle} formatter={(val, name, props) => [`${val.toLocaleString()} m³/ha`, props.payload.fullName]} />
+                <Tooltip contentStyle={tooltipStyle} formatter={(val, name, props) => [`${val.toLocaleString()} m³/ha`, props.payload.fullName]} />
                 <Bar dataKey="waterReq" radius={[4, 4, 0, 0]}>
                   {waterBarData.map((entry, idx) => (
                     <Cell key={idx} fill={entry.color} />
@@ -210,7 +220,7 @@ export default function AnalyticsPanel({ simulationResults, selectedDistrict, ma
                     <Cell key={idx} fill={entry.color} />
                   ))}
                 </Pie>
-                <Tooltip formatter={(val, name) => [`₹${val.toLocaleString()}/ha`, name]} contentStyle={lightTooltipStyle} />
+                <Tooltip formatter={(val, name) => [`₹${val.toLocaleString()}/ha`, name]} contentStyle={tooltipStyle} />
               </PieChart>
             </ResponsiveContainer>
           </div>
